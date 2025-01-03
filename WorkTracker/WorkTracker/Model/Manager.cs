@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WorkTracker.Model;
 
-public partial class Manager:User
+public partial class Manager
 {
     public string Username { get; set; } = null!;
 

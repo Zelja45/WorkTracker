@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\App.xaml
-11407045341
+31194406236
 
-4-999713243
-226-1949561296
-MainWindow.xaml;
+34964929601
+2261411008295
+Components\Header.xaml;LoginWindow.xaml;MainWindow.xaml;
 
 False
 

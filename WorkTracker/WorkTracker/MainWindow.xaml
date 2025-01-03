@@ -3,10 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WorkTracker"
+        xmlns:controls="clr-namespace:WorkTracker.Components"
         mc:Ignorable="d"
+        ResizeMode="CanResize"
+        WindowStyle="None"
+        Style="{DynamicResource MaterialDesignWindow}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource MaterialDesignPaper}"
         Title="MainWindow" Height="450" Width="800">
+        <WindowChrome.WindowChrome>
+            <WindowChrome GlassFrameThickness="0"
+                          CornerRadius="15"
+                          CaptionHeight="0" />
+        </WindowChrome.WindowChrome>
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <controls:Header></controls:Header>
+        
     </Grid>
+
+
 </Window>

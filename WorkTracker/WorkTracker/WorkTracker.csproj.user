@@ -7,8 +7,28 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\Header.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Components\Header.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Resource Update="Properties\Languages\Language-en-US.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Update="Properties\Languages\Language-sr-RS.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
   </ItemGroup>
 </Project>
