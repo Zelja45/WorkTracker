@@ -8,6 +8,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Label Content="Prikazo se vju" />
+        <Label Content="Prikazo se vju" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </UserControl>

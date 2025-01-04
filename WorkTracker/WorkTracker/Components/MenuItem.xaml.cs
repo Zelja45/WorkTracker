@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WorkTracker.ViewModel.Core;
 
 namespace WorkTracker.Components
 {
@@ -50,5 +51,12 @@ namespace WorkTracker.Components
 
         public static readonly DependencyProperty IsSelectedProperty =
             DependencyProperty.Register("IsSelected", typeof(bool), typeof(MenuItem));
+        public RelayCommand ItemCommand
+        {
+            get { return (RelayCommand)GetValue(ItemCommandProperty); }
+            set { SetValue(ItemCommandProperty, value); }
+        }
+        public static readonly DependencyProperty ItemCommandProperty =
+           DependencyProperty.Register("ItemCommand", typeof(RelayCommand), typeof(MenuItem));
     }
 }

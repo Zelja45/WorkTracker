@@ -39,10 +39,10 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`Sector` (
   `idSector` INT NOT NULL AUTO_INCREMENT,
   `Name` VARCHAR(45) NOT NULL,
   `Description` VARCHAR(256) NULL,
-  `HourlyRate` VARCHAR(45) NULL,
-  `OvertimeHourlyRate` VARCHAR(45) NULL,
-  `DailyHoursNorm` VARCHAR(45) NULL,
-  `WeeklyHoursNorm` VARCHAR(45) NULL,
+  `HourlyRate` VARCHAR(45) NOT NULL,
+  `OvertimeHourlyRate` VARCHAR(45) NOT NULL,
+  `DailyHoursNorm` VARCHAR(45) NOT NULL,
+  `WeeklyHoursNorm` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idSector`))
 ENGINE = InnoDB;
 
@@ -111,10 +111,12 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `worktracker`.`Admin` (
   `Username` VARCHAR(45) NOT NULL,
-  `Password` VARCHAR(255) NOT NULL,
-  `Name` VARCHAR(45) NOT NULL,
-  `Surname` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`Username`))
+  PRIMARY KEY (`Username`),
+  CONSTRAINT `fk_Admin_User1`
+    FOREIGN KEY (`Username`)
+    REFERENCES `worktracker`.`User` (`Username`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 

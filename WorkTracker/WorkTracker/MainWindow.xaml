@@ -15,7 +15,7 @@
         WindowStartupLocation="CenterScreen"
         Title="MainWindow"
         Height="450"
-        Width="800" >
+        Width="800" Margin="10" >
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0"
                       CornerRadius="15"
@@ -37,8 +37,9 @@
                               VerticalAlignment="Stretch"
                               HorizontalAlignment="Stretch"
                               Content="{Binding Navigation.CurrentView}" />
+            <controls:LoadingCircle Grid.Row="1" Panel.ZIndex="1"/>
         </Grid>
-        <controls:Menu MenuItemsData="{Binding DataContext.MenuItems,RelativeSource={RelativeSource AncestorType=Window}}"></controls:Menu>
+        <controls:Menu Margin="10"
+                       MenuItemsData="{Binding DataContext.MenuItems,RelativeSource={RelativeSource AncestorType=Window}}"></controls:Menu>
     </Grid>
-    
 </Window>

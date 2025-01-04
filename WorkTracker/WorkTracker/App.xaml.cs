@@ -34,7 +34,7 @@ namespace WorkTracker
             {
                 DataContext = provider.GetRequiredService<LoginViewModel>()
             });
-            services.AddSingleton<SettingsViewModel>(); 
+             
             services.AddSingleton<SettingsService>();
             services.AddSingleton<SettingsStore>();
             services.AddSingleton<ThemeChanger>();
@@ -42,10 +42,11 @@ namespace WorkTracker
                 new LanguageChanger(Application.Current.Resources)
             );
 
-
+            services.AddSingleton<SettingsViewModel>();
             services.AddSingleton<MainViewModel>();
             services.AddSingleton<LoginViewModel>();
             services.AddSingleton<WorkerMainViewModel>();
+            services.AddSingleton<LoadingCircleViewModel>();
 
            
 

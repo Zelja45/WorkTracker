@@ -3,16 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\menuitem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\menuitem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\utils\\utilitymodels\\menuitemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\utils\\utilitymodels\\menuitemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\viewmodel\\core\\asyncrelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\viewmodel\\core\\asyncrelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\viewmodel\\core\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\viewmodel\\core\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\model\\worktrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\model\\worktrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\loadingcircle.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\loadingcircle.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\loadingcircle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\loadingcircle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\viewmodel\\loadingcircleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\viewmodel\\loadingcircleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\view\\workermainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -23,12 +55,20 @@
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\services\\navigationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\services\\navigationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\menuitem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\menuitem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\menuitem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\menuitem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\utils\\utilitymodels\\menuitemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\utils\\utilitymodels\\menuitemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\viewmodel\\workermainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,18 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\menuitem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\menuitem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\components\\header.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\components\\header.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,20 +99,12 @@
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\utils\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\utils\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\utils\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\utils\\booleantovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\model\\worktrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\model\\worktrackercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -131,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\utils\\languagechanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\viewmodel\\core\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\viewmodel\\core\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|c:\\users\\nikola\\desktop\\worktracker\\worktracker\\worktracker\\viewmodel\\core\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF02D307-846B-4705-988E-5C1A52B7E47C}|WorkTracker\\WorkTracker.csproj|solutionrelative:worktracker\\viewmodel\\core\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -166,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -174,31 +186,209 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "WorkTracker\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAkwCAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T00:50:27.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoadingCircle.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\LoadingCircle.xaml.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\Components\\LoadingCircle.xaml.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\LoadingCircle.xaml.cs",
+              "RelativeToolTip": "WorkTracker\\Components\\LoadingCircle.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T14:08:34.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorktrackerContext.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\WorktrackerContext.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\Model\\WorktrackerContext.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\WorktrackerContext.cs",
+              "RelativeToolTip": "WorkTracker\\Model\\WorktrackerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T21:41:15.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Services\\UserService.cs*",
+              "RelativeToolTip": "WorkTracker\\Services\\UserService.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T13:06:01.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\Core\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\Core\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\Core\\RelayCommand.cs",
+              "RelativeToolTip": "WorkTracker\\ViewModel\\Core\\RelayCommand.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:09:44.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsyncRelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\Core\\AsyncRelayCommand.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\Core\\AsyncRelayCommand.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\Core\\AsyncRelayCommand.cs",
+              "RelativeToolTip": "WorkTracker\\ViewModel\\Core\\AsyncRelayCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T14:48:34.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoadingCircle.xaml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\LoadingCircle.xaml",
+              "RelativeDocumentMoniker": "WorkTracker\\Components\\LoadingCircle.xaml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\LoadingCircle.xaml",
+              "RelativeToolTip": "WorkTracker\\Components\\LoadingCircle.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-04T13:59:27.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "WorkTracker\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\LoginWindow.xaml",
+              "RelativeToolTip": "WorkTracker\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-04T14:12:36.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.xaml.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.xaml.cs",
+              "RelativeToolTip": "WorkTracker\\App.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:04:03.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WorkTracker\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\MainWindow.xaml",
+              "RelativeToolTip": "WorkTracker\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-03T16:15:21.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoadingCircleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\LoadingCircleViewModel.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\LoadingCircleViewModel.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\LoadingCircleViewModel.cs",
+              "RelativeToolTip": "WorkTracker\\ViewModel\\LoadingCircleViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T14:06:38.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "WorkTracker\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowBsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:13:14.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MenuItem.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\MenuItem.xaml.cs",
+              "RelativeDocumentMoniker": "WorkTracker\\Components\\MenuItem.xaml.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\MenuItem.xaml.cs",
+              "RelativeToolTip": "WorkTracker\\Components\\MenuItem.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAzwDcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T19:24:07.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WorkerMainView.xaml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\View\\WorkerMainView.xaml",
+              "RelativeDocumentMoniker": "WorkTracker\\View\\WorkerMainView.xaml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\View\\WorkerMainView.xaml",
+              "RelativeToolTip": "WorkTracker\\View\\WorkerMainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-04T00:40:19.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Menu.xaml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\Menu.xaml",
               "RelativeDocumentMoniker": "WorkTracker\\Components\\Menu.xaml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\Menu.xaml*",
-              "RelativeToolTip": "WorkTracker\\Components\\Menu.xaml*",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\Menu.xaml",
+              "RelativeToolTip": "WorkTracker\\Components\\Menu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-03T20:11:40.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.xaml",
-              "RelativeDocumentMoniker": "WorkTracker\\App.xaml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.xaml",
-              "RelativeToolTip": "WorkTracker\\App.xaml",
+              "DocumentIndex": 14,
+              "Title": "MenuItem.xaml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\MenuItem.xaml",
+              "RelativeDocumentMoniker": "WorkTracker\\Components\\MenuItem.xaml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\MenuItem.xaml",
+              "RelativeToolTip": "WorkTracker\\Components\\MenuItem.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-02T10:57:31.426Z",
+              "WhenOpened": "2025-01-03T18:25:09.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "MenuItemData.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Utils\\UtilityModels\\MenuItemData.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Utils\\UtilityModels\\MenuItemData.cs",
@@ -211,57 +401,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\MainViewModel.cs",
-              "RelativeToolTip": "WorkTracker\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA9wBsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:13:14.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WorkerMainView.xaml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\View\\WorkerMainView.xaml",
-              "RelativeDocumentMoniker": "WorkTracker\\View\\WorkerMainView.xaml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\View\\WorkerMainView.xaml",
-              "RelativeToolTip": "WorkTracker\\View\\WorkerMainView.xaml",
+              "DocumentIndex": 18,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.xaml",
+              "RelativeDocumentMoniker": "WorkTracker\\App.xaml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.xaml",
+              "RelativeToolTip": "WorkTracker\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-04T00:40:19.56Z",
+              "WhenOpened": "2025-01-02T10:57:31.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MenuItem.xaml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\MenuItem.xaml",
-              "RelativeDocumentMoniker": "WorkTracker\\Components\\MenuItem.xaml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\MenuItem.xaml",
-              "RelativeToolTip": "WorkTracker\\Components\\MenuItem.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-03T18:25:09.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\LoginViewModel.cs",
-              "RelativeToolTip": "WorkTracker\\ViewModel\\LoginViewModel.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAywDoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T00:50:27.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "WorkerMainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\WorkerMainViewModel.cs",
               "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\WorkerMainViewModel.cs",
@@ -274,56 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NavigationServices.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Services\\NavigationServices.cs",
-              "RelativeDocumentMoniker": "WorkTracker\\Services\\NavigationServices.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Services\\NavigationServices.cs",
-              "RelativeToolTip": "WorkTracker\\Services\\NavigationServices.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAUwCIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:06:29.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WorkTracker\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\MainWindow.xaml",
-              "RelativeToolTip": "WorkTracker\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-03T16:15:21.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.xaml.cs",
-              "RelativeDocumentMoniker": "WorkTracker\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.xaml.cs",
-              "RelativeToolTip": "WorkTracker\\App.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwB4AAAC+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:04:03.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MenuItem.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\MenuItem.xaml.cs",
-              "RelativeDocumentMoniker": "WorkTracker\\Components\\MenuItem.xaml.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\MenuItem.xaml.cs",
-              "RelativeToolTip": "WorkTracker\\Components\\MenuItem.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T19:24:07.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "Menu.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\Menu.xaml.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Components\\Menu.xaml.cs",
@@ -331,11 +434,12 @@
               "RelativeToolTip": "WorkTracker\\Components\\Menu.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAwwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T19:55:01.476Z"
+              "WhenOpened": "2025-01-03T19:55:01.476Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "WorkerMainView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\View\\WorkerMainView.xaml.cs",
               "RelativeDocumentMoniker": "WorkTracker\\View\\WorkerMainView.xaml.cs",
@@ -343,11 +447,12 @@
               "RelativeToolTip": "WorkTracker\\View\\WorkerMainView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T23:23:23.755Z"
+              "WhenOpened": "2025-01-03T23:23:23.755Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WorkTracker\\MainWindow.xaml.cs",
@@ -355,11 +460,12 @@
               "RelativeToolTip": "WorkTracker\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T22:20:12.633Z"
+              "WhenOpened": "2025-01-03T22:20:12.633Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "Header.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Components\\Header.xaml.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Components\\Header.xaml.cs",
@@ -367,34 +473,12 @@
               "RelativeToolTip": "WorkTracker\\Components\\Header.xaml.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAgwDoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T16:42:43.414Z"
+              "WhenOpened": "2025-01-03T16:42:43.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "WorkTracker\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\LoginWindow.xaml",
-              "RelativeToolTip": "WorkTracker\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-03T13:46:46.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "WorkTracker\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Services\\UserService.cs",
-              "RelativeToolTip": "WorkTracker\\Services\\UserService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T13:06:01.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "WorkTracker\\LoginWindow.xaml.cs",
@@ -402,11 +486,12 @@
               "RelativeToolTip": "WorkTracker\\LoginWindow.xaml.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAwCgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T13:38:45.621Z"
+              "WhenOpened": "2025-01-03T13:38:45.621Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "BooleanToVisibilityConverter.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Utils\\BooleanToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Utils\\BooleanToVisibilityConverter.cs",
@@ -414,11 +499,12 @@
               "RelativeToolTip": "WorkTracker\\Utils\\BooleanToVisibilityConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:33:06.319Z"
+              "WhenOpened": "2025-01-03T14:33:06.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "Util.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Utils\\Util.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Utils\\Util.cs",
@@ -426,11 +512,12 @@
               "RelativeToolTip": "WorkTracker\\Utils\\Util.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T13:09:03.267Z"
+              "WhenOpened": "2025-01-03T13:09:03.267Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Manager.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\Manager.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Model\\Manager.cs",
@@ -438,23 +525,12 @@
               "RelativeToolTip": "WorkTracker\\Model\\Manager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T21:40:48.345Z"
+              "WhenOpened": "2025-01-01T21:40:48.345Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "WorktrackerContext.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\WorktrackerContext.cs",
-              "RelativeDocumentMoniker": "WorkTracker\\Model\\WorktrackerContext.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\WorktrackerContext.cs",
-              "RelativeToolTip": "WorkTracker\\Model\\WorktrackerContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T21:41:15.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\App.config",
               "RelativeDocumentMoniker": "WorkTracker\\App.config",
@@ -462,34 +538,37 @@
               "RelativeToolTip": "WorkTracker\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-01-02T16:59:02.833Z"
+              "WhenOpened": "2025-01-02T16:59:02.833Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Language-sr-RS.xaml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Properties\\Languages\\Language-sr-RS.xaml",
               "RelativeDocumentMoniker": "WorkTracker\\Properties\\Languages\\Language-sr-RS.xaml",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Properties\\Languages\\Language-sr-RS.xaml",
               "RelativeToolTip": "WorkTracker\\Properties\\Languages\\Language-sr-RS.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-02T21:10:18.732Z"
+              "WhenOpened": "2025-01-02T21:10:18.732Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "SettingsService.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Services\\SettingsService.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Services\\SettingsService.cs",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Services\\SettingsService.cs",
               "RelativeToolTip": "WorkTracker\\Services\\SettingsService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T15:30:20.828Z"
+              "WhenOpened": "2025-01-02T15:30:20.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "Language-en-US.xaml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Properties\\Languages\\Language-en-US.xaml",
               "RelativeDocumentMoniker": "WorkTracker\\Properties\\Languages\\Language-en-US.xaml",
@@ -501,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "ApplicationSettings.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Utils\\UtilityModels\\ApplicationSettings.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Utils\\UtilityModels\\ApplicationSettings.cs",
@@ -509,35 +588,38 @@
               "RelativeToolTip": "WorkTracker\\Utils\\UtilityModels\\ApplicationSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T13:50:16.753Z"
+              "WhenOpened": "2025-01-02T13:50:16.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "SettingsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\SettingsViewModel.cs",
               "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\SettingsViewModel.cs",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\SettingsViewModel.cs",
               "RelativeToolTip": "WorkTracker\\ViewModel\\SettingsViewModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAswB0AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAA9wB0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T12:03:28.558Z"
+              "WhenOpened": "2025-01-03T12:03:28.558Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "ThemeChanger.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Utils\\ThemeChanger.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Utils\\ThemeChanger.cs",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Utils\\ThemeChanger.cs",
               "RelativeToolTip": "WorkTracker\\Utils\\ThemeChanger.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAIA8wB8AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAnwB8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T14:54:32.708Z"
+              "WhenOpened": "2025-01-02T14:54:32.708Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "SettingsStore.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Stores\\SettingsStore.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Stores\\SettingsStore.cs",
@@ -545,11 +627,12 @@
               "RelativeToolTip": "WorkTracker\\Stores\\SettingsStore.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAASwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T13:47:05.757Z"
+              "WhenOpened": "2025-01-02T13:47:05.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "LanguageChanger.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Utils\\LanguageChanger.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Utils\\LanguageChanger.cs",
@@ -557,23 +640,12 @@
               "RelativeToolTip": "WorkTracker\\Utils\\LanguageChanger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T17:48:27.347Z"
+              "WhenOpened": "2025-01-02T17:48:27.347Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\Core\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\Core\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\Core\\RelayCommand.cs",
-              "RelativeToolTip": "WorkTracker\\ViewModel\\Core\\RelayCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:09:44.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\Core\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\Core\\BaseViewModel.cs",
@@ -581,11 +653,12 @@
               "RelativeToolTip": "WorkTracker\\ViewModel\\Core\\BaseViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:08:17.55Z"
+              "WhenOpened": "2025-01-02T16:08:17.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "ObeservableObject.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\ViewModel\\Core\\ObeservableObject.cs",
               "RelativeDocumentMoniker": "WorkTracker\\ViewModel\\Core\\ObeservableObject.cs",
@@ -593,11 +666,12 @@
               "RelativeToolTip": "WorkTracker\\ViewModel\\Core\\ObeservableObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:09:03.156Z"
+              "WhenOpened": "2025-01-02T16:09:03.156Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "Worker.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\Worker.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Model\\Worker.cs",
@@ -605,11 +679,12 @@
               "RelativeToolTip": "WorkTracker\\Model\\Worker.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T22:00:18.056Z"
+              "WhenOpened": "2025-01-01T22:00:18.056Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "Sector.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\Sector.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Model\\Sector.cs",
@@ -617,11 +692,12 @@
               "RelativeToolTip": "WorkTracker\\Model\\Sector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T21:59:24.02Z"
+              "WhenOpened": "2025-01-01T21:59:24.02Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\User.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Model\\User.cs",
@@ -629,11 +705,12 @@
               "RelativeToolTip": "WorkTracker\\Model\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T21:43:03.433Z"
+              "WhenOpened": "2025-01-01T21:43:03.433Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\Model\\Admin.cs",
               "RelativeDocumentMoniker": "WorkTracker\\Model\\Admin.cs",
@@ -641,7 +718,8 @@
               "RelativeToolTip": "WorkTracker\\Model\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T21:40:39.536Z"
+              "WhenOpened": "2025-01-01T21:40:39.536Z",
+              "EditorCaption": ""
             }
           ]
         }

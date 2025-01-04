@@ -21,7 +21,7 @@ namespace WorkTracker.ViewModel
         private bool _isIncorrectCredentialsLabelVisible = false;
         public SettingsViewModel Settings { get; set; }
         public UserService UserService { get; set; }
-        public RelayCommand DoLoginCommand { get; }
+        public AsyncRelayCommand DoLoginCommand { get; }
         public bool IsLogginable { get { return _isLogginable; } set { _isLogginable = value; OnPropertyChanged(); } }
         public bool IsIncorrectCredentialsLabelVisible { get { return _isIncorrectCredentialsLabelVisible; }set { _isIncorrectCredentialsLabelVisible = value;OnPropertyChanged(); } }
 
@@ -30,16 +30,17 @@ namespace WorkTracker.ViewModel
         public LoginViewModel(SettingsViewModel settings,UserService userService)
         {
             Settings = settings;
-            DoLoginCommand = new RelayCommand (o => { DoLogin(); }, o => true );
+            DoLoginCommand = new AsyncRelayCommand (DoLogin );
             UserService = userService;
            
         }
-        private void DoLogin()
+        private async System.Threading.Tasks.Task DoLogin()
         {
-            User? user = UserService.LoginUser(Username, Password);
+            App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = true;
+            User? user = await UserService.LoginUser(Username, Password);
             if (user != null)
             {
-                Manager? manager = UserService.LoginManager(user);
+                Manager? manager =await UserService.LoginManager(user);
                 if(manager != null)
                 {
                     IsIncorrectCredentialsLabelVisible = false;
@@ -47,7 +48,7 @@ namespace WorkTracker.ViewModel
                 }
                 else
                 {
-                    Worker? worker = UserService.LoginWorker(user);
+                    Worker? worker =await UserService.LoginWorker(user);
                     if(worker != null)
                     {
                         IsIncorrectCredentialsLabelVisible = false;
@@ -62,6 +63,8 @@ namespace WorkTracker.ViewModel
                 IsIncorrectCredentialsLabelVisible = false;
                 App.serviceProvider.GetRequiredService<MainWindow>().Show();
                 App.serviceProvider.GetRequiredService<LoginWindow>().Close();
+
+                App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = false;
             }
             else
             {

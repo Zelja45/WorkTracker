@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-       
+        xmlns:controls="clr-namespace:WorkTracker.Components"
         xmlns:local="clr-namespace:WorkTracker"
         xmlns:utils="clr-namespace:WorkTracker.Utils"
         mc:Ignorable="d"
@@ -32,7 +32,9 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal"
-                        Margin="5" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        Margin="5"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center">
                 <Button x:Name="minimizeBtn"
                         Height="20"
                         Width="20"
@@ -53,9 +55,10 @@
                                              Height="20" />
                 </Button>
             </StackPanel>
-            <Grid Grid.Row="1" Margin="25,0,25,0">
+            <Grid Grid.Row="1"
+                  Margin="25,0,25,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="*" />
@@ -75,7 +78,8 @@
                                                  RenderTransformOrigin=".5,.5" />
                     </materialDesign:ToggleButtonAssist.OnContent>
                 </ToggleButton>
-                <StackPanel Orientation="Vertical" Grid.Row="1">
+                <StackPanel Orientation="Vertical"
+                            Grid.Row="1">
                     <Image HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            Source="{StaticResource Logo}"
@@ -85,19 +89,17 @@
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                Margin="50,10,50,5"
-                               Style="{StaticResource MaterialDesignHeadline6TextBlock}"
-                                />
+                               Style="{StaticResource MaterialDesignHeadline6TextBlock}" />
                     <TextBlock Text="{DynamicResource WelcomeBack}"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                TextWrapping="Wrap"
                                TextAlignment="Center"
                                Margin="50,0,50,10"
-                              
-                               Style="{StaticResource MaterialDesignBody2TextBlock}"
-                                />
+                               Style="{StaticResource MaterialDesignBody2TextBlock}" />
                 </StackPanel>
-                <StackPanel Orientation="Vertical" Grid.Row="2"
+                <StackPanel Orientation="Vertical"
+                            Grid.Row="2"
                             Margin="0,20,0,0">
                     <TextBox VerticalAlignment="Top"
                              Text="{Binding Username,UpdateSourceTrigger=PropertyChanged}"
@@ -105,14 +107,18 @@
                              Style="{StaticResource MaterialDesignOutlinedTextBox}">
                     </TextBox>
                     <Rectangle Height="15" />
-                    <PasswordBox x:Name="password" VerticalContentAlignment="Bottom" PasswordChanged="PasswordBox_PasswordChanged"
+                    <PasswordBox x:Name="password"
+                                 VerticalContentAlignment="Bottom"
+                                 PasswordChanged="PasswordBox_PasswordChanged"
                                  materialDesign:HintAssist.Hint="{DynamicResource Password}"
                                  materialDesign:TextFieldAssist.HasClearButton="True"
                                  Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}" />
                     <Label Content="*Invalid username or password"
                            Foreground="Red"
                            Visibility="{Binding IsIncorrectCredentialsLabelVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
-                    <Button Content="{DynamicResource Login}" Command="{Binding DoLoginCommand}" IsEnabled="{Binding IsLogginable}"
+                    <Button Content="{DynamicResource Login}"
+                            Command="{Binding DoLoginCommand}"
+                            IsEnabled="{Binding IsLogginable}"
                             FontSize="16"
                             Margin="0,20,0,0"
                             materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
@@ -121,8 +127,12 @@
                             HorizontalAlignment="Center">
                     </Button>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="3">
-                    <Label Content="{DynamicResource Languages}" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Grid.Row="3">
+                    <Label Content="{DynamicResource Languages}"
+                           VerticalAlignment="Center" />
                     <ToggleButton Style="{StaticResource MaterialDesignFlatToggleButton}"
                                   IsChecked="{Binding Settings.EnglishSelected}"
                                   Command="{Binding Settings.SwitchLanguage}"
@@ -130,10 +140,15 @@
                                   ToolTip="MaterialDesignFlatToggleButton">
                         <Image HorizontalAlignment="Center"
                                VerticalAlignment="Center"
-                               Source="{StaticResource LogoEnglish}" Height="25" Width="25"/>
+                               Source="{StaticResource LogoEnglish}"
+                               Height="25"
+                               Width="25" />
                     </ToggleButton>
-                    <ToggleButton Style="{StaticResource MaterialDesignFlatToggleButton}" IsChecked="{Binding Settings.BosnianSelected}"
-                                  ToolTip="MaterialDesignFlatToggleButton" Command="{Binding Settings.SwitchLanguage}" CommandParameter="sr-RS">
+                    <ToggleButton Style="{StaticResource MaterialDesignFlatToggleButton}"
+                                  IsChecked="{Binding Settings.BosnianSelected}"
+                                  ToolTip="MaterialDesignFlatToggleButton"
+                                  Command="{Binding Settings.SwitchLanguage}"
+                                  CommandParameter="sr-RS">
                         <Image HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                Source="{StaticResource LogoBosnian}"
@@ -142,7 +157,7 @@
                     </ToggleButton>
                 </StackPanel>
             </Grid>
+            <controls:LoadingCircle Grid.Row="1" Panel.ZIndex="1" />
         </Grid>
-        
     </materialDesign:Card>
 </Window>

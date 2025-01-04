@@ -118,6 +118,6 @@
     </UserControl.Resources>
     <Grid>
         <RadioButton Style="{StaticResource MenuButtonStyle}"
-                     GroupName="MenuItems" />
+                     GroupName="MenuItems" Command="{Binding ItemCommand}" />
     </Grid>
 </UserControl>
