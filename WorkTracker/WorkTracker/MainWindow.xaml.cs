@@ -20,5 +20,17 @@ namespace WorkTracker
         {
             InitializeComponent();
         }
+
+        private void Window_StateChanged(object sender, EventArgs e)
+        {
+            if (WindowState == WindowState.Maximized)
+            {
+                var screenBounds = SystemParameters.WorkArea;
+                Left = screenBounds.Left;
+                Top = screenBounds.Top;
+                Width = screenBounds.Width;
+                Height = screenBounds.Height;
+            }
+        }
     }
 }

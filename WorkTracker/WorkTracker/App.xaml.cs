@@ -6,6 +6,7 @@ using System.Windows.Navigation;
 using WorkTracker.Services;
 using WorkTracker.Stores;
 using WorkTracker.Utils;
+using WorkTracker.View;
 using WorkTracker.ViewModel;
 using WorkTracker.ViewModel.Core;
 
@@ -26,6 +27,9 @@ namespace WorkTracker
                 DataContext = provider.GetRequiredService<MainViewModel>()
             });
 
+            services.AddSingleton<INavigationService, NavigationServices>();
+            services.AddSingleton<Func<Type, BaseViewModel>>(provider => viewModelType => (BaseViewModel)provider.GetRequiredService(viewModelType));//function for getting specific viewmodel
+
             services.AddSingleton<LoginWindow>(provider => new LoginWindow
             {
                 DataContext = provider.GetRequiredService<LoginViewModel>()
@@ -41,9 +45,9 @@ namespace WorkTracker
 
             services.AddSingleton<MainViewModel>();
             services.AddSingleton<LoginViewModel>();
+            services.AddSingleton<WorkerMainViewModel>();
 
-            services.AddSingleton<INavigationService, NavigationServices>();
-            services.AddSingleton<Func<Type, BaseViewModel>>(provider => viewModelType => (BaseViewModel)provider.GetRequiredService(viewModelType));//function for getting specific viewmodel
+           
 
             services.AddSingleton<UserService>();
 

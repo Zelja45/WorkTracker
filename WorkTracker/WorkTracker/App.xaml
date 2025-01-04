@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WorkTracker"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-            >
+             xmlns:viewModel="clr-namespace:WorkTracker.ViewModel"
+             xmlns:view="clr-namespace:WorkTracker.View">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -23,6 +24,10 @@
                          UriSource="Resources/bosnian.png" />
             <BitmapImage x:Key="LogoEnglish"
                          UriSource="Resources/uk.png" />
+            
+            <DataTemplate DataType="{x:Type viewModel:WorkerMainViewModel}">
+                <view:WorkerMainView/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

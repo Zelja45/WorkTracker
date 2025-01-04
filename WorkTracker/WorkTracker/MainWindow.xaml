@@ -6,27 +6,39 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WorkTracker"
         xmlns:controls="clr-namespace:WorkTracker.Components"
+        xmlns:views="clr-namespace:WorkTracker.View"
         mc:Ignorable="d"
         ResizeMode="CanResize"
         WindowStyle="None"
-        Style="{DynamicResource MaterialDesignWindow}"
+        Background="{DynamicResource MaterialDesignPaper}"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         WindowStartupLocation="CenterScreen"
-        Background="{DynamicResource MaterialDesignPaper}"
-        Title="MainWindow" Height="450" Width="800">
-        <WindowChrome.WindowChrome>
-            <WindowChrome GlassFrameThickness="0"
-                          CornerRadius="15"
-                          CaptionHeight="0" />
-        </WindowChrome.WindowChrome>
+        Title="MainWindow"
+        Height="450"
+        Width="800" >
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0"
+                      CornerRadius="15"
+                      CaptionHeight="0" />
+    </WindowChrome.WindowChrome>
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="35" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <controls:Header></controls:Header>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <controls:Header></controls:Header>
+            <ContentPresenter Validation.ErrorTemplate="{x:Null}"
+                              Grid.Row="1"
+                              VerticalAlignment="Stretch"
+                              HorizontalAlignment="Stretch"
+                              Content="{Binding Navigation.CurrentView}" />
+        </Grid>
+        <controls:Menu MenuItemsData="{Binding DataContext.MenuItems,RelativeSource={RelativeSource AncestorType=Window}}"></controls:Menu>
     </Grid>
-
-
+    
 </Window>

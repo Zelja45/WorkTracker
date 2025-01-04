@@ -38,10 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Properties\Languages\Language-en-US.xaml" />
     <Resource Include="Properties\Languages\Language-sr-RS.xaml" />
     <Resource Include="Resources\bosnian.png" />

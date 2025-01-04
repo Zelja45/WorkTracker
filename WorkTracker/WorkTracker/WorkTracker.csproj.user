@@ -10,7 +10,16 @@
     <Compile Update="Components\Header.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\MenuItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WorkerMainView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,10 +27,19 @@
     <Page Update="Components\Header.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\MenuItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WorkerMainView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Resource Update="Properties\Languages\Language-en-US.xaml">

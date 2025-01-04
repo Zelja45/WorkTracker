@@ -43,6 +43,7 @@ namespace WorkTracker.ViewModel
                 if(manager != null)
                 {
                     IsIncorrectCredentialsLabelVisible = false;
+                    App.serviceProvider.GetRequiredService<MainViewModel>().PrepareManagerUI();
                 }
                 else
                 {
@@ -50,6 +51,7 @@ namespace WorkTracker.ViewModel
                     if(worker != null)
                     {
                         IsIncorrectCredentialsLabelVisible = false;
+                        App.serviceProvider.GetRequiredService<MainViewModel>().PrepareWorkerUI();
                     }
                     else
                     {
