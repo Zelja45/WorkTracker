@@ -15,24 +15,6 @@ CREATE SCHEMA IF NOT EXISTS `worktracker` DEFAULT CHARACTER SET utf8 ;
 USE `worktracker` ;
 
 -- -----------------------------------------------------
--- Table `worktracker`.`User`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `worktracker`.`User` (
-  `Username` VARCHAR(45) NOT NULL,
-  `Password` VARCHAR(255) NOT NULL,
-  `Name` VARCHAR(45) NOT NULL,
-  `Surname` VARCHAR(45) NOT NULL,
-  `Email` VARCHAR(45) NOT NULL,
-  `PhoneNumber` VARCHAR(45) NOT NULL,
-  `IsActive` TINYINT NOT NULL,
-  `CreatedAt` DATE NOT NULL,
-  `Image` BLOB NULL,
-  PRIMARY KEY (`Username`),
-  UNIQUE INDEX `Username_UNIQUE` (`Username` ASC) VISIBLE)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `worktracker`.`Sector`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `worktracker`.`Sector` (
@@ -48,24 +30,28 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `worktracker`.`Worker`
+-- Table `worktracker`.`User`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `worktracker`.`Worker` (
+CREATE TABLE IF NOT EXISTS `worktracker`.`User` (
   `Username` VARCHAR(45) NOT NULL,
+  `Password` VARCHAR(255) NOT NULL,
+  `Name` VARCHAR(45) NOT NULL,
+  `Surname` VARCHAR(45) NOT NULL,
+  `Email` VARCHAR(45) NOT NULL,
+  `PhoneNumber` VARCHAR(45) NOT NULL,
+  `IsActive` TINYINT NOT NULL,
+  `CreatedAt` DATE NOT NULL,
+  `Image` BLOB NULL,
+  `AccountType` VARCHAR(45) NOT NULL,
   `OvertimeRateWorkerSpecific` DECIMAL(5,2) NULL,
   `HourlyRateWorkerSpecific` DECIMAL(5,2) NULL,
-  `idSector` INT NOT NULL,
+  `idSector` INT NULL,
   PRIMARY KEY (`Username`),
-  INDEX `fk_Worker_Sector1_idx` (`idSector` ASC) VISIBLE,
-  INDEX `fk_Worker_User1_idx` (`Username` ASC) VISIBLE,
-  CONSTRAINT `fk_Worker_Sector1`
+  UNIQUE INDEX `Username_UNIQUE` (`Username` ASC) VISIBLE,
+  INDEX `fk_User_Sector1_idx` (`idSector` ASC) VISIBLE,
+  CONSTRAINT `fk_User_Sector1`
     FOREIGN KEY (`idSector`)
     REFERENCES `worktracker`.`Sector` (`idSector`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Worker_User1`
-    FOREIGN KEY (`Username`)
-    REFERENCES `worktracker`.`User` (`Username`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -82,38 +68,9 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`WorkSession` (
   `Status` TINYINT NOT NULL,
   `WorkerUsername` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idSession`),
-  INDEX `fk_WorkSession_Worker1_idx` (`WorkerUsername` ASC) VISIBLE,
-  CONSTRAINT `fk_WorkSession_Worker1`
+  INDEX `fk_WorkSession_User1_idx` (`WorkerUsername` ASC) VISIBLE,
+  CONSTRAINT `fk_WorkSession_User1`
     FOREIGN KEY (`WorkerUsername`)
-    REFERENCES `worktracker`.`Worker` (`Username`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `worktracker`.`Manager`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `worktracker`.`Manager` (
-  `Username` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`Username`),
-  INDEX `fk_Manager_User1_idx` (`Username` ASC) VISIBLE,
-  CONSTRAINT `fk_Manager_User1`
-    FOREIGN KEY (`Username`)
-    REFERENCES `worktracker`.`User` (`Username`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `worktracker`.`Admin`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `worktracker`.`Admin` (
-  `Username` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`Username`),
-  CONSTRAINT `fk_Admin_User1`
-    FOREIGN KEY (`Username`)
     REFERENCES `worktracker`.`User` (`Username`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -127,16 +84,16 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`SectorManager` (
   `idSector` INT NOT NULL,
   `ManagerUsername` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idSector`, `ManagerUsername`),
-  INDEX `fk_Sector_has_Manager_Manager1_idx` (`ManagerUsername` ASC) VISIBLE,
   INDEX `fk_Sector_has_Manager_Sector1_idx` (`idSector` ASC) VISIBLE,
+  INDEX `fk_SectorManager_User1_idx` (`ManagerUsername` ASC) VISIBLE,
   CONSTRAINT `fk_Sector_has_Manager_Sector1`
     FOREIGN KEY (`idSector`)
     REFERENCES `worktracker`.`Sector` (`idSector`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Sector_has_Manager_Manager1`
+  CONSTRAINT `fk_SectorManager_User1`
     FOREIGN KEY (`ManagerUsername`)
-    REFERENCES `worktracker`.`Manager` (`Username`)
+    REFERENCES `worktracker`.`User` (`Username`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -153,13 +110,13 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`Task` (
   `Priority` INT NOT NULL,
   `CreatedAt` DATETIME NOT NULL,
   `DueDate` DATETIME NOT NULL,
-  `WorkerUsername` VARCHAR(45) NOT NULL,
   `Progress` INT NOT NULL DEFAULT 0,
+  `WorkerUsername` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idTask`),
-  INDEX `fk_Task_Worker1_idx` (`WorkerUsername` ASC) VISIBLE,
-  CONSTRAINT `fk_Task_Worker1`
+  INDEX `fk_Task_User1_idx` (`WorkerUsername` ASC) VISIBLE,
+  CONSTRAINT `fk_Task_User1`
     FOREIGN KEY (`WorkerUsername`)
-    REFERENCES `worktracker`.`Worker` (`Username`)
+    REFERENCES `worktracker`.`User` (`Username`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -172,12 +129,12 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`TODOList` (
   `idTODOList` INT NOT NULL AUTO_INCREMENT,
   `Title` VARCHAR(100) NOT NULL,
   `Description` TEXT NULL,
-  `Worker_Username` VARCHAR(45) NOT NULL,
+  `WorkerUsername` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idTODOList`),
-  INDEX `fk_TODOList_Worker1_idx` (`Worker_Username` ASC) VISIBLE,
-  CONSTRAINT `fk_TODOList_Worker1`
-    FOREIGN KEY (`Worker_Username`)
-    REFERENCES `worktracker`.`Worker` (`Username`)
+  INDEX `fk_TODOList_User1_idx` (`WorkerUsername` ASC) VISIBLE,
+  CONSTRAINT `fk_TODOList_User1`
+    FOREIGN KEY (`WorkerUsername`)
+    REFERENCES `worktracker`.`User` (`Username`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

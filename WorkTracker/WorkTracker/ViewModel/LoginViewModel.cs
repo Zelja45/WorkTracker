@@ -1,4 +1,5 @@
-﻿using MaterialDesignThemes.Wpf;
+﻿
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 using WorkTracker.Model;
 using WorkTracker.Services;
 using WorkTracker.Stores;
+using WorkTracker.Utils;
 using WorkTracker.ViewModel.Core;
 
 namespace WorkTracker.ViewModel
@@ -19,56 +21,50 @@ namespace WorkTracker.ViewModel
         private string _username="";
         private string _password="";
         private bool _isIncorrectCredentialsLabelVisible = false;
+        private INavigationService _navigationService;
         public SettingsViewModel Settings { get; set; }
         public UserService UserService { get; set; }
-        public AsyncRelayCommand DoLoginCommand { get; }
+        public RelayCommand DoLoginCommand { get; }
         public bool IsLogginable { get { return _isLogginable; } set { _isLogginable = value; OnPropertyChanged(); } }
         public bool IsIncorrectCredentialsLabelVisible { get { return _isIncorrectCredentialsLabelVisible; }set { _isIncorrectCredentialsLabelVisible = value;OnPropertyChanged(); } }
 
         public string Username { get { return _username; } set { _username = value; if (_password.Length != 0 && _username.Length != 0) { IsLogginable = true; IsIncorrectCredentialsLabelVisible =false; } else IsLogginable = false; Debug.WriteLine(_username); } }
         public string Password { get { return _password; } set { _password = value; if (_password.Length != 0 && _username.Length != 0) { IsLogginable = true; IsIncorrectCredentialsLabelVisible = false; } else IsLogginable = false; } }
-        public LoginViewModel(SettingsViewModel settings,UserService userService)
+        public LoginViewModel(SettingsViewModel settings,UserService userService,INavigationService navigationService)
         {
+            _navigationService= navigationService;
             Settings = settings;
-            DoLoginCommand = new AsyncRelayCommand (DoLogin );
+            DoLoginCommand = new RelayCommand (async(o)=> { App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = true; await DoLogin(); App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = false; },o=>true);
             UserService = userService;
            
         }
         private async System.Threading.Tasks.Task DoLogin()
         {
-            App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = true;
+            
             User? user = await UserService.LoginUser(Username, Password);
             if (user != null)
             {
-                Manager? manager =await UserService.LoginManager(user);
-                if(manager != null)
+                if (user.AccountType.Equals( Constants.AdminKeyWord))
                 {
-                    IsIncorrectCredentialsLabelVisible = false;
-                    App.serviceProvider.GetRequiredService<MainViewModel>().PrepareManagerUI();
+                    App.serviceProvider.GetRequiredService<MainViewModel>().PrepareAdminUI();
+                    await _navigationService.NavigateTo<AdminHomeViewModel>();
                 }
-                else
+                else if (user.AccountType.Equals(Constants.WorkerKeyWord))
                 {
-                    Worker? worker =await UserService.LoginWorker(user);
-                    if(worker != null)
-                    {
-                        IsIncorrectCredentialsLabelVisible = false;
-                        App.serviceProvider.GetRequiredService<MainViewModel>().PrepareWorkerUI();
-                    }
-                    else
-                    {
-                        IsIncorrectCredentialsLabelVisible = true;
-                        return;
-                    }
+                    App.serviceProvider.GetRequiredService<MainViewModel>().PrepareWorkerUI();
                 }
-                IsIncorrectCredentialsLabelVisible = false;
+                else if(user.AccountType.Equals(Constants.ManagerKeyWord))
+                {
+                    App.serviceProvider.GetRequiredService<MainViewModel>().PrepareManagerUI(); 
+
+                }
+                App.serviceProvider.GetRequiredService<UserStore>().User = user;
                 App.serviceProvider.GetRequiredService<MainWindow>().Show();
                 App.serviceProvider.GetRequiredService<LoginWindow>().Close();
-
-                App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = false;
+               
             }
             else
             {
-                //Admin login
                 IsIncorrectCredentialsLabelVisible=true;
             }
         }

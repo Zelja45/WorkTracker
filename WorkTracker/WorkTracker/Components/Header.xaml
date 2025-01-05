@@ -5,10 +5,37 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WorkTracker.Components"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             >
     <Grid  MouseDown="StackPanel_MouseDown" HorizontalAlignment="Stretch" Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left" Margin="6,0,0,0">
+            <Label Content="{Binding DateText}" VerticalAlignment="Center" Foreground="{DynamicResource SecondaryHueMidBrush}"
+                   FontSize="14" />
+            <Button Name="ShowCalendarButton" Style="{StaticResource MaterialDesignIconButton}" Click="ShowCalendarButon_Click">
+                <materialDesign:PackIcon Kind="Calendar" Foreground="{DynamicResource SecondaryHueMidBrush}" />
+            </Button>
+            <Popup Name="CalendarPopup"
+                   StaysOpen="True"
+                   Placement="Bottom"
+                   PlacementTarget="{Binding ElementName=ShowCalendarButton}">
+                <Border Background="{DynamicResource MaterialDesignPaper}" 
+                        BorderBrush="{DynamicResource MaterialDesignPaper}"
+                        BorderThickness="10" Margin="0">
+                    <Calendar materialDesign:ElevationAssist.Elevation="Dp8"
+                              Style="{StaticResource MaterialDesignCalendarPortraitForeground}" />
+                </Border>
+            </Popup>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1" Orientation="Horizontal"
                     Margin="5"
                    
                     Background="Transparent"

@@ -19,7 +19,13 @@
     <Compile Update="Components\MenuItem.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\NumberOfAccountsCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminHomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\WorkerMainView.xaml.cs">
@@ -39,10 +45,16 @@
     <Page Update="Components\MenuItem.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\NumberOfAccountsCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminHomeView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\WorkerMainView.xaml">
@@ -51,7 +63,7 @@
     <Resource Update="Properties\Languages\Language-en-US.xaml">
       <SubType>Designer</SubType>
     </Resource>
-    <Resource Update="Properties\Languages\Language-sr-RS.xaml">
+    <Resource Update="Properties\Languages\Language-sr-Latn-RS.xaml">
       <SubType>Designer</SubType>
     </Resource>
   </ItemGroup>

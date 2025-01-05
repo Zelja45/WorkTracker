@@ -140,3 +140,7 @@ C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-win
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\WorkerMainView.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\LoadingCircle.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\LoadingCircle.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AdminHomeView.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AdminHomeView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\NumberOfAccountsCard.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\NumberOfAccountsCard.baml

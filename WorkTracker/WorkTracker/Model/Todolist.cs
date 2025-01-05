@@ -15,5 +15,5 @@ public partial class Todolist
 
     public virtual ICollection<Todolistitem> Todolistitems { get; set; } = new List<Todolistitem>();
 
-    public virtual Worker WorkerUsernameNavigation { get; set; } = null!;
+    public virtual User WorkerUsernameNavigation { get; set; } = null!;
 }

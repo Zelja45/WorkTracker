@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <System:String x:Key="Password">Šifra</System:String>
+    <System:String x:Key="Username">Korisničko ime</System:String>
+    <System:String x:Key="WelcomeBack">Dobro došli!</System:String>
+    <System:String x:Key="Login">Prijavite se</System:String>
+    <System:String x:Key="Languages">Jezici:</System:String>
+    <System:String x:Key="GoodDay">Dobar dan,</System:String>
+    <System:String x:Key="GoodMorning">Dobro jutro,</System:String>
+    <System:String x:Key="GoodNight">Dobro veče,</System:String>
+    <System:String x:Key="GoodEvening">Dobro veče,</System:String>
+    <System:String x:Key="NumberOfDeactivatedAccounts">Broj deaktiviranih naloga:</System:String>
+    <System:String x:Key="NumberOfWorkers">Broj radnika:</System:String>
+    <System:String x:Key="NumberOfManagers">Broj menadžera:</System:String>
+    <System:String x:Key="NumberOfSectors">Broj sektora:</System:String>
+
+</ResourceDictionary>

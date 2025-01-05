@@ -19,9 +19,9 @@ public partial class Task
 
     public DateTime DueDate { get; set; }
 
-    public string WorkerUsername { get; set; } = null!;
-
     public int Progress { get; set; }
 
-    public virtual Worker WorkerUsernameNavigation { get; set; } = null!;
+    public string WorkerUsername { get; set; } = null!;
+
+    public virtual User WorkerUsernameNavigation { get; set; } = null!;
 }

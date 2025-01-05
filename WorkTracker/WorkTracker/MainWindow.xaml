@@ -14,8 +14,8 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         WindowStartupLocation="CenterScreen"
         Title="MainWindow"
-        Height="450"
-        Width="800" Margin="10" >
+        MinHeight="550"
+        MinWidth="850" Height="550" Width="850" Margin="10" >
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0"
                       CornerRadius="15"
@@ -28,18 +28,18 @@
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="35" />
+                <RowDefinition Height="50" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <controls:Header></controls:Header>
-            <ContentPresenter Validation.ErrorTemplate="{x:Null}"
+            <ContentPresenter Validation.ErrorTemplate="{x:Null}" Margin="5,0,5,0"
                               Grid.Row="1"
                               VerticalAlignment="Stretch"
                               HorizontalAlignment="Stretch"
                               Content="{Binding Navigation.CurrentView}" />
             <controls:LoadingCircle Grid.Row="1" Panel.ZIndex="1"/>
         </Grid>
-        <controls:Menu Margin="10"
+        <controls:Menu Margin="10" 
                        MenuItemsData="{Binding DataContext.MenuItems,RelativeSource={RelativeSource AncestorType=Window}}"></controls:Menu>
     </Grid>
 </Window>

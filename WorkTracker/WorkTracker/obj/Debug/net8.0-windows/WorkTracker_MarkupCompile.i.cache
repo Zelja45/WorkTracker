@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\App.xaml
-7-2047110477
+9-778704136
 
-441239579769
-2261411008295
-Components\Header.xaml;Components\LoadingCircle.xaml;Components\Menu.xaml;Components\MenuItem.xaml;LoginWindow.xaml;MainWindow.xaml;View\WorkerMainView.xaml;
+471418924683
+236-111539988
+Components\Header.xaml;Components\LoadingCircle.xaml;Components\Menu.xaml;Components\MenuItem.xaml;Components\NumberOfAccountsCard.xaml;LoginWindow.xaml;MainWindow.xaml;View\AdminHomeView.xaml;View\WorkerMainView.xaml;
 
 True
 

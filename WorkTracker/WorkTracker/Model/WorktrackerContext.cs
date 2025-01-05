@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
@@ -8,7 +7,6 @@ namespace WorkTracker.Model;
 
 public partial class WorktrackerContext : DbContext
 {
-    public static readonly String ConnectionString= ConfigurationManager.ConnectionStrings["WorkTrackerDatabase"].ConnectionString;
     public WorktrackerContext()
     {
     }
@@ -17,10 +15,6 @@ public partial class WorktrackerContext : DbContext
         : base(options)
     {
     }
-
-    public virtual DbSet<Admin> Admins { get; set; }
-
-    public virtual DbSet<Manager> Managers { get; set; }
 
     public virtual DbSet<Pauselog> Pauselogs { get; set; }
 
@@ -34,48 +28,19 @@ public partial class WorktrackerContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    public virtual DbSet<Worker> Workers { get; set; }
-
     public virtual DbSet<Worksession> Worksessions { get; set; }
 
     public virtual DbSet<Worksessionreport> Worksessionreports { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseMySql(ConnectionString, Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.36-mysql"));
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseMySql("server=localhost;uid=worktracker;pwd=lozinka;database=worktracker", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.36-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder
             .UseCollation("utf8mb3_general_ci")
             .HasCharSet("utf8mb3");
-
-        modelBuilder.Entity<Admin>(entity =>
-        {
-            entity.HasKey(e => e.Username).HasName("PRIMARY");
-
-            entity.ToTable("admin");
-
-            entity.Property(e => e.Username).HasMaxLength(45);
-            entity.Property(e => e.Name).HasMaxLength(45);
-            entity.Property(e => e.Password).HasMaxLength(255);
-            entity.Property(e => e.Surname).HasMaxLength(45);
-        });
-
-        modelBuilder.Entity<Manager>(entity =>
-        {
-            entity.HasKey(e => e.Username).HasName("PRIMARY");
-
-            entity.ToTable("manager");
-
-            entity.HasIndex(e => e.Username, "fk_Manager_User1_idx");
-
-            entity.Property(e => e.Username).HasMaxLength(45);
-
-            entity.HasOne(d => d.UsernameNavigation).WithOne(p => p.Manager)
-                .HasForeignKey<Manager>(d => d.Username)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_Manager_User1");
-        });
 
         modelBuilder.Entity<Pauselog>(entity =>
         {
@@ -112,10 +77,10 @@ public partial class WorktrackerContext : DbContext
             entity.HasMany(d => d.ManagerUsernames).WithMany(p => p.IdSectors)
                 .UsingEntity<Dictionary<string, object>>(
                     "Sectormanager",
-                    r => r.HasOne<Manager>().WithMany()
+                    r => r.HasOne<User>().WithMany()
                         .HasForeignKey("ManagerUsername")
                         .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("fk_Sector_has_Manager_Manager1"),
+                        .HasConstraintName("fk_SectorManager_User1"),
                     l => l.HasOne<Sector>().WithMany()
                         .HasForeignKey("IdSector")
                         .OnDelete(DeleteBehavior.ClientSetNull)
@@ -126,7 +91,7 @@ public partial class WorktrackerContext : DbContext
                             .HasName("PRIMARY")
                             .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0 });
                         j.ToTable("sectormanager");
-                        j.HasIndex(new[] { "ManagerUsername" }, "fk_Sector_has_Manager_Manager1_idx");
+                        j.HasIndex(new[] { "ManagerUsername" }, "fk_SectorManager_User1_idx");
                         j.HasIndex(new[] { "IdSector" }, "fk_Sector_has_Manager_Sector1_idx");
                         j.IndexerProperty<int>("IdSector").HasColumnName("idSector");
                         j.IndexerProperty<string>("ManagerUsername").HasMaxLength(45);
@@ -139,7 +104,7 @@ public partial class WorktrackerContext : DbContext
 
             entity.ToTable("task");
 
-            entity.HasIndex(e => e.WorkerUsername, "fk_Task_Worker1_idx");
+            entity.HasIndex(e => e.WorkerUsername, "fk_Task_User1_idx");
 
             entity.Property(e => e.IdTask)
                 .ValueGeneratedNever()
@@ -153,7 +118,7 @@ public partial class WorktrackerContext : DbContext
             entity.HasOne(d => d.WorkerUsernameNavigation).WithMany(p => p.Tasks)
                 .HasForeignKey(d => d.WorkerUsername)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_Task_Worker1");
+                .HasConstraintName("fk_Task_User1");
         });
 
         modelBuilder.Entity<Todolist>(entity =>
@@ -162,19 +127,17 @@ public partial class WorktrackerContext : DbContext
 
             entity.ToTable("todolist");
 
-            entity.HasIndex(e => e.WorkerUsername, "fk_TODOList_Worker1_idx");
+            entity.HasIndex(e => e.WorkerUsername, "fk_TODOList_User1_idx");
 
             entity.Property(e => e.IdTodolist).HasColumnName("idTODOList");
             entity.Property(e => e.Description).HasColumnType("text");
             entity.Property(e => e.Title).HasMaxLength(100);
-            entity.Property(e => e.WorkerUsername)
-                .HasMaxLength(45)
-                .HasColumnName("Worker_Username");
+            entity.Property(e => e.WorkerUsername).HasMaxLength(45);
 
             entity.HasOne(d => d.WorkerUsernameNavigation).WithMany(p => p.Todolists)
                 .HasForeignKey(d => d.WorkerUsername)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_TODOList_Worker1");
+                .HasConstraintName("fk_TODOList_User1");
         });
 
         modelBuilder.Entity<Todolistitem>(entity =>
@@ -207,39 +170,23 @@ public partial class WorktrackerContext : DbContext
 
             entity.HasIndex(e => e.Username, "Username_UNIQUE").IsUnique();
 
+            entity.HasIndex(e => e.IdSector, "fk_User_Sector1_idx");
+
             entity.Property(e => e.Username).HasMaxLength(45);
+            entity.Property(e => e.AccountType).HasMaxLength(45);
             entity.Property(e => e.Email).HasMaxLength(45);
+            entity.Property(e => e.HourlyRateWorkerSpecific).HasPrecision(5, 2);
+            entity.Property(e => e.IdSector).HasColumnName("idSector");
             entity.Property(e => e.Image).HasColumnType("blob");
             entity.Property(e => e.Name).HasMaxLength(45);
+            entity.Property(e => e.OvertimeRateWorkerSpecific).HasPrecision(5, 2);
             entity.Property(e => e.Password).HasMaxLength(255);
             entity.Property(e => e.PhoneNumber).HasMaxLength(45);
             entity.Property(e => e.Surname).HasMaxLength(45);
-        });
 
-        modelBuilder.Entity<Worker>(entity =>
-        {
-            entity.HasKey(e => e.Username).HasName("PRIMARY");
-
-            entity.ToTable("worker");
-
-            entity.HasIndex(e => e.IdSector, "fk_Worker_Sector1_idx");
-
-            entity.HasIndex(e => e.Username, "fk_Worker_User1_idx");
-
-            entity.Property(e => e.Username).HasMaxLength(45);
-            entity.Property(e => e.HourlyRateWorkerSpecific).HasPrecision(5, 2);
-            entity.Property(e => e.IdSector).HasColumnName("idSector");
-            entity.Property(e => e.OvertimeRateWorkerSpecific).HasPrecision(5, 2);
-
-            entity.HasOne(d => d.IdSectorNavigation).WithMany(p => p.Workers)
+            entity.HasOne(d => d.IdSectorNavigation).WithMany(p => p.Users)
                 .HasForeignKey(d => d.IdSector)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_Worker_Sector1");
-
-            entity.HasOne(d => d.UsernameNavigation).WithOne(p => p.Worker)
-                .HasForeignKey<Worker>(d => d.Username)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_Worker_User1");
+                .HasConstraintName("fk_User_Sector1");
         });
 
         modelBuilder.Entity<Worksession>(entity =>
@@ -248,7 +195,7 @@ public partial class WorktrackerContext : DbContext
 
             entity.ToTable("worksession");
 
-            entity.HasIndex(e => e.WorkerUsername, "fk_WorkSession_Worker1_idx");
+            entity.HasIndex(e => e.WorkerUsername, "fk_WorkSession_User1_idx");
 
             entity.Property(e => e.IdSession).HasColumnName("idSession");
             entity.Property(e => e.EndTime).HasColumnType("datetime");
@@ -259,7 +206,7 @@ public partial class WorktrackerContext : DbContext
             entity.HasOne(d => d.WorkerUsernameNavigation).WithMany(p => p.Worksessions)
                 .HasForeignKey(d => d.WorkerUsername)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("fk_WorkSession_Worker1");
+                .HasConstraintName("fk_WorkSession_User1");
         });
 
         modelBuilder.Entity<Worksessionreport>(entity =>

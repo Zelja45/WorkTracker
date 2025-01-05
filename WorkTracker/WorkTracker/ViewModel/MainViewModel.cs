@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using WorkTracker.Services;
 using WorkTracker.Utils.UtilityModels;
 using WorkTracker.ViewModel.Core;
@@ -23,8 +24,12 @@ namespace WorkTracker.ViewModel
        } 
        public void PrepareAdminUI()
        {
+            MenuItems = new List<MenuItemData>();
+            MenuItems.Add(new MenuItemData() { Text = "Home", ItemCommand = new RelayCommand(o => { Navigation.NavigateTo<AdminHomeViewModel>(); }, o => true), IconKind = PackIconKind.Home, IsSelectedInitialy = true });
+            MenuItems.Add(new MenuItemData() { Text = "Kuca", ItemCommand = new RelayCommand(o => { Navigation.NavigateTo<AdminHomeViewModel>(); }, o => true), IconKind = PackIconKind.Home });
 
-       }
+            
+        }
        public void PrepareWorkerUI()
        {
             MenuItems = new List<MenuItemData>();

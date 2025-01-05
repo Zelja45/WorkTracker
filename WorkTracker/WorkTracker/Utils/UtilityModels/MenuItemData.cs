@@ -13,5 +13,6 @@ namespace WorkTracker.Utils.UtilityModels
         public PackIconKind IconKind { get; set; }
         public string Text { get; set; }
         public RelayCommand ItemCommand { get; set; }
+        public bool IsSelectedInitialy { get; set; } = false;
     }
 }

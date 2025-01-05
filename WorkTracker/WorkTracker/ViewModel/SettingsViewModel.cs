@@ -29,11 +29,12 @@ namespace WorkTracker.ViewModel
         }
         public void ChangeLanguage(object param)
         {
+
             if (param is string code)
             {
                 switch (code)
                 {
-                    case "sr-RS":
+                    case "sr-Latn-RS":
                         _settingsService.ChangeLanguage(code);
                         BosnianSelected = true;
                         EnglishSelected = false;

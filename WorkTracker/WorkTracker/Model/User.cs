@@ -23,7 +23,21 @@ public partial class User
 
     public byte[]? Image { get; set; }
 
-    public virtual Manager? Manager { get; set; }
+    public string AccountType { get; set; } = null!;
 
-    public virtual Worker? Worker { get; set; }
+    public decimal? OvertimeRateWorkerSpecific { get; set; }
+
+    public decimal? HourlyRateWorkerSpecific { get; set; }
+
+    public int? IdSector { get; set; }
+
+    public virtual Sector? IdSectorNavigation { get; set; }
+
+    public virtual ICollection<Task> Tasks { get; set; } = new List<Task>();
+
+    public virtual ICollection<Todolist> Todolists { get; set; } = new List<Todolist>();
+
+    public virtual ICollection<Worksession> Worksessions { get; set; } = new List<Worksession>();
+
+    public virtual ICollection<Sector> IdSectors { get; set; } = new List<Sector>();
 }

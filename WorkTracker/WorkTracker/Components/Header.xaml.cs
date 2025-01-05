@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WorkTracker.Stores;
 
 namespace WorkTracker.Components
 {
@@ -20,8 +23,19 @@ namespace WorkTracker.Components
     /// </summary>
     public partial class Header : UserControl
     {
+        public string DateText
+        {
+            get
+            {
+                DateTime now = DateTime.Now;
+                string languageCode = App.serviceProvider.GetRequiredService<SettingsStore>().CurrentSettings.LanguageCode;
+                return now.ToString("D", new CultureInfo(languageCode));
+            }
+        }
+        
         public Header()
         {
+            DataContext = this;
             InitializeComponent();
         }
 
@@ -67,6 +81,11 @@ namespace WorkTracker.Components
                 }
             }
                 
+        }
+
+        private void ShowCalendarButon_Click(object sender, RoutedEventArgs e)
+        {
+            CalendarPopup.IsOpen = !CalendarPopup.IsOpen;
         }
     }
 }

@@ -12,15 +12,17 @@
     <None Remove="Resources\bosnian.png" />
     <None Remove="Resources\Logo.png" />
     <None Remove="Resources\uk.png" />
+    <None Remove="Resources\user-avatar.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Page Remove="Properties\Languages\Language-en-US.xaml" />
-    <Page Remove="Properties\Languages\Language-sr-RS.xaml" />
+    <Page Remove="Properties\Languages\Language-sr-Latn-RS.xaml" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.5.1" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.0-rc4.5" />
     <PackageReference Include="MaterialDesignColors" Version="3.1.0" />
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
@@ -39,10 +41,11 @@
 
   <ItemGroup>
     <Resource Include="Properties\Languages\Language-en-US.xaml" />
-    <Resource Include="Properties\Languages\Language-sr-RS.xaml" />
+    <Resource Include="Properties\Languages\Language-sr-Latn-RS.xaml" />
     <Resource Include="Resources\bosnian.png" />
     <Resource Include="Resources\Logo.png" />
     <Resource Include="Resources\uk.png" />
+    <Resource Include="Resources\user-avatar.png" />
   </ItemGroup>
 
   <ItemGroup>

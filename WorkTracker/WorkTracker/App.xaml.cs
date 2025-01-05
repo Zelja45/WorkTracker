@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Data;
 using System.Windows;
 using System.Windows.Navigation;
+using WorkTracker.Model;
 using WorkTracker.Services;
 using WorkTracker.Stores;
 using WorkTracker.Utils;
@@ -47,13 +48,15 @@ namespace WorkTracker
             services.AddSingleton<LoginViewModel>();
             services.AddSingleton<WorkerMainViewModel>();
             services.AddSingleton<LoadingCircleViewModel>();
+            services.AddSingleton<AdminHomeViewModel>();
+            services.AddSingleton<User>();
+
 
            
 
             services.AddSingleton<UserService>();
-
+            services.AddSingleton<UserStore>();
             serviceProvider = services.BuildServiceProvider();
-
         }
         protected override void OnStartup(StartupEventArgs e)
         {

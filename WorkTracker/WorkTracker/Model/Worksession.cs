@@ -19,7 +19,7 @@ public partial class Worksession
 
     public virtual Pauselog? Pauselog { get; set; }
 
-    public virtual Worker WorkerUsernameNavigation { get; set; } = null!;
+    public virtual User WorkerUsernameNavigation { get; set; } = null!;
 
     public virtual Worksessionreport? Worksessionreport { get; set; }
 }

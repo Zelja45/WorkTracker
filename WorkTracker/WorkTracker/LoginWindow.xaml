@@ -148,7 +148,7 @@
                                   IsChecked="{Binding Settings.BosnianSelected}"
                                   ToolTip="MaterialDesignFlatToggleButton"
                                   Command="{Binding Settings.SwitchLanguage}"
-                                  CommandParameter="sr-RS">
+                                  CommandParameter="sr-Latn-RS">
                         <Image HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                Source="{StaticResource LogoBosnian}"

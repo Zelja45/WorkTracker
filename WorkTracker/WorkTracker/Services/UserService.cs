@@ -22,27 +22,59 @@ namespace WorkTracker.Services
             }
             return user;
         }
-        public async Task<Manager?> LoginManager(User user)
+        public async Task<int> GetNumberOfWorkers()
         {
-            Manager? manager = null;
-            using (WorktrackerContext context = new WorktrackerContext())
-            {
-                manager =await context.Managers.FirstOrDefaultAsync(m => m.Username == user.Username);
-                if(manager != null)
-                    manager.UsernameNavigation = user;
-            }
-            return manager;
-        }
-        public async Task<Worker?> LoginWorker(User user)
-        {
-            Worker? worker = null;
+            int countOfUsers = 0;
             using(WorktrackerContext context = new WorktrackerContext())
             {
-                worker =await context.Workers.FirstOrDefaultAsync(w => w.Username == user.Username);
-                if (worker != null)
-                    worker.UsernameNavigation = user;
+                countOfUsers = await context.Users.Where(u=>u.AccountType==Constants.WorkerKeyWord&&u.IsActive==(sbyte)1).CountAsync();
+            }    
+            return countOfUsers;
+        }
+        public async Task<int> GetNumberOfManagers()
+        {
+            int countOfUsers = 0;
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                countOfUsers = await context.Users.Where(u => u.AccountType == Constants.ManagerKeyWord && u.IsActive == (sbyte)1).CountAsync();
             }
-            return worker;
+            return countOfUsers;
+        }
+        public async Task<int> GetNumberOfAdmins()
+        {
+            int countOfUsers = 0;
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                countOfUsers = await context.Users.Where(u => u.AccountType == Constants.AdminKeyWord && u.IsActive == (sbyte)1).CountAsync();
+            }
+            return countOfUsers;
+        }
+        public async Task<int> GetNumberOfSectors()
+        {
+            int countOfSectors = 0;
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                countOfSectors = await context.Sectors.CountAsync();
+            }
+            return countOfSectors;
+        }
+        public async Task<int> GetNumberOfWorkersDeactivated()
+        {
+            int countOfUsers = 0;
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                countOfUsers = await context.Users.Where(u => u.AccountType == Constants.WorkerKeyWord && u.IsActive == (sbyte)0).CountAsync();
+            }
+            return countOfUsers;
+        }
+        public async Task<int> GetNumberOfManagersDeactivated()
+        {
+            int countOfUsers = 0;
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                countOfUsers = await context.Users.Where(u => u.AccountType == Constants.ManagerKeyWord && u.IsActive == (sbyte)0).CountAsync();
+            }
+            return countOfUsers;
         }
     }
 }

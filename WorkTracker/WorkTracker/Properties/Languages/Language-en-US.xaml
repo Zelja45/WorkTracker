@@ -7,5 +7,13 @@
     <System:String x:Key="WelcomeBack">Welcome back!</System:String>
     <System:String x:Key="Login">Log in</System:String>
     <System:String x:Key="Languages">Languages:</System:String>
-    
+    <System:String x:Key="GoodDay">Good Day,</System:String>
+    <System:String x:Key="GoodMorning">Good Morning,</System:String>
+    <System:String x:Key="GoodNight">Good Night,</System:String>
+    <System:String x:Key="GoodEvening">Good Evening,</System:String>
+    <System:String x:Key="NumberOfDeactivatedAccounts">Number of deactivated accounts:</System:String>
+    <System:String x:Key="NumberOfWorkers">Number of workers:</System:String>
+    <System:String x:Key="NumberOfManagers">Number of managers:</System:String>
+    <System:String x:Key="NumberOfSectors">Number of sectors:</System:String>
+
 </ResourceDictionary>
