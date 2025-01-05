@@ -4,7 +4,7 @@ Desktop.ini
 
 # User-specific files
 .idea/
-.vscode/
+.vs/
 
 # Build results
 [Dd]ebug/
@@ -35,7 +35,7 @@ obj/
 ScaffoldingReadMe.txt
 
 # VS Code directories
-.vscode/
+.vs/
 
 # Windows Installer files
 *.cab
