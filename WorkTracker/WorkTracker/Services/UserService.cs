@@ -18,7 +18,7 @@ namespace WorkTracker.Services
             string passwordHash = Util.HashPassword(password);
             using (WorktrackerContext context = new WorktrackerContext())
             {
-                user =await context.Users.FirstOrDefaultAsync(u=>u.Username == username&&u.Password==password);
+                user =await context.Users.FirstOrDefaultAsync(u=>u.Username == username&&u.Password==password&&u.IsActive==(sbyte)1);
             }
             return user;
         }
@@ -75,6 +75,14 @@ namespace WorkTracker.Services
                 countOfUsers = await context.Users.Where(u => u.AccountType == Constants.ManagerKeyWord && u.IsActive == (sbyte)0).CountAsync();
             }
             return countOfUsers;
+        }
+        public async System.Threading.Tasks.Task AddNewUser(User user)
+        {
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                await context.Users.AddAsync(user);
+                await context.SaveChangesAsync();
+            }
         }
     }
 }

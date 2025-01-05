@@ -53,7 +53,7 @@ namespace WorkTracker.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WorkTracker;component/components/loadingcircle.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WorkTracker;V1.0.0.0;component/components/loadingcircle.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Components\LoadingCircle.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

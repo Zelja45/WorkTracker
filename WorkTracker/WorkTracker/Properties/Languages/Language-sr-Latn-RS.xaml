@@ -14,5 +14,31 @@
     <System:String x:Key="NumberOfWorkers">Broj radnika:</System:String>
     <System:String x:Key="NumberOfManagers">Broj menadžera:</System:String>
     <System:String x:Key="NumberOfSectors">Broj sektora:</System:String>
+    <System:String x:Key="Home">Početna strana</System:String>
+    <System:String x:Key="AddUsers">Kreiraj nalog</System:String>
+    <System:String x:Key="AddAccountsFor">Kreiraj nalog za </System:String>
+    <System:String x:Key="AccountsAddList">Admina, Manadžera ili Radnika</System:String>
+    <System:String x:Key="Name">Ime</System:String>
+    <System:String x:Key="Surname">Prezime</System:String>
+    <System:String x:Key="PhoneNumber">Broj telefona</System:String>
+    <System:String x:Key="Email">Email</System:String>
+    <System:String x:Key="PersonalInfo">Lične informacije</System:String>
+    <System:String x:Key="Credentials">Kredencijali</System:String>
+    <System:String x:Key="AccountType">Tip naloga</System:String>
+    <System:String x:Key="Yes">Da</System:String>
+    <System:String x:Key="No">Ne</System:String>
+    <System:String x:Key="PasswordNotSecureTitle">Šifra nije dovoljno sigurna</System:String>
+    <System:String x:Key="PasswordNotSecureDesc">Unesite šifru koja sadrzi 8 karaktera i sadrži barem jedno slovo, jednu cifru i jedan specijalni znak</System:String>
+    <System:String x:Key="EmailIncorrenctTitle">Email adresa nije ispravna</System:String>
+    <System:String x:Key="EmailIncorrenctDescription">Unesite validnu email adresu</System:String>
+    <System:String x:Key="NumberIncorrenctTitle">Broj telefona nije ispravan</System:String>
+    <System:String x:Key="NumberIncorrenctDescription">Unesite validan 9-cifreni broj telefona</System:String>
+    <System:String x:Key="NewUserAddedTitle">Novi korisnik je uspjesno dodat</System:String>
+    <System:String x:Key="NewUserAddedDescription">Kreiran je novi korisnički nalog</System:String>
+    <System:String x:Key="IncorrectUsernameTitle">Korisničko ime nije ispravno</System:String>
+    <System:String x:Key="IncorrectUsernameDescription">Korisnik sa unesenim korisničkim imenom postoji</System:String>
+    <System:String x:Key="Admin">Administrator</System:String>
+    <System:String x:Key="Worker">Radnik</System:String>
+    <System:String x:Key="Manager">Menadžer</System:String>
 
 </ResourceDictionary>

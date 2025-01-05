@@ -15,5 +15,34 @@
     <System:String x:Key="NumberOfWorkers">Number of workers:</System:String>
     <System:String x:Key="NumberOfManagers">Number of managers:</System:String>
     <System:String x:Key="NumberOfSectors">Number of sectors:</System:String>
+    <System:String x:Key="Home">Home</System:String>
+    <System:String x:Key="AddUsers">Create account</System:String>
+    <System:String x:Key="AddAccountsFor">Create accounts for </System:String>
+    <System:String x:Key="AccountsAddList">Admin, Manager or Worker</System:String>
+    <System:String x:Key="Name">Name</System:String>
+    <System:String x:Key="Surname">Surname</System:String>
+    <System:String x:Key="PhoneNumber">Phone number</System:String>
+    <System:String x:Key="Email">Email</System:String>
+    <System:String x:Key="PersonalInfo">Personal info</System:String>
+    <System:String x:Key="Credentials">Credentials</System:String>
+    <System:String x:Key="AccountType">Account type</System:String>
+    <System:String x:Key="Yes">Yes</System:String>
+    <System:String x:Key="No">No</System:String>
+    <System:String x:Key="PasswordNotSecureTitle">Password is not secure enough</System:String>
+    <System:String x:Key="PasswordNotSecureDesc">Enter a password that is 8 characters long and contains at least one capital letter, one number, and one special character</System:String>
+    <System:String x:Key="EmailIncorrenctTitle">Email address is not correct</System:String>
+    <System:String x:Key="EmailIncorrenctDescription">Enter valid email address</System:String>
+    <System:String x:Key="NumberIncorrenctTitle">Phone number is not valid</System:String>
+    <System:String x:Key="NumberIncorrenctDescription">Please enter a valid 9-digit phone number</System:String>
+    <System:String x:Key="NewUserAddedTitle">A new user has been successfully added</System:String>
+    <System:String x:Key="NewUserAddedDescription">A new user account has been created</System:String>
+    <System:String x:Key="IncorrectUsernameTitle">Username is incorrect</System:String>
+    <System:String x:Key="IncorrectUsernameDescription">The user with the entered username exists</System:String>
+    <System:String x:Key="Admin">Admin</System:String>
+    <System:String x:Key="Worker">Worker</System:String>
+    <System:String x:Key="Manager">Manager</System:String>
+
+
+
 
 </ResourceDictionary>

@@ -28,9 +28,12 @@
             
             <DataTemplate DataType="{x:Type viewModel:AdminHomeViewModel}">
                 <view:AdminHomeView/>
+                </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:AddNewUserViewModel}">
+                <view:AddUserView />
             </DataTemplate>
 
-           
+
         </ResourceDictionary>
         
     </Application.Resources>

@@ -1,22 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "vX3eUnQXOoY=",
+  "dgSpecHash": "l/noQCEJt+g=",
   "success": true,
   "projectFilePath": "C:\\Users\\Nikola\\Desktop\\WorkTracker\\WorkTracker\\WorkTracker\\WorkTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\harfbuzzsharp\\7.3.0.2\\harfbuzzsharp.7.3.0.2.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\7.3.0.2\\harfbuzzsharp.nativeassets.macos.7.3.0.2.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\7.3.0.2\\harfbuzzsharp.nativeassets.win32.7.3.0.2.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\k4os.compression.lz4\\1.3.8\\k4os.compression.lz4.1.3.8.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\k4os.compression.lz4.streams\\1.3.8\\k4os.compression.lz4.streams.1.3.8.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\livechartscore\\2.0.0-rc4.5\\livechartscore.2.0.0-rc4.5.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\livechartscore.skiasharpview\\2.0.0-rc4.5\\livechartscore.skiasharpview.2.0.0-rc4.5.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\livechartscore.skiasharpview.wpf\\2.0.0-rc4.5\\livechartscore.skiasharpview.wpf.2.0.0-rc4.5.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\materialdesigncolors\\3.1.0\\materialdesigncolors.3.1.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -49,19 +43,11 @@
     "C:\\Users\\Nikola\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\mysql.data\\9.1.0\\mysql.data.9.1.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\opentk\\3.3.1\\opentk.3.3.1.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\opentk.glwpfcontrol\\3.3.0\\opentk.glwpfcontrol.3.3.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.2\\pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\skiasharp\\3.0.0-preview.4.1\\skiasharp.3.0.0-preview.4.1.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\skiasharp.harfbuzz\\2.88.8\\skiasharp.harfbuzz.2.88.8.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.0.0-preview.4.1\\skiasharp.nativeassets.macos.3.0.0-preview.4.1.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.0.0-preview.4.1\\skiasharp.nativeassets.win32.3.0.0-preview.4.1.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\skiasharp.views.desktop.common\\3.0.0-preview.4.1\\skiasharp.views.desktop.common.3.0.0-preview.4.1.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\skiasharp.views.wpf\\3.0.0-preview.4.1\\skiasharp.views.wpf.3.0.0-preview.4.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
@@ -115,36 +101,6 @@
       "warningLevel": 1,
       "message": "Package 'System.Text.Json' 8.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
       "libraryId": "System.Text.Json",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'OpenTK 3.3.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "OpenTK",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'OpenTK.GLWpfControl 3.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "OpenTK.GLWpfControl",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SkiaSharp.Views.WPF 3.0.0-preview.4.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "SkiaSharp.Views.WPF",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]

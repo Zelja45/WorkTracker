@@ -9,9 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using MaterialDesignThemes.Wpf;
-using MaterialDesignThemes.Wpf.Converters;
-using MaterialDesignThemes.Wpf.Transitions;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -34,7 +31,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Shell;
 using WorkTracker.Components;
-using WorkTracker.Utils;
 using WorkTracker.View;
 
 
@@ -58,7 +54,7 @@ namespace WorkTracker.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WorkTracker;component/view/workermainview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WorkTracker;V1.0.0.0;component/view/workermainview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\WorkerMainView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\CustomDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\Header.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +28,9 @@
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\AddUserView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\AdminHomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -33,6 +39,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Components\CustomDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\Header.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -52,6 +61,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddUserView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\AdminHomeView.xaml">

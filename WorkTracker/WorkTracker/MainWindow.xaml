@@ -14,8 +14,8 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         WindowStartupLocation="CenterScreen"
         Title="MainWindow"
-        MinHeight="550"
-        MinWidth="850" Height="550" Width="850" Margin="10" >
+        MinHeight="570"
+        MinWidth="850" Height="570" Width="850" Margin="10" >
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0"
                       CornerRadius="15"
