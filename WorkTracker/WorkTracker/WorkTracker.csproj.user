@@ -25,6 +25,9 @@
     <Compile Update="Components\NumberOfAccountsCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\SingleUserCardAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +35,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\AdminHomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminManageUsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\WorkerMainView.xaml.cs">
@@ -57,6 +63,9 @@
     <Page Update="Components\NumberOfAccountsCard.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\SingleUserCardAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -67,6 +76,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\AdminHomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminManageUsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\WorkerMainView.xaml">

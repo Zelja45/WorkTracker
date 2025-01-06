@@ -84,5 +84,26 @@ namespace WorkTracker.Services
                 await context.SaveChangesAsync();
             }
         }
+        public async System.Threading.Tasks.Task UpdateUser(User user)
+        {
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                User? usr = await context.Users.FirstOrDefaultAsync(u => u.Username.Equals(user.Username));
+                if (usr != null)
+                {
+                    usr.IsActive = user.IsActive;
+                    await context.SaveChangesAsync();
+                }
+            }
+        }
+        public async System.Threading.Tasks.Task<List<User>> GetManagersAndWorkers()
+        {
+            List<User> users = new List<User>();
+            using(WorktrackerContext context = new WorktrackerContext())
+            {
+                users = await context.Users.Where(u=>u.AccountType==Constants.ManagerKeyWord||u.AccountType==Constants.WorkerKeyWord).ToListAsync();    
+            }
+            return users;
+        }
     }
 }

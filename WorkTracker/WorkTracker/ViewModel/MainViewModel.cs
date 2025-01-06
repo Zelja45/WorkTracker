@@ -1,4 +1,5 @@
 ﻿using MaterialDesignThemes.Wpf;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -27,6 +28,7 @@ namespace WorkTracker.ViewModel
             MenuItems = new List<MenuItemData>();
             MenuItems.Add(new MenuItemData() { Text = (String)Application.Current.Resources["Home"], ItemCommand = new RelayCommand(o => { Navigation.NavigateTo<AdminHomeViewModel>(); }, o => true), IconKind = PackIconKind.Home, IsSelectedInitialy = true });
             MenuItems.Add(new MenuItemData() { Text = (String)Application.Current.Resources["AddUsers"], ItemCommand = new RelayCommand(o => { Navigation.NavigateTo<AddNewUserViewModel>(); }, o => true), IconKind = PackIconKind.UserAdd });
+            MenuItems.Add(new MenuItemData() { Text = (String)Application.Current.Resources["ManageUsers"], ItemCommand = new RelayCommand(async o => { App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = true; await Navigation.NavigateTo<AdminManageUsersViewModel>(); App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = false; }, o => true), IconKind = PackIconKind.Group });
         }
        public void PrepareWorkerUI()
        {

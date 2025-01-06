@@ -25,12 +25,17 @@
                          UriSource="Resources/bosnian.png" />
             <BitmapImage x:Key="LogoEnglish"
                          UriSource="Resources/uk.png" />
-            
+            <BitmapImage x:Key="DefaultImage"
+                         UriSource="/Resources/user-avatar.png" />
+
             <DataTemplate DataType="{x:Type viewModel:AdminHomeViewModel}">
                 <view:AdminHomeView/>
                 </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:AddNewUserViewModel}">
                 <view:AddUserView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:AdminManageUsersViewModel}">
+                <view:AdminManageUsersView />
             </DataTemplate>
 
 

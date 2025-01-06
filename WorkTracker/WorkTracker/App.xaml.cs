@@ -50,6 +50,7 @@ namespace WorkTracker
             services.AddSingleton<LoadingCircleViewModel>();
             services.AddSingleton<AdminHomeViewModel>();
             services.AddSingleton<AddNewUserViewModel>();
+            services.AddSingleton<AdminManageUsersViewModel>();
             services.AddSingleton<User>();
 
 

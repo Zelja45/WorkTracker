@@ -37,8 +37,9 @@
     <System:String x:Key="NewUserAddedDescription">Kreiran je novi korisnički nalog</System:String>
     <System:String x:Key="IncorrectUsernameTitle">Korisničko ime nije ispravno</System:String>
     <System:String x:Key="IncorrectUsernameDescription">Korisnik sa unesenim korisničkim imenom postoji</System:String>
-    <System:String x:Key="Admin">Administrator</System:String>
-    <System:String x:Key="Worker">Radnik</System:String>
-    <System:String x:Key="Manager">Menadžer</System:String>
+    <System:String x:Key="admin">Administrator</System:String>
+    <System:String x:Key="worker">Radnik</System:String>
+    <System:String x:Key="manager">Menadžer</System:String>
+    <System:String x:Key="ManageUsers">Upravljanje korisnicima</System:String>
 
 </ResourceDictionary>

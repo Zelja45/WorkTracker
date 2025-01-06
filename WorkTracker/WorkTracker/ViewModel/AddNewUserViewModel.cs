@@ -18,7 +18,6 @@ namespace WorkTracker.ViewModel
 {
     public class AddNewUserViewModel:BaseViewModel
     {
-
         private string _name="";
         private string _surname="";
         private string _email="";
@@ -35,7 +34,7 @@ namespace WorkTracker.ViewModel
         public string Username { get => _username; set { _username = value; CheckPropertiesToEnable(); OnPropertyChanged(); } }
         public string Password{ get => _password; set { _password = value; CheckPropertiesToEnable(); OnPropertyChanged(); } }
 
-        public List<string> AccountTypes { get; } = new List<string> { (string)Application.Current.Resources["Admin"], (string)Application.Current.Resources["Manager"], (string)Application.Current.Resources["Worker"] };
+        public List<string> AccountTypes { get; } = new List<string> { (string)Application.Current.Resources[Constants.AdminKeyWord], (string)Application.Current.Resources[Constants.ManagerKeyWord], (string)Application.Current.Resources[Constants.WorkerKeyWord] };
         public string? AccountType { get { return _accountType; } set { _accountType = value; CheckPropertiesToEnable(); OnPropertyChanged();} }
 
         public bool IsRegistrable { get { return _isRegistrable; } set { _isRegistrable = value;OnPropertyChanged(); } }
@@ -43,9 +42,9 @@ namespace WorkTracker.ViewModel
         public RelayCommand Register { get; set; }
         private Dictionary<string, string> _typesCodesMap = new Dictionary<string, string>
         {
-            {(string) Application.Current.Resources["Admin"],Constants.AdminKeyWord },
-            {(string) Application.Current.Resources["Manager"],Constants.ManagerKeyWord },
-            {(string) Application.Current.Resources["Worker"],Constants.WorkerKeyWord }
+            {(string) Application.Current.Resources[Constants.AdminKeyWord],Constants.AdminKeyWord },
+            {(string) Application.Current.Resources[Constants.ManagerKeyWord],Constants.ManagerKeyWord },
+            {(string) Application.Current.Resources[Constants.WorkerKeyWord],Constants.WorkerKeyWord }
         };
 
 

@@ -54,7 +54,7 @@ namespace WorkTracker.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WorkTracker;V1.0.0.0;component/view/workermainview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WorkTracker;component/view/workermainview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\WorkerMainView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
