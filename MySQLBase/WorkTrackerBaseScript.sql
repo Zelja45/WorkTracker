@@ -20,11 +20,11 @@ USE `worktracker` ;
 CREATE TABLE IF NOT EXISTS `worktracker`.`Sector` (
   `idSector` INT NOT NULL AUTO_INCREMENT,
   `Name` VARCHAR(45) NOT NULL,
-  `Description` VARCHAR(256) NULL,
-  `HourlyRate` VARCHAR(45) NOT NULL,
-  `OvertimeHourlyRate` VARCHAR(45) NOT NULL,
-  `DailyHoursNorm` VARCHAR(45) NOT NULL,
-  `WeeklyHoursNorm` VARCHAR(45) NOT NULL,
+  `Description` TEXT NULL,
+  `HourlyRate` DECIMAL(5,2) NOT NULL,
+  `OvertimeHourlyRate` DECIMAL(5,2) NOT NULL,
+  `DailyHoursNorm` INT NOT NULL,
+  `WeeklyHoursNorm` INT NOT NULL,
   PRIMARY KEY (`idSector`))
 ENGINE = InnoDB;
 

@@ -1,0 +1,167 @@
+﻿<UserControl x:Class="WorkTracker.View.AddSectorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:components="clr-namespace:WorkTracker.Components"
+             xmlns:local="clr-namespace:WorkTracker.View"
+             mc:Ignorable="d"
+             d:DesignWidth="800" 
+             >
+    <UserControl.Resources>
+        <Style x:Key="Separator"
+               TargetType="Rectangle">
+            <Setter Property="Fill"
+                    Value="{DynamicResource SecondaryHueMidBrush}" />
+            <Setter Property="Height"
+                    Value="2" />
+        </Style>
+        <Style x:Key="SizedBox"
+               TargetType="Rectangle">
+            <Setter Property="Height"
+                    Value="10" />
+        </Style>
+        <Style x:Key="Label" TargetType="Label" >
+            <Setter Property="Foreground"
+                    Value="{DynamicResource SecondaryHueMidBrush}" />
+            <Setter Property="FontSize"
+                    Value="13" />
+        </Style>
+    </UserControl.Resources>
+    <Grid Margin="0,0,0,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,5"
+                    VerticalAlignment="Center">
+            <Label Content="{DynamicResource Create}"
+                   Foreground="{DynamicResource SecondaryHueMidBrush}"
+                   FontSize="22"
+                   FontWeight="Bold" />
+            <Label Content="{DynamicResource Sectors}"
+                   Foreground="{DynamicResource MaterialDesignBody}"
+                   FontSize="22"
+                   FontWeight="Bold" />
+        </StackPanel>
+        <materialDesign:Card  Grid.Row="1"
+                              Background="{DynamicResource MaterialDesignCardBackground}"
+                              UniformCornerRadius="10"
+                              materialDesign:ElevationAssist.Elevation="Dp3"
+                              Padding="8">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Rectangle Style="{StaticResource Separator}" />
+                <Label Content="{DynamicResource Informations}" Grid.Row="1"
+                       Style="{StaticResource Label}" />
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40*" />
+                        <ColumnDefinition Width="60*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox VerticalAlignment="Top"
+                             Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
+                             Margin="10,5,10,5"
+                             materialDesign:HintAssist.Hint="{DynamicResource SectorName}"
+                             Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                    </TextBox>
+                    <TextBox Height="70"
+                             Margin="10,5,10,5"
+                             Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}"
+                             Grid.Column="1"
+                             VerticalAlignment="Top"
+                             materialDesign:HintAssist.Hint="{DynamicResource Description}"
+                             AcceptsReturn="True"
+                             Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                             TextWrapping="Wrap"
+                             VerticalScrollBarVisibility="Auto" />
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="70*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel VerticalAlignment="Top"
+                                Margin="0,10,0,10">
+                        <Rectangle Style="{StaticResource Separator}" />
+                        <Label Content="{DynamicResource RatesAndNorms}"
+                               Style="{StaticResource Label}" />
+                        <StackPanel VerticalAlignment="Top"
+                                    Margin="8,0,8,0">
+                            <Rectangle Style="{StaticResource SizedBox}" />
+                            <TextBox VerticalAlignment="Top"
+                                     Text="{Binding DailyHoursNorm, UpdateSourceTrigger=PropertyChanged}"
+                                     PreviewTextInput="TextBox_PreviewTextInput"
+                                     materialDesign:HintAssist.Hint="{DynamicResource DailyHourNorm}"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                            </TextBox>
+                            <Rectangle Style="{StaticResource SizedBox}" />
+                            <TextBox VerticalAlignment="Top"
+                                     Text="{Binding  WeeklyHoursNorm, UpdateSourceTrigger=PropertyChanged}"
+                                     PreviewTextInput="TextBox_PreviewTextInput"
+                                     materialDesign:HintAssist.Hint="{DynamicResource WeeklyHoursNorm}"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                            </TextBox>
+                            <Rectangle Style="{StaticResource SizedBox}" />
+                            <TextBox VerticalAlignment="Top"
+                                     Text="{Binding HourlyRate, UpdateSourceTrigger=PropertyChanged}"
+                                     PreviewTextInput="TextBox_PreviewTextInput_1"
+                                     materialDesign:HintAssist.Hint="{DynamicResource HourlyRate}"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                            </TextBox>
+                            <Rectangle Style="{StaticResource SizedBox}" />
+                            <TextBox VerticalAlignment="Top"
+                                     Text="{Binding OvertimeHourlyRate, UpdateSourceTrigger=PropertyChanged}"
+                                     PreviewTextInput="TextBox_PreviewTextInput_1"
+                                     materialDesign:HintAssist.Hint="{DynamicResource OvertimeHourlyRate}"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                            </TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                   
+                        <Grid Margin="20,10,0,10" Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <StackPanel>
+                                <Rectangle Style="{StaticResource Separator}" />
+                                <Label Content="{DynamicResource AddManagersForSector}"
+                                       Style="{StaticResource Label}" />
+                                
+                            </StackPanel>
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden"
+                                      Grid.Row="1">
+                            <ItemsControl ItemsSource="{Binding Cards}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <components:ManagersAddingSectorsCard DataContext="{Binding}" />
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+                    </Grid>
+                    
+                </Grid>
+
+                <Button Grid.Row="4"
+                        Content="{DynamicResource AddNewSector}"
+                        HorizontalAlignment="Center"
+                        Command="{Binding AddSectorCommand}"
+                        IsEnabled="{Binding IsAddingable}"
+                        materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
+                        Style="{StaticResource MaterialDesignRaisedButton}" />
+            </Grid>
+
+        </materialDesign:Card>
+       
+    </Grid>
+</UserControl>

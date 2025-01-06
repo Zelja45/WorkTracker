@@ -50,6 +50,10 @@ namespace WorkTracker.Components
                 }
                 else
                 {
+                    double cornerAdjustment = 15; // Podešavanje za CornerRadius
+                    double adjustment = 2; // Dodatna kompenzacija
+                    window.MaxHeight = SystemParameters.WorkArea.Height+10;
+                    window.MaxWidth = SystemParameters.WorkArea.Width+10;
                     window.WindowState = WindowState.Maximized;
                 }
             }

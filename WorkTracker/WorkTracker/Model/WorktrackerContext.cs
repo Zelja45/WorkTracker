@@ -67,12 +67,10 @@ public partial class WorktrackerContext : DbContext
             entity.ToTable("sector");
 
             entity.Property(e => e.IdSector).HasColumnName("idSector");
-            entity.Property(e => e.DailyHoursNorm).HasMaxLength(45);
-            entity.Property(e => e.Description).HasMaxLength(256);
-            entity.Property(e => e.HourlyRate).HasMaxLength(45);
+            entity.Property(e => e.Description).HasColumnType("text");
+            entity.Property(e => e.HourlyRate).HasPrecision(5, 2);
             entity.Property(e => e.Name).HasMaxLength(45);
-            entity.Property(e => e.OvertimeHourlyRate).HasMaxLength(45);
-            entity.Property(e => e.WeeklyHoursNorm).HasMaxLength(45);
+            entity.Property(e => e.OvertimeHourlyRate).HasPrecision(5, 2);
 
             entity.HasMany(d => d.ManagerUsernames).WithMany(p => p.IdSectors)
                 .UsingEntity<Dictionary<string, object>>(

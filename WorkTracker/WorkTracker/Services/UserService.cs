@@ -105,5 +105,14 @@ namespace WorkTracker.Services
             }
             return users;
         }
+        public async System.Threading.Tasks.Task<List<User>> GetUsersByType(string type)
+        {
+            List<User> users = new List<User>();
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                users = await context.Users.Where(u => u.AccountType ==type && u.IsActive==(sbyte)1).ToListAsync();
+            }
+            return users;
+        }
     }
 }

@@ -16,38 +16,13 @@ using System.Windows.Shapes;
 namespace WorkTracker.Components
 {
     /// <summary>
-    /// Interaction logic for NumberOfAccountsCard.xaml
+    /// Interaction logic for ManagersAddingSectorsCard.xaml
     /// </summary>
-    public partial class NumberOfAccountsCard : UserControl
+    public partial class ManagersAddingSectorsCard : UserControl
     {
-        public NumberOfAccountsCard()
+        public ManagersAddingSectorsCard()
         {
-            DataContext = this;
             InitializeComponent();
         }
-        public string TopLabel
-        {
-            get;
-            set;
-        }
-        public string NumberActive
-        {
-            get;
-            set;
-        }
-
-        
-       
-
-
-       
-        public string NumberOfDeactivatedAccounts
-        {
-            get;
-            set;
-        }
-
-        
-    
     }
 }

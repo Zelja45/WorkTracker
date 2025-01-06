@@ -16,19 +16,22 @@
     <Compile Update="Components\LoadingCircle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\ManagersAddingSectorsCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\Menu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\MenuItem.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Components\NumberOfAccountsCard.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Components\SingleUserCardAdmin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddSectorView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\AddUserView.xaml.cs">
@@ -54,13 +57,13 @@
     <Page Update="Components\LoadingCircle.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\ManagersAddingSectorsCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\Menu.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\MenuItem.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Components\NumberOfAccountsCard.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\SingleUserCardAdmin.xaml">
@@ -70,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddSectorView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\AddUserView.xaml">

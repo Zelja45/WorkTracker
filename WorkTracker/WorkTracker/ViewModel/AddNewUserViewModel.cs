@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using WorkTracker.Components;
+using WorkTracker.Components.ViewModels;
 using WorkTracker.Model;
 using WorkTracker.Services;
 using WorkTracker.Utils;

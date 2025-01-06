@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Data;
 using System.Windows;
 using System.Windows.Navigation;
+using WorkTracker.Components.ViewModels;
 using WorkTracker.Model;
 using WorkTracker.Services;
 using WorkTracker.Stores;
@@ -38,6 +39,7 @@ namespace WorkTracker
              
             services.AddSingleton<SettingsService>();
             services.AddSingleton<SettingsStore>();
+            services.AddSingleton<SectorService>();
             services.AddSingleton<ThemeChanger>();
             services.AddSingleton(provider =>
                 new LanguageChanger(Application.Current.Resources)
@@ -51,6 +53,7 @@ namespace WorkTracker
             services.AddSingleton<AdminHomeViewModel>();
             services.AddSingleton<AddNewUserViewModel>();
             services.AddSingleton<AdminManageUsersViewModel>();
+            services.AddSingleton<AddSectorViewModel>();
             services.AddSingleton<User>();
 
 

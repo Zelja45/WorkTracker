@@ -15,7 +15,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-            <TextBlock Text="Manage account of "
+            <TextBlock Text="{DynamicResource ManageAccountsOf}"
                    Foreground="{DynamicResource SecondaryHueMidBrush}"
                    FontSize="25"
                    FontWeight="Bold" />
@@ -31,13 +31,13 @@
             </Grid.ColumnDefinitions>
             <TextBox VerticalAlignment="Center" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
                      HorizontalAlignment="Center"
-                     materialDesign:HintAssist.Hint="Search by name,surname or username"
+                     materialDesign:HintAssist.Hint="{DynamicResource SearchByNameSurnameUsername}"
                      Style="{StaticResource MaterialDesignOutlinedTextBox}">
             </TextBox>
             <StackPanel Orientation="Horizontal"
                         VerticalAlignment="Center"
                         Grid.Column="1">
-                <Label Content="Filtriraj:"
+                <Label Content="{DynamicResource Filter}"
                        Foreground="{DynamicResource SecondaryHueMidBrush}"
                        FontSize="15"
                        VerticalAlignment="Center" />
@@ -50,7 +50,7 @@
                 </ListBox>
             </StackPanel>
         </Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto"
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"
                       Grid.Row="2">
             <ItemsControl 
                           ItemsSource="{Binding CardsViewModelsToShow}">

@@ -16,7 +16,7 @@
     <System:String x:Key="NumberOfSectors">Broj sektora:</System:String>
     <System:String x:Key="Home">Početna strana</System:String>
     <System:String x:Key="AddUsers">Kreiraj nalog</System:String>
-    <System:String x:Key="AddAccountsFor">Kreiraj nalog za </System:String>
+    <System:String x:Key="AddAccountsFor" xml:space="preserve">Kreiraj nalog za </System:String>
     <System:String x:Key="AccountsAddList">Admina, Manadžera ili Radnika</System:String>
     <System:String x:Key="Name">Ime</System:String>
     <System:String x:Key="Surname">Prezime</System:String>
@@ -40,6 +40,32 @@
     <System:String x:Key="admin">Administrator</System:String>
     <System:String x:Key="worker">Radnik</System:String>
     <System:String x:Key="manager">Menadžer</System:String>
-    <System:String x:Key="ManageUsers">Upravljanje korisnicima</System:String>
+    <System:String x:Key="ManageUsers">Upravljanje nalozima</System:String>
+    <System:String x:Key="InactiveActive">Neaktivan/Aktivan</System:String>
+    <System:String x:Key="PhoneNumberCard">Broj telefona:</System:String>
+    <System:String x:Key="EmailCard">Email adresa:</System:String>
+    <System:String x:Key="AccountTypeCard">Tip naloga:</System:String>
+    <System:String x:Key="ManageAccountsOf"
+                   xml:space="preserve">Upravljajte nalozima od </System:String>
+    <System:String x:Key="SearchByNameSurnameUsername">Pretrazite po imenu, prezimenu ili username-u</System:String>
+    <System:String x:Key="Filter">Filter:</System:String>
+    <System:String x:Key="Informations">Informacije</System:String>
+    <System:String x:Key="SectorName">Naziv sektora</System:String>
+    <System:String x:Key="Description">Opis</System:String>
+    <System:String x:Key="RatesAndNorms">Norme i satnice</System:String>
+    <System:String x:Key="DailyHourNorm">Dnevna norma sati</System:String>
+    <System:String x:Key="WeeklyHoursNorm">Sedmična norma sati</System:String>
+    <System:String x:Key="HourlyRate">Satnica</System:String>
+    <System:String x:Key="OvertimeHourlyRate">Satnica za prekovremeni rad</System:String>
+    <System:String x:Key="AddManagersForSector">Dodaj menadžere sektora</System:String>
+    <System:String x:Key="Create" xml:space="preserve">Kreirajte </System:String>
+    <System:String x:Key="Sectors">Sektore</System:String>
+    <System:String x:Key="CreateSectors">Kreiranje sektora</System:String>
+    <System:String x:Key="AddNewSector">Dodajte novi sektor</System:String>
+    <System:String x:Key="NewSectorIsCreatedTitle">Novi sektor je kreiran</System:String>
+    <System:String x:Key="NewSectorIsCreatedDescription">Uspješno ste kreirali novi sektor</System:String>
+    <System:String x:Key="ErorrOnAddingTitle">Greška pri kreiranju sektora</System:String>
+    <System:String x:Key="TryAgainLater">Pokušajte ponovo kasnije</System:String>
+    <System:String x:Key="InvalidEntryDescription">Unosi nisu validni, unesite validne numeričke vrijednosti</System:String>
 
 </ResourceDictionary>

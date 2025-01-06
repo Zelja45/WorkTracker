@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:System="clr-namespace:System;assembly=mscorlib">
+    
 
     <System:String x:Key="Password">Password</System:String>
     <System:String x:Key="Username">Username</System:String>
@@ -17,7 +18,7 @@
     <System:String x:Key="NumberOfSectors">Number of sectors:</System:String>
     <System:String x:Key="Home">Home</System:String>
     <System:String x:Key="AddUsers">Create account</System:String>
-    <System:String x:Key="AddAccountsFor">Create accounts for </System:String>
+    <System:String x:Key="AddAccountsFor" xml:space="preserve">Create accounts for </System:String>
     <System:String x:Key="AccountsAddList">Admins, Managers or Workers</System:String>
     <System:String x:Key="Name">Name</System:String>
     <System:String x:Key="Surname">Surname</System:String>
@@ -41,7 +42,38 @@
     <System:String x:Key="admin">Admin</System:String>
     <System:String x:Key="worker">Worker</System:String>
     <System:String x:Key="manager">Manager</System:String>
-    <System:String x:Key="ManageUsers">Manage users</System:String>
+    <System:String x:Key="ManageUsers">Manage accounts</System:String>
+    <System:String x:Key="InactiveActive">Inactive/Active</System:String>
+    <System:String x:Key="PhoneNumberCard">Phone number:</System:String>
+    <System:String x:Key="EmailCard">Email address:</System:String>
+    <System:String x:Key="AccountTypeCard">Account type:</System:String>
+    <System:String x:Key="ManageAccountsOf" xml:space="preserve">Manage accounts of </System:String>
+    <System:String x:Key="SearchByNameSurnameUsername">Search by name,surname or username</System:String>
+    <System:String x:Key="Filter">Filter:</System:String>
+    <System:String x:Key="Informations">Informations</System:String>
+    <System:String x:Key="SectorName">Sector name</System:String>
+    <System:String x:Key="Description">Description</System:String>
+    <System:String x:Key="RatesAndNorms">Norms and rates</System:String>
+    <System:String x:Key="DailyHourNorm">Daily hours norm</System:String>
+    <System:String x:Key="WeeklyHoursNorm">Weekly hours norm</System:String>
+    <System:String x:Key="HourlyRate">Hourly rate</System:String>
+    <System:String x:Key="OvertimeHourlyRate">Overtime hourly rate</System:String>
+    <System:String x:Key="AddManagersForSector">Add managers for sector</System:String>
+    <System:String x:Key="Create" xml:space="preserve">Create </System:String>
+    <System:String x:Key="Sectors">Sectors</System:String>
+    <System:String x:Key="CreateSectors">Create sectors</System:String>
+    <System:String x:Key="AddNewSector">Add new sector</System:String>
+    <System:String x:Key="NewSectorIsCreatedTitle">New sector is created</System:String>
+    <System:String x:Key="NewSectorIsCreatedDescription">You have successfully added a new sector</System:String>
+    <System:String x:Key="ErorrOnAddingTitle">Erorr on adding new sector</System:String>
+    <System:String x:Key="TryAgainLater">Try again later</System:String>
+    <System:String x:Key="InvalidEntryDescription">Entries are invalid, please enter valid numeric values</System:String>
+    
+    
+
+
+
+
 
 
 

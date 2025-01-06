@@ -142,8 +142,6 @@ C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-win
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\LoadingCircle.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AdminHomeView.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AdminHomeView.baml
-C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\NumberOfAccountsCard.g.cs
-C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\NumberOfAccountsCard.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddUserView.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddUserView.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\CustomDialog.g.cs
@@ -152,3 +150,7 @@ C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-win
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\SingleUserCardAdmin.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AdminManageUsersView.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AdminManageUsersView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddSectorView.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddSectorView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\ManagersAddingSectorsCard.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\ManagersAddingSectorsCard.baml

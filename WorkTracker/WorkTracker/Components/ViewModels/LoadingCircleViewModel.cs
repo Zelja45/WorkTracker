@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using WorkTracker.ViewModel.Core;
 
-namespace WorkTracker.ViewModel
+namespace WorkTracker.Components.ViewModels
 {
-    public class LoadingCircleViewModel:BaseViewModel
+    public class LoadingCircleViewModel : BaseViewModel
     {
         private bool _isLoading = false;
         public bool IsLoading { get { return _isLoading; } set { _isLoading = value; OnPropertyChanged(); } }

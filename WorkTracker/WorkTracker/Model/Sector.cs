@@ -11,13 +11,13 @@ public partial class Sector
 
     public string? Description { get; set; }
 
-    public string HourlyRate { get; set; } = null!;
+    public decimal HourlyRate { get; set; }
 
-    public string OvertimeHourlyRate { get; set; } = null!;
+    public decimal OvertimeHourlyRate { get; set; }
 
-    public string DailyHoursNorm { get; set; } = null!;
+    public int DailyHoursNorm { get; set; }
 
-    public string WeeklyHoursNorm { get; set; } = null!;
+    public int WeeklyHoursNorm { get; set; }
 
     public virtual ICollection<User> Users { get; set; } = new List<User>();
 

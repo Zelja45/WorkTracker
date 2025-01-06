@@ -15,11 +15,12 @@
         WindowStartupLocation="CenterScreen"
         Title="MainWindow"
         MinHeight="570"
-        MinWidth="850" Height="570" Width="850" Margin="10" >
+        MinWidth="850" Height="570" Width="850" >
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0"
-                      CornerRadius="15"
-                      CaptionHeight="0" />
+                      CornerRadius="0"
+                      CaptionHeight="15"
+                      ResizeBorderThickness="5"  />
     </WindowChrome.WindowChrome>
     <Grid>
         <Grid.ColumnDefinitions>

@@ -18,7 +18,7 @@
                     <ColumnDefinition Width="auto" />
                 </Grid.ColumnDefinitions>
                 <StackPanel VerticalAlignment="Center" Grid.Column="1">
-                    <Label Content="Inactive/Active"
+                    <Label Content="{DynamicResource InactiveActive}"
                            FontWeight="Bold"
                            FontSize="15" />
                     <Rectangle Height="10" />
@@ -50,8 +50,8 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
                         <Image Name="UserImage"
-                               Width="40"
-                               Height="40"
+                               Width="50"
+                               Height="50"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center">
                             <Image.Source>
@@ -62,9 +62,9 @@
                                 </Binding>
                             </Image.Source>
                             <Image.Clip>
-                                <EllipseGeometry RadiusX="20"
-                                                 RadiusY="20"
-                                                 Center="20,20" />
+                                <EllipseGeometry RadiusX="25"
+                                                 RadiusY="25"
+                                                 Center="25,25" />
                             </Image.Clip>
                         </Image>
                         <StackPanel Grid.Column="1" VerticalAlignment="Center">
@@ -82,19 +82,19 @@
                     <StackPanel Orientation="Horizontal"
                                 Grid.Row="1">
                         <Label Foreground="{DynamicResource SecondaryHueMidBrush}"
-                               Content="Phone number:" />
+                               Content="{DynamicResource PhoneNumberCard}" />
                         <Label Foreground="{DynamicResource SecondaryHueMidBrush}"
                                Content="{Binding User.PhoneNumber}" />
                         <Rectangle Width="10" />
                         <Label Foreground="{DynamicResource SecondaryHueMidBrush}"
-                               Content="Email address:" />
+                               Content="{DynamicResource EmailCard}" />
                         <Label Foreground="{DynamicResource SecondaryHueMidBrush}"
                                Content="{Binding User.Email}" />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal"
                                 Grid.Row="2">
                         <Label Foreground="{DynamicResource SecondaryHueMidBrush}" FontSize="14" FontWeight="Bold"
-                               Content="Account type:" />
+                               Content="{DynamicResource AccountTypeCard}" />
                         <Label Foreground="{DynamicResource MaterialDesignBody}"
                                FontSize="14"
                                FontWeight="Bold"

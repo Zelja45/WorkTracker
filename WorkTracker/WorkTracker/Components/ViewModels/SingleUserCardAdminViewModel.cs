@@ -8,30 +8,30 @@ using WorkTracker.Model;
 using WorkTracker.Services;
 using WorkTracker.ViewModel.Core;
 
-namespace WorkTracker.ViewModel
+namespace WorkTracker.Components.ViewModels
 {
-    public class SingleUserCardAdminViewModel:BaseViewModel
+    public class SingleUserCardAdminViewModel : BaseViewModel
     {
         private bool _status;
         private UserService _userService;
         public User User { get; set; }
 
-        public RelayCommand SwitchStatus { get;set; }
+        public RelayCommand SwitchStatus { get; set; }
 
-        public bool Status { get { return _status; } set { _status = value;OnPropertyChanged(); } }
-        public string NameSurname { get {return User.Name + " " + User.Surname; } }
+        public bool Status { get { return _status; } set { _status = value; OnPropertyChanged(); } }
+        public string NameSurname { get { return User.Name + " " + User.Surname; } }
         public string AccountType { get { return (string)Application.Current.Resources[User.AccountType]; } }
 
-        public SingleUserCardAdminViewModel(User user,UserService userService)
+        public SingleUserCardAdminViewModel(User user, UserService userService)
         {
             User = user;
-            _status= User.IsActive != 0;
+            _status = User.IsActive != 0;
             _userService = userService;
-            SwitchStatus = new RelayCommand(async o => {await SwitchActivationStatusOfUser(); }, o => true);
+            SwitchStatus = new RelayCommand(async o => { await SwitchActivationStatusOfUser(); }, o => true);
         }
         private async System.Threading.Tasks.Task SwitchActivationStatusOfUser()
         {
-            if(User.IsActive == 0)
+            if (User.IsActive == 0)
             {
                 User.IsActive = 1;
                 Status = true;
@@ -39,10 +39,10 @@ namespace WorkTracker.ViewModel
             else
             {
                 User.IsActive = 0;
-                Status =false;
+                Status = false;
             }
             await _userService.UpdateUser(User);
         }
-        
+
     }
 }
