@@ -69,6 +69,7 @@
     <System:String x:Key="TryAgainLater">Try again later</System:String>
     <System:String x:Key="InvalidEntryDescription">Entries are invalid, please enter valid numeric values</System:String>
     <System:String x:Key="MyProfile">Your profile</System:String>
+    <System:String x:Key="Settings">Settings</System:String>
     
     
 

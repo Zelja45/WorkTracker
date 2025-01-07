@@ -1,9 +1,11 @@
 ﻿using MaterialDesignThemes.Wpf;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WorkTracker.Components.ViewModels;
 using WorkTracker.Stores;
 using WorkTracker.Utils;
 
@@ -52,6 +54,7 @@ namespace WorkTracker.Services
             var currentSettings = _settingsStore.CurrentSettings;
             currentSettings.LanguageCode = languageCode;
             _languageChanger.ApplyLanguage(languageCode);
+            App.serviceProvider.GetRequiredService<HeaderViewModel>().ChangeLanguage(languageCode);
             _settingsStore.SaveSettings();
         }
     }

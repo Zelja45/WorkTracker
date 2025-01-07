@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WorkTracker.Components.ViewModels;
 using WorkTracker.Stores;
 
 namespace WorkTracker.Components
@@ -23,19 +24,11 @@ namespace WorkTracker.Components
     /// </summary>
     public partial class Header : UserControl
     {
-        public string DateText
-        {
-            get
-            {
-                DateTime now = DateTime.Now;
-                string languageCode = App.serviceProvider.GetRequiredService<SettingsStore>().CurrentSettings.LanguageCode;
-                return now.ToString("D", new CultureInfo(languageCode));
-            }
-        }
+        
         
         public Header()
         {
-            DataContext = this;
+            DataContext = App.serviceProvider.GetRequiredService<HeaderViewModel>();
             InitializeComponent();
         }
 

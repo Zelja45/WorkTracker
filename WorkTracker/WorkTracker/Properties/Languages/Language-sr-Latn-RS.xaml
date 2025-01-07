@@ -68,5 +68,6 @@
     <System:String x:Key="TryAgainLater">Pokušajte ponovo kasnije</System:String>
     <System:String x:Key="InvalidEntryDescription">Unosi nisu validni, unesite validne numeričke vrijednosti</System:String>
     <System:String x:Key="MyProfile">Vaš profil</System:String>
-
+    <System:String x:Key="Settings">Podešavanja</System:String>
+    
 </ResourceDictionary>

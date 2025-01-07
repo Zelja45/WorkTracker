@@ -55,6 +55,7 @@ namespace WorkTracker
             services.AddSingleton<AdminManageUsersViewModel>();
             services.AddSingleton<AddSectorViewModel>();
             services.AddSingleton<MyProfileViewModel>();
+            services.AddSingleton<HeaderViewModel>();
             services.AddSingleton<User>();
 
 
