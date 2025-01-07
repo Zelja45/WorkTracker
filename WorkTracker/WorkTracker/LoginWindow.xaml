@@ -10,6 +10,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize"
+        FontFamily="{DynamicResource AppFont}"
         WindowStyle="None"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
     AllowsTransparency="True"

@@ -54,7 +54,7 @@
             </Grid>
             <StackPanel Grid.Column="1"
                         VerticalAlignment="Center">
-                <Label Content="Add:"
+                <Label Content="{DynamicResource AddManagerWorkerCard}"
                        FontWeight="Bold"
                        FontSize="14" />
                 <ToggleButton Grid.Column="1" Width="40" Height="40" IsChecked="{Binding IsChecked}"

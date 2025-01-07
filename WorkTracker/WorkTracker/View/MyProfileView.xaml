@@ -25,7 +25,7 @@
                     Margin="0,0,0,5"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center">
-            <Label Content="My profile"
+            <Label Content="{DynamicResource MyProfile}"
                    FontWeight="Bold"
                    FontSize="25"
                    Foreground="{DynamicResource SecondaryHueMidBrush}" />
@@ -70,8 +70,7 @@
                             Panel.ZIndex="1"
                             Command="{Binding ImagePickCommand}"
                             Foreground="{DynamicResource PrimaryHueMidBrush}"
-                            Style="{StaticResource MaterialDesignIconButton}"
-                            ToolTip="MaterialDesignIconButton">
+                            Style="{StaticResource MaterialDesignIconButton}">
                         <materialDesign:PackIcon Kind="LeadPencil" />
                     </Button>
                     <StackPanel Grid.Column="1"
@@ -96,7 +95,7 @@
                     <StackPanel HorizontalAlignment="Stretch">
                         <Rectangle Style="{StaticResource SizedBox}" />
                         <StackPanel Orientation="Horizontal">
-                            <TextBox Name="NewEmail" materialDesign:HintAssist.Hint="Email"
+                            <TextBox Name="NewEmail" materialDesign:HintAssist.Hint="{DynamicResource Email}"
                                      IsEnabled="False"
                                      Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                      Width="260"
@@ -118,7 +117,7 @@
                             <TextBox Name="NewPhone" VerticalAlignment="Top" IsEnabled="False"
                                      Text="{Binding NewPhone,UpdateSourceTrigger=PropertyChanged}"
                                      Width="260"
-                                     materialDesign:HintAssist.Hint="Phone"
+                                     materialDesign:HintAssist.Hint="{DynamicResource PhoneNumber}"
                                      Style="{StaticResource MaterialDesignOutlinedTextBox}" />
                             <Button Height="30" Name="EditPhone"
                                     Width="30"
@@ -133,14 +132,14 @@
                         <Rectangle Style="{StaticResource SizedBox}" />
                         <Button materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
                                 Command="{Binding SaveChangesCommand}"
-                                Content="Save changes"
+                                Content="{DynamicResource SaveChanges}"
                                 HorizontalAlignment="Center"
                                 IsEnabled="{Binding IsUpateable}"
                                 Style="{StaticResource MaterialDesignRaisedButton}"/>
                     </StackPanel>
                     <StackPanel Grid.Column="2" Margin="0,10,0,0">
                         <Button x:Name="ChangePasswordBtn" Click="ChangePasswordBtn_Click" materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
-                                Content="Change password"
+                                Content="{DynamicResource ChangePassword}"
                                 HorizontalAlignment="Center"
                                 Style="{StaticResource MaterialDesignRaisedButton}" />
                         <StackPanel x:Name="OldPassword" Visibility="Collapsed">
@@ -148,20 +147,20 @@
                                          VerticalContentAlignment="Bottom"
                                          HorizontalAlignment="Center"
                                          Width="250"
-                                         materialDesign:HintAssist.Hint="Old password"
+                                         materialDesign:HintAssist.Hint="{DynamicResource CurrentPassword}"
                                          materialDesign:PasswordBoxAssist.Password="{Binding Path=OldPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                          materialDesign:TextFieldAssist.HasClearButton="True"
                                          Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}" />
                             <Rectangle Style="{StaticResource SizedBox}" />
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                 <Button materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
-                                        Content="Back"
+                                        Content="{DynamicResource Back}"
                                         Click="Button_Click"
                                         HorizontalAlignment="Center"
                                         Style="{StaticResource MaterialDesignRaisedButton}" />
                                 <Rectangle Width="5" />
                                 <Button x:Name="checkOldPassword" materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
-                                        Content="Confirm"
+                                        Content="{DynamicResource Confirm}"
                                         Click="checkOldPassword_Click"
                                         HorizontalAlignment="Center"
                                         Style="{StaticResource MaterialDesignRaisedButton}" />
@@ -172,7 +171,7 @@
                             <PasswordBox VerticalContentAlignment="Bottom"
                                          HorizontalAlignment="Center"
                                          Width="250"
-                                         materialDesign:HintAssist.Hint="New password"
+                                         materialDesign:HintAssist.Hint="{DynamicResource NewPassword}"
                                          materialDesign:PasswordBoxAssist.Password="{Binding Path=NewPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                          materialDesign:TextFieldAssist.HasClearButton="True"
                                          Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}" />
@@ -180,7 +179,7 @@
                             <PasswordBox VerticalContentAlignment="Bottom"
                                          HorizontalAlignment="Center"
                                          Width="250"
-                                         materialDesign:HintAssist.Hint="New password confirm"
+                                         materialDesign:HintAssist.Hint="{DynamicResource NewPasswordRepeated}"
                                          materialDesign:PasswordBoxAssist.Password="{Binding Path=NewPasswordRepeated, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                          materialDesign:TextFieldAssist.HasClearButton="True"
                                          Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}" />
@@ -188,13 +187,13 @@
                             <StackPanel Orientation="Horizontal"
                                         HorizontalAlignment="Center">
                                 <Button materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
-                                        Content="Back"
+                                        Content="{DynamicResource Back}"
                                         Click="Button_Click_1"
                                         HorizontalAlignment="Center"
                                         Style="{StaticResource MaterialDesignRaisedButton}" />
                                 <Rectangle Width="5" />
                                 <Button x:Name="confirmPasswordBtn" materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
-                                        Content="Confirm"
+                                        Content="{DynamicResource Confirm}"
                                         Click="confirmPasswordBtn_Click"
                                         HorizontalAlignment="Center"
                                         Style="{StaticResource MaterialDesignRaisedButton}" />

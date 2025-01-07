@@ -122,7 +122,7 @@
                     <Button HorizontalAlignment="Center" IsEnabled="{Binding IsRegistrable}"
                             Grid.Row="1"
                             materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
-                            Content="Add account"
+                            Content="{DynamicResource CreateAccount}"
                             Style="{StaticResource MaterialDesignRaisedButton}"
                             Command="{Binding Register}"/>
 

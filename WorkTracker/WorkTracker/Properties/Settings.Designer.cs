@@ -58,5 +58,17 @@ namespace WorkTracker.Properties {
                 this["LanguageCode"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI")]
+        public string FontCode {
+            get {
+                return ((string)(this["FontCode"]));
+            }
+            set {
+                this["FontCode"] = value;
+            }
+        }
     }
 }

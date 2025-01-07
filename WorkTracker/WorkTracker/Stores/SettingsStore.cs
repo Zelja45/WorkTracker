@@ -35,7 +35,8 @@ namespace WorkTracker.Stores
             {
                 LanguageCode = settings.LanguageCode,
                 Theme = theme,
-                PrimaryColorCode = primaryColorCode
+                PrimaryColorCode = primaryColorCode,
+                FontCode=settings.FontCode
             };
             _currentSettings = appSettings;
         }
@@ -54,6 +55,7 @@ namespace WorkTracker.Stores
 
             settings.LanguageCode = CurrentSettings.LanguageCode;
             settings.PrimaryColorCode = CurrentSettings.PrimaryColorCode;
+            settings.FontCode= CurrentSettings.FontCode;
             settings.Save();
         }
 

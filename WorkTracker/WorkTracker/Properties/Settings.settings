@@ -11,5 +11,8 @@
     <Setting Name="LanguageCode" Type="System.String" Scope="User">
       <Value Profile="(Default)">en-US</Value>
     </Setting>
+    <Setting Name="FontCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Segoe UI</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

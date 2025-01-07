@@ -60,8 +60,14 @@ namespace WorkTracker.ViewModel
 
                 }
                 App.serviceProvider.GetRequiredService<UserStore>().User = user;
-                App.serviceProvider.GetRequiredService<MainWindow>().Show();
-                App.serviceProvider.GetRequiredService<LoginWindow>().Close();
+                App.mainWindow = new MainWindow
+                {
+                    DataContext = App.serviceProvider.GetRequiredService<MainViewModel>()
+                };
+                Username = "";
+                Password = "";
+                App.mainWindow.Show();
+                App.loginWindow.Close();
                
             }
             else

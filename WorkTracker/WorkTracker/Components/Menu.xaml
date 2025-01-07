@@ -68,7 +68,8 @@
     <Grid.RowDefinitions>
         <RowDefinition Height="60" />
         <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <ToggleButton Margin="8 0 0 0"
                               Height="50"
@@ -133,6 +134,18 @@
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
+            <Button Style="{DynamicResource PopupButtonStyle}" Grid.Row="2"
+                    DataContext="{Binding LogoutItem}"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Command="{Binding ItemCommand}"
+                    ToolTip="{Binding Text}">
+                <local:MenuItem  Text="{Binding Text}"
+                                 IconKind="{Binding IconKind}"
+                                 ItemCommand="{Binding ItemCommand}"
+                                 IsSelected="{Binding IsSelectedInitialy}"
+                                 VerticalAlignment="Center" />
+            </Button>
         </Grid>
     </materialDesign:Card>
     

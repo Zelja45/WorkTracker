@@ -14,11 +14,16 @@ namespace WorkTracker.Utils
     {
         private readonly Dictionary<string, Color> primaryColors;
 
+        public static List<string> ColorCodes = new List<string>();
+
         public ThemeChanger()
         {
             string primaryColor1= ConfigurationManager.AppSettings["PrimaryColor1"];
             string primaryColor2 = ConfigurationManager.AppSettings["PrimaryColor2"];
             string primaryColor3 = ConfigurationManager.AppSettings["PrimaryColor3"];
+            ColorCodes.Add(primaryColor1);
+            ColorCodes.Add(primaryColor2);
+            ColorCodes.Add(primaryColor3);
             primaryColors = new Dictionary<string, Color>()
             {
                 { primaryColor1, (Color)ColorConverter.ConvertFromString(primaryColor1) },

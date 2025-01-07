@@ -70,9 +70,30 @@
     <System:String x:Key="InvalidEntryDescription">Entries are invalid, please enter valid numeric values</System:String>
     <System:String x:Key="MyProfile">Your profile</System:String>
     <System:String x:Key="Settings">Settings</System:String>
-    
-    
-
+    <System:String x:Key="SaveChanges">Save changes</System:String>
+    <System:String x:Key="ChangePassword">Change password</System:String>
+    <System:String x:Key="CurrentPassword">Current password</System:String>
+    <System:String x:Key="Back">Back</System:String>
+    <System:String x:Key="Confirm">Confirm</System:String>
+    <System:String x:Key="NewPassword">New password</System:String>
+    <System:String x:Key="NewPasswordRepeated">New password repeated</System:String>
+    <System:String x:Key="ProfileUpdatedTitle">Profile updated</System:String>
+    <System:String x:Key="ProfileUpdatedDescription">You have successfully updated your profile information</System:String>
+    <System:String x:Key="IncorrectPassword">Incorrect password</System:String>
+    <System:String x:Key="IncorrectPasswordDescription">The entered password is incorrect</System:String>
+    <System:String x:Key="PasswordUpdated">Password updated</System:String>
+    <System:String x:Key="PasswordUpdatedDescription">The password has been successfully changed</System:String>
+    <System:String x:Key="Erorr">Erorr</System:String>
+    <System:String x:Key="PasswordsDontMatch">The passwords do not match</System:String>
+    <System:String x:Key="LightDarkTheme">Light/Dark theme:</System:String>
+    <System:String x:Key="PrimaryColor">Primary color:</System:String>
+    <System:String x:Key="Red">Red</System:String>
+    <System:String x:Key="Green">Green</System:String>
+    <System:String x:Key="Blue">Blue</System:String>
+    <System:String x:Key="Logout">Logout</System:String>
+    <System:String x:Key="CreateAccount">Create account</System:String>
+    <System:String x:Key="AddManagerWorkerCard">Add:</System:String>
+    <System:String x:Key="LogoutQuestion">Are you sure you want to log out of your account?</System:String>
 
 
 

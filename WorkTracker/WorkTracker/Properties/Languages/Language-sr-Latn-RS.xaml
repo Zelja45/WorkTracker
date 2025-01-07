@@ -69,5 +69,29 @@
     <System:String x:Key="InvalidEntryDescription">Unosi nisu validni, unesite validne numeričke vrijednosti</System:String>
     <System:String x:Key="MyProfile">Vaš profil</System:String>
     <System:String x:Key="Settings">Podešavanja</System:String>
-    
+    <System:String x:Key="SaveChanges">Sačuvajte promjene</System:String>
+    <System:String x:Key="ChangePassword">Izmjenite lozinku</System:String>
+    <System:String x:Key="CurrentPassword">Trenutna šifra</System:String>
+    <System:String x:Key="Back">Nazad</System:String>
+    <System:String x:Key="Confirm">Potvrdite</System:String>
+    <System:String x:Key="NewPassword">Nova šifra</System:String>
+    <System:String x:Key="NewPasswordRepeated">Ponovljena nova šifra</System:String>
+    <System:String x:Key="ProfileUpdatedTitle">Profil azuriran</System:String>
+    <System:String x:Key="ProfileUpdatedDescription">Uspješno ste ažurirali podatke o svom profilu</System:String>
+    <System:String x:Key="IncorrectPassword">Netačna lozinka</System:String>
+    <System:String x:Key="IncorrectPasswordDescription">Unesena lozinka nije tačna</System:String>
+    <System:String x:Key="PasswordUpdated">Lozinka ažurirana</System:String>
+    <System:String x:Key="PasswordUpdatedDescription">Lozinka je uspješno promenjena</System:String>
+    <System:String x:Key="Erorr">Greška</System:String>
+    <System:String x:Key="PasswordsDontMatch">Lozinke se ne poklapaju</System:String>
+    <System:String x:Key="LightDarkTheme">Svijetla/Tamna tema:</System:String>
+    <System:String x:Key="PrimaryColor">Primarna boja:</System:String>
+    <System:String x:Key="Red">Crvena</System:String>
+    <System:String x:Key="Green">Zelena</System:String>
+    <System:String x:Key="Blue">Plava</System:String>
+    <System:String x:Key="Logout">Odjava</System:String>
+    <System:String x:Key="CreateAccount">Kreirajte nalog</System:String>
+    <System:String x:Key="AddManagerWorkerCard">Dodajte:</System:String>
+    <System:String x:Key="LogoutQuestion">Da li ste sigurni da želite da se odjavite sa naloga?</System:String>
+
 </ResourceDictionary>

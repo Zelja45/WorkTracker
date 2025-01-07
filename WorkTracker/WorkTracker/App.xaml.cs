@@ -20,22 +20,18 @@ namespace WorkTracker
     public partial class App : Application
     {
         public static ServiceProvider serviceProvider;
+        public static LoginWindow loginWindow;
+        public static MainWindow mainWindow;
         public App()
         {
 
             IServiceCollection services = new ServiceCollection();
-            services.AddSingleton<MainWindow>(provider => new MainWindow
-            {
-                DataContext = provider.GetRequiredService<MainViewModel>()
-            });
+            
 
             services.AddSingleton<INavigationService, NavigationServices>();
             services.AddSingleton<Func<Type, BaseViewModel>>(provider => viewModelType => (BaseViewModel)provider.GetRequiredService(viewModelType));//function for getting specific viewmodel
 
-            services.AddSingleton<LoginWindow>(provider => new LoginWindow
-            {
-                DataContext = provider.GetRequiredService<LoginViewModel>()
-            });
+            
              
             services.AddSingleton<SettingsService>();
             services.AddSingleton<SettingsStore>();
@@ -67,12 +63,20 @@ namespace WorkTracker
         }
         protected override void OnStartup(StartupEventArgs e)
         {
-            var loginWindow = serviceProvider.GetRequiredService<LoginWindow>();
+            
             serviceProvider.GetRequiredService<SettingsStore>().LoadSettings();
             serviceProvider.GetRequiredService<SettingsService>().ApplyCurrentSettings();
             serviceProvider.GetRequiredService<SettingsViewModel>().IsDarkThemeSetted = serviceProvider.GetRequiredService<SettingsService>().IsDarkThemeSetted;
             string languageCode=serviceProvider.GetRequiredService<SettingsStore>().CurrentSettings.LanguageCode;
+            string font= serviceProvider.GetRequiredService<SettingsStore>().CurrentSettings.FontCode;
+            string colorCode = serviceProvider.GetRequiredService<SettingsStore>().CurrentSettings.PrimaryColorCode;
+            serviceProvider.GetRequiredService<SettingsViewModel>().SelectedFont= font;
             serviceProvider.GetRequiredService<SettingsViewModel>().ChangeLanguage(languageCode);
+            serviceProvider.GetRequiredService<SettingsViewModel>().SelectedColorIndex = ThemeChanger.ColorCodes.IndexOf(colorCode);
+            loginWindow=new LoginWindow
+            {
+                DataContext = serviceProvider.GetRequiredService<LoginViewModel>()
+            };
             loginWindow.Show();
             base.OnStartup(e);
 

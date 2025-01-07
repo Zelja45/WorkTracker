@@ -35,20 +35,24 @@ namespace WorkTracker.ViewModel
         public string Username { get => _username; set { _username = value; CheckPropertiesToEnable(); OnPropertyChanged(); } }
         public string Password{ get => _password; set { _password = value; CheckPropertiesToEnable(); OnPropertyChanged(); } }
 
-        public List<string> AccountTypes { get; } = new List<string> { (string)Application.Current.Resources[Constants.AdminKeyWord], (string)Application.Current.Resources[Constants.ManagerKeyWord], (string)Application.Current.Resources[Constants.WorkerKeyWord] };
+        public List<string> AccountTypes { get; set; } 
         public string? AccountType { get { return _accountType; } set { _accountType = value; CheckPropertiesToEnable(); OnPropertyChanged();} }
 
         public bool IsRegistrable { get { return _isRegistrable; } set { _isRegistrable = value;OnPropertyChanged(); } }
 
         public RelayCommand Register { get; set; }
-        private Dictionary<string, string> _typesCodesMap = new Dictionary<string, string>
+        private Dictionary<string, string> _typesCodesMap; 
+
+        public override async System.Threading.Tasks.Task Initialize()
         {
-            {(string) Application.Current.Resources[Constants.AdminKeyWord],Constants.AdminKeyWord },
-            {(string) Application.Current.Resources[Constants.ManagerKeyWord],Constants.ManagerKeyWord },
-            {(string) Application.Current.Resources[Constants.WorkerKeyWord],Constants.WorkerKeyWord }
-        };
-
-
+            _typesCodesMap= new Dictionary<string, string>
+            {
+                {(string) Application.Current.Resources[Constants.AdminKeyWord],Constants.AdminKeyWord },
+                {(string) Application.Current.Resources[Constants.ManagerKeyWord],Constants.ManagerKeyWord },
+                {(string) Application.Current.Resources[Constants.WorkerKeyWord],Constants.WorkerKeyWord }
+            };
+            AccountTypes = new List<string> { (string)Application.Current.Resources[Constants.AdminKeyWord], (string)Application.Current.Resources[Constants.ManagerKeyWord], (string)Application.Current.Resources[Constants.WorkerKeyWord] };
+        }
         public AddNewUserViewModel(UserService userService) 
         {
             _userService = userService;

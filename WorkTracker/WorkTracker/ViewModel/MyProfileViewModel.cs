@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using WorkTracker.Components;
 using WorkTracker.Components.ViewModels;
 using WorkTracker.Services;
@@ -72,6 +73,7 @@ namespace WorkTracker.ViewModel
         }
         private async Task SaveChanges()
         {
+            ResourceDictionary resources=App.Current.Resources;
             App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = true;
             _userStore.User.Email= _newEmail;
             _userStore.User.PhoneNumber= _newPhone;
@@ -79,33 +81,35 @@ namespace WorkTracker.ViewModel
             await _userService.UpdateUserInfo(NewEmail, NewPhone, NewImage, _userStore.User.Username);
             App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = false;
             IsUpateable= false;
-            new CustomDialog(false, true, "Profil azuriran", "Uspjesno ste azurirali vas podatke").Show();       
+            new CustomDialog(false, true, (string)resources["ProfileUpdatedTitle"] , (string)resources["ProfileUpdatedDescription"]).Show();       
         }
         public bool CheckOldPassword()
         {
+            ResourceDictionary resources = App.Current.Resources;
             if (OldPassword.Equals(_userStore.User.Password))
             {
                 return true;
             }
             else
             {
-                new CustomDialog(false, false, "Netacna lozinka", "Unesena lozinka nije tacna").Show();
+                new CustomDialog(false, false, (string)resources["IncorrectPassword"], (string)resources["IncorrectPasswordDescription"]).Show();
                 return false;
             }
         }
         public async Task<bool> ChangePassword()
         {
-            if(NewPassword.Equals(NewPasswordRepeated))
+            ResourceDictionary resources = App.Current.Resources;
+            if (NewPassword.Equals(NewPasswordRepeated))
             {
                 App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = true;
                 await _userService.UpdateUserPassword(_userStore.User.Username, NewPassword);
                 App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = false;
-                new CustomDialog(false, true, "Info", "Lozinka je uspjesno izmjenjena").Show();
+                new CustomDialog(false, true, (string)resources["PasswordUpdated"], (string)resources["PasswordUpdatedDescription"]).Show();
                 return true;
             }
             else
             {
-                new CustomDialog(false, false, "Greska", "Lozinke se ne poklapaju").Show();
+                new CustomDialog(false, false, (string)resources["Erorr"], (string)resources["PasswordsDontMatch"]).Show();
                 return false;
             }
         }

@@ -15,6 +15,7 @@
         WindowStartupLocation="CenterScreen"
         Title="MainWindow"
         MinHeight="570"
+        FontFamily="{DynamicResource AppFont}"
         MinWidth="850" Height="570" Width="850" >
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0"

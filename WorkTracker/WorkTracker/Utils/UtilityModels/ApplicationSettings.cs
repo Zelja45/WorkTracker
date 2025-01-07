@@ -12,5 +12,6 @@ namespace WorkTracker.Utils.UtilityModels
         public required string LanguageCode { get; set; }
         public required ITheme Theme { get; set; }
         public required string PrimaryColorCode { get; set; }
+        public required string FontCode { get; set; }
     }
 }
