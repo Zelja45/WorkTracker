@@ -25,8 +25,10 @@ namespace WorkTracker.Utils
                 {
                     BitmapImage bitmapImage = new BitmapImage();
                     bitmapImage.BeginInit();
+                    bitmapImage.CacheOption = BitmapCacheOption.OnLoad; 
                     bitmapImage.StreamSource = ms;
                     bitmapImage.EndInit();
+                    bitmapImage.Freeze(); 
                     return bitmapImage;
                 }
             }

@@ -84,7 +84,7 @@ namespace WorkTracker.Services
                 await context.SaveChangesAsync();
             }
         }
-        public async System.Threading.Tasks.Task UpdateUser(User user)
+        public async System.Threading.Tasks.Task UpdateUserActiveStatus(User user)
         {
             using (WorktrackerContext context = new WorktrackerContext())
             {
@@ -113,6 +113,32 @@ namespace WorkTracker.Services
                 users = await context.Users.Where(u => u.AccountType ==type && u.IsActive==(sbyte)1).ToListAsync();
             }
             return users;
+        }
+        public async System.Threading.Tasks.Task UpdateUserInfo(string newEmail,string newPhone, byte[] image,string username)
+        {
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                User? usr = await context.Users.FirstOrDefaultAsync(u => u.Username.Equals(username));
+                if (usr != null)
+                {
+                    usr.PhoneNumber = newPhone;
+                    usr.Email = newEmail;
+                    usr.Image = image;
+                    await context.SaveChangesAsync();
+                }
+            }
+        }
+        public async System.Threading.Tasks.Task UpdateUserPassword(string username,string password)
+        {
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                User? usr = await context.Users.FirstOrDefaultAsync(u => u.Username.Equals(username));
+                if (usr != null)
+                {
+                    usr.Password = password;
+                    await context.SaveChangesAsync();
+                }
+            }
         }
     }
 }

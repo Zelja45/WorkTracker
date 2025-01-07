@@ -31,8 +31,10 @@ namespace WorkTracker.ViewModel
             MenuItems.Add(new MenuItemData() { Text = (String)Application.Current.Resources["AddUsers"], ItemCommand = new RelayCommand(o => { Navigation.NavigateTo<AddNewUserViewModel>(); }, o => true), IconKind = PackIconKind.UserAdd });
             MenuItems.Add(new MenuItemData() { Text = (String)Application.Current.Resources["ManageUsers"], ItemCommand = new RelayCommand(async o => { App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = true; await Navigation.NavigateTo<AdminManageUsersViewModel>(); App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = false; }, o => true), IconKind = PackIconKind.AccountCog });
             MenuItems.Add(new MenuItemData() { Text = (String)Application.Current.Resources["CreateSectors"], ItemCommand = new RelayCommand(async o => { App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = true; await Navigation.NavigateTo<AddSectorViewModel>(); App.serviceProvider.GetRequiredService<LoadingCircleViewModel>().IsLoading = false; }, o => true), IconKind = PackIconKind.AccountMultiplePlus });
+            MenuItems.Add(new MenuItemData() { Text = (String)Application.Current.Resources["MyProfile"], ItemCommand = new RelayCommand(async o => {  await Navigation.NavigateTo<MyProfileViewModel>(); }, o => true), IconKind = PackIconKind.AccountCircle });
+
         }
-       public void PrepareWorkerUI()
+        public void PrepareWorkerUI()
        {
             MenuItems = new List<MenuItemData>();
             MenuItems.Add(new MenuItemData() { Text = "Radnik 1", ItemCommand = new RelayCommand(o => { }, o => true), IconKind = PackIconKind.ThumbsDownOutline });

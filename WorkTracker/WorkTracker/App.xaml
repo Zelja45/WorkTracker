@@ -40,6 +40,9 @@
             <DataTemplate DataType="{x:Type viewModel:AddSectorViewModel}">
                 <view:AddSectorView />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:MyProfileViewModel}">
+                <view:MyProfileView />
+            </DataTemplate>
 
 
         </ResourceDictionary>

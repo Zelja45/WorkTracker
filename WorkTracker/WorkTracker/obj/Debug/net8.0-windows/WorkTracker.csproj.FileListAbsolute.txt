@@ -154,3 +154,5 @@ C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-win
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddSectorView.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\ManagersAddingSectorsCard.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\ManagersAddingSectorsCard.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\MyProfileView.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\MyProfileView.baml

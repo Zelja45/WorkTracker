@@ -41,7 +41,7 @@ namespace WorkTracker.Components.ViewModels
                 User.IsActive = 0;
                 Status = false;
             }
-            await _userService.UpdateUser(User);
+            await _userService.UpdateUserActiveStatus(User);
         }
 
     }
