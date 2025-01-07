@@ -36,6 +36,7 @@ namespace WorkTracker
             services.AddSingleton<SettingsService>();
             services.AddSingleton<SettingsStore>();
             services.AddSingleton<SectorService>();
+            services.AddSingleton<TaskService>();
             services.AddSingleton<ThemeChanger>();
             services.AddSingleton(provider =>
                 new LanguageChanger(Application.Current.Resources)
@@ -52,6 +53,8 @@ namespace WorkTracker
             services.AddSingleton<AddSectorViewModel>();
             services.AddSingleton<MyProfileViewModel>();
             services.AddSingleton<HeaderViewModel>();
+            services.AddSingleton<ManagerHomeViewModel>();
+            services.AddSingleton<HomeViewHeaderModel>();
             services.AddSingleton<User>();
 
 

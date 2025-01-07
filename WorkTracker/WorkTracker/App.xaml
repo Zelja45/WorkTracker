@@ -47,6 +47,9 @@
             <DataTemplate DataType="{x:Type viewModel:SettingsViewModel}">
                 <view:SettingsView />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ManagerHomeViewModel}">
+                <view:ManagerHomeView />
+            </DataTemplate>
 
 
         </ResourceDictionary>

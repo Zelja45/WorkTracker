@@ -94,8 +94,18 @@
     <System:String x:Key="CreateAccount">Create account</System:String>
     <System:String x:Key="AddManagerWorkerCard">Add:</System:String>
     <System:String x:Key="LogoutQuestion">Are you sure you want to log out of your account?</System:String>
-
-
+    <System:String x:Key="Progress">Progress:</System:String>
+    <System:String x:Key="WorkerTaskCard">Worker:</System:String>
+    <System:String x:Key="Priority">Priority:</System:String>
+    <System:String x:Key="CreatedAt">Created at:</System:String>
+    <System:String x:Key="DueDate">Due date:</System:String>
+    <System:String x:Key="DeleteTask">Delete task</System:String>
+    <System:String x:Key="NumberOfMySectors">Number of my sectors:</System:String>
+    <System:String x:Key="NumberOfMyWorkers">Number of my workers:</System:String>
+    <System:String x:Key="TODO">TO DO</System:String>
+    <System:String x:Key="Doing">Doing</System:String>
+    <System:String x:Key="Done">Done</System:String>
+    <System:String x:Key="Overdue">Overdue</System:String>
 
 
 

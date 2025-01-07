@@ -45,6 +45,7 @@ namespace WorkTracker.ViewModel
             User? user = await UserService.LoginUser(Username, Password);
             if (user != null)
             {
+                App.serviceProvider.GetRequiredService<UserStore>().User = user;
                 if (user.AccountType.Equals( Constants.AdminKeyWord))
                 {
                     App.serviceProvider.GetRequiredService<MainViewModel>().PrepareAdminUI();
@@ -57,9 +58,9 @@ namespace WorkTracker.ViewModel
                 else if(user.AccountType.Equals(Constants.ManagerKeyWord))
                 {
                     App.serviceProvider.GetRequiredService<MainViewModel>().PrepareManagerUI(); 
+                    await _navigationService.NavigateTo<ManagerHomeViewModel>();
 
                 }
-                App.serviceProvider.GetRequiredService<UserStore>().User = user;
                 App.mainWindow = new MainWindow
                 {
                     DataContext = App.serviceProvider.GetRequiredService<MainViewModel>()

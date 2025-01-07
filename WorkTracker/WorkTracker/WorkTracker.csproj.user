@@ -13,6 +13,9 @@
     <Compile Update="Components\Header.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\HomeViewHeader.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\LoadingCircle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -26,6 +29,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\SingleUserCardAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\TaskCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginWindow.xaml.cs">
@@ -43,13 +49,16 @@
     <Compile Update="View\AdminManageUsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\ManagerHomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\MyProfileView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\SettingsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\WorkerMainView.xaml.cs">
+    <Compile Update="View\WorkerHomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -58,6 +67,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\Header.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\HomeViewHeader.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\LoadingCircle.xaml">
@@ -73,6 +85,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\SingleUserCardAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\TaskCard.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginWindow.xaml">
@@ -93,13 +108,16 @@
     <Page Update="View\AdminManageUsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\ManagerHomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\MyProfileView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\SettingsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\WorkerMainView.xaml">
+    <Page Update="View\WorkerHomeView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Resource Update="Properties\Languages\Language-en-US.xaml">

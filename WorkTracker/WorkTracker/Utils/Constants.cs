@@ -11,5 +11,8 @@ namespace WorkTracker.Utils
         public static readonly string AdminKeyWord="admin";
         public static readonly string WorkerKeyWord = "worker";
         public static readonly string ManagerKeyWord = "manager";
+        public static readonly int TODO = 0;
+        public static readonly int Doing= 1;
+        public static readonly int Done= 2;
     }
 }

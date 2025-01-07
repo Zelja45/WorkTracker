@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,18 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WorkTracker.ViewModel;
 
 namespace WorkTracker.View
 {
     /// <summary>
-    /// Interaction logic for WorkerMainView.xaml
+    /// Interaction logic for ManagerHomeView.xaml
     /// </summary>
-    public partial class WorkerMainView : UserControl
+    public partial class ManagerHomeView : UserControl
     {
-        public WorkerMainView()
+        public ManagerHomeView()
         {
-            DataContext=App.serviceProvider.GetRequiredService<WorkerMainViewModel>();
             InitializeComponent();
         }
     }

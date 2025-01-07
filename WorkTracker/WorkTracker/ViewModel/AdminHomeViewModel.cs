@@ -22,34 +22,7 @@ namespace WorkTracker.ViewModel
 
         public int NumberOfSectors { get; set; }
 
-        public string LabelTitle { get 
-            {
-                DateTime now = DateTime.Now;
-                if ((now.Hour >= 21&& now.Hour <= 23) || (now.Hour >= 0 && now.Hour <= 5))
-                {
-                    return Application.Current.Resources["GoodNight"] as String;
-                }
-                else if (now.Hour >= 6 && now.Hour <= 10)
-                {
-                    return Application.Current.Resources["GoodMorning"] as String;
-                }
-                else if (now.Hour >= 11 && now.Hour <= 17)
-                {
-                    return Application.Current.Resources["GoodDay"] as String;
-                }
-                else
-                {
-                    return Application.Current.Resources["GoodEvening"] as String;
-                }
-            } 
-        }
-        public string UserNameSurname
-        {
-            get
-            {
-                return UserStore.User.Name + " " + UserStore.User.Surname;
-            }
-        }
+        
         public AdminHomeViewModel(UserStore userStore,UserService userService)
         {
             _userService = userService;

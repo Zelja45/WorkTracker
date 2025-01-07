@@ -136,8 +136,6 @@ C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-win
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\MenuItem.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\Menu.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\Menu.baml
-C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\WorkerMainView.g.cs
-C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\WorkerMainView.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\LoadingCircle.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\LoadingCircle.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AdminHomeView.g.cs
@@ -158,3 +156,11 @@ C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-win
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\MyProfileView.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\SettingsView.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\SettingsView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\ManagerHomeView.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\WorkerHomeView.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\ManagerHomeView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\WorkerHomeView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\HomeViewHeader.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\HomeViewHeader.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\TaskCard.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\TaskCard.baml
