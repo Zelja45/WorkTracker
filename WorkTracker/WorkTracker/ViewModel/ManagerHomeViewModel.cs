@@ -5,7 +5,9 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using WorkTracker.Components;
 using WorkTracker.Components.ViewModels;
+using WorkTracker.Model;
 using WorkTracker.Services;
 using WorkTracker.Stores;
 using WorkTracker.Utils;
@@ -15,6 +17,7 @@ namespace WorkTracker.ViewModel
 {
     public class ManagerHomeViewModel:BaseViewModel
     {
+        private INavigationService _navigationService;
         private UserService _userService;
         private SectorService _sectorService;
         private TaskService _taskService;
@@ -22,54 +25,66 @@ namespace WorkTracker.ViewModel
         private int _numberOfMyWorkers;
         private int _numberOfMySectors;
         private int _selectedTabIndex;
-        private List<Model.Task> allTasks;
+        private List<TaskCardViewModel> allTasks;
 
         public int NumberOfMyWorkers { get { return _numberOfMyWorkers; } set { _numberOfMyWorkers = value;OnPropertyChanged(); } }
         public int NumberOfMySectors { get { return _numberOfMySectors; } set { _numberOfMySectors = value; OnPropertyChanged(); } }
         public ObservableCollection<TaskCardViewModel> TaskCardsToShow { get; set; } = new ObservableCollection<TaskCardViewModel>();
         public int SelectedTabIndex { get { return _selectedTabIndex; } set { _selectedTabIndex = value; SwitchTab(); OnPropertyChanged(); } }
-        public ManagerHomeViewModel(UserService userService,UserStore userStore,SectorService sectorService,TaskService taskService)
+        public RelayCommand AddNewTaskCommand { get; set; }
+        public ManagerHomeViewModel(UserService userService,UserStore userStore,SectorService sectorService,TaskService taskService,INavigationService navigationService)
         {
+            _navigationService = navigationService;
             _userService = userService;
             _userStore = userStore;
             _taskService = taskService;
             _sectorService = sectorService;
+            AddNewTaskCommand = new RelayCommand(o => { _navigationService.NavigateTo<AddNewTaskViewModel>(); }, o => true);
         }
-        public override async Task Initialize()
+        public override async System.Threading.Tasks.Task Initialize()
         {
+            allTasks = new List<TaskCardViewModel>();
             NumberOfMySectors = await _sectorService.CountNumberOfMenagersSectors(_userStore.User.Username);
-            NumberOfMyWorkers = await _sectorService.CountNumberOfWorkersInAllSectorsOfManager(_userStore.User.Username);
-            allTasks = await _taskService.GetAllTasksOfManager(_userStore.User.Username);
-            foreach (Model.Task task in allTasks)
-            { 
+            List<User> workers= await _sectorService.GetAllManagerWorkers(_userStore.User.Username);
+            NumberOfMyWorkers = workers.Count();
+            List<Model.Task> tasks = await _taskService.GetAllTasksOfManager(_userStore.User.Username);
+            foreach (Model.Task task in tasks)
+            {
+                TaskCardViewModel card=null;
+                RelayCommand command = new RelayCommand(o => 
+                {
+                    new CustomDialog(true,true,"Uklanjanje zadatka","Da li ste sigurni da zelite ukloiti zadatak",new RelayCommand(o => {_taskService.DeleteTask(task); TaskCardsToShow.Remove(card); },o=>true)).Show();
+                }, o => true);
+                card=new TaskCardViewModel(task,command);
+                allTasks.Add(card);
                 if(task.Status==Constants.TODO && task.DueDate >= DateTime.Now)
-                    TaskCardsToShow.Add(new TaskCardViewModel(task)); 
+                    TaskCardsToShow.Add(card); 
             }
         }
         public void SwitchTab()
         {
             TaskCardsToShow.Clear(); 
-            foreach(Model.Task task in allTasks)
+            foreach(TaskCardViewModel task in allTasks)
             {
                 if (SelectedTabIndex == 0)
                 {
-                    if (task.Status == Constants.TODO && task.DueDate >= DateTime.Now)
-                        TaskCardsToShow.Add(new TaskCardViewModel(task));
+                    if (task.Task.Status == Constants.TODO && task.Task.DueDate >= DateTime.Now)
+                        TaskCardsToShow.Add(task);
                 }
                 else if (SelectedTabIndex == 1)
                 {
-                    if (task.Status == Constants.Doing && task.DueDate >= DateTime.Now)
-                        TaskCardsToShow.Add(new TaskCardViewModel(task));
+                    if (task.Task.Status == Constants.Doing && task.Task.DueDate >= DateTime.Now)
+                        TaskCardsToShow.Add(task);
                 }
                 else if (SelectedTabIndex == 2)
                 {
-                    if (task.Status == Constants.Done)
-                        TaskCardsToShow.Add(new TaskCardViewModel(task));
+                    if (task.Task.Status == Constants.Done)
+                        TaskCardsToShow.Add(task);
                 }
                 else if (SelectedTabIndex == 3)
                 {
-                    if ( task.DueDate < DateTime.Now&& task.Status != Constants.Done)
-                        TaskCardsToShow.Add(new TaskCardViewModel(task));
+                    if ( task.Task.DueDate < DateTime.Now&& task.Task.Status != Constants.Done)
+                        TaskCardsToShow.Add(task);
                 }
             }
             

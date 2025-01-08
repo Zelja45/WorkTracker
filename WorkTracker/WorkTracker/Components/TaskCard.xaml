@@ -78,24 +78,25 @@
             <StackPanel Orientation="Horizontal"
                         Grid.Row="3">
                 <Label Content="{DynamicResource Priority}" />
-                <Label Content="{Binding Task.Priority}"
+                <Label Content="{Binding PriorityText}"
                        Foreground="{DynamicResource MaterialDesignBody}" />
             </StackPanel>
             <StackPanel Orientation="Horizontal"
                         Grid.Row="4">
                 <Label Content="{DynamicResource CreatedAt}" />
-                <Label Content="{Binding Task.CreatedAt}"
+                <Label Content="{Binding CreatedAtText}"
                        Foreground="{DynamicResource MaterialDesignBody}" />
             </StackPanel>
             <StackPanel Grid.Row="5" Orientation="Horizontal">
                 <Label Content="{DynamicResource DueDate}" />
-                <Label Content="{Binding Task.DueDate}"
+                <Label Content="{Binding DueDateText}"
                        Foreground="{DynamicResource MaterialDesignBody}" />
             </StackPanel>
             <Button Grid.Row="6"
                     Height="25"
                     Width="25"
                     HorizontalAlignment="Right"
+                    Command="{Binding DeleteTask}"
                     Visibility="{Binding IsRemoveable,Converter={StaticResource BooleanToVisibilityConverter}}"
                     Style="{StaticResource MaterialDesignIconButton}"
                     ToolTip="{DynamicResource DeleteTask}">

@@ -105,5 +105,18 @@
     <System:String x:Key="Doing">U radu</System:String>
     <System:String x:Key="Done">Završeno</System:String>
     <System:String x:Key="Overdue">Isteklo</System:String>
-
+    <System:String x:Key="Tasks">Zadaci</System:String>
+    <System:String x:Key="CreateNewTask">Kreirajte novi zadatak</System:String>
+    <System:String x:Key="DueDatePick">Datum dospjeća</System:String>
+    <System:String x:Key="DueTimePick">Vrijeme dospeća</System:String>
+    <System:String x:Key="Priority13">Prioritet</System:String>
+    <System:String x:Key="CreateTask">Kreiraj zadatak</System:String>
+    <System:String x:Key="ChooseWorker">Izaberite radnika</System:String>
+    <System:String x:Key="Low">Nizak</System:String>
+    <System:String x:Key="Medium">Srednji</System:String>
+    <System:String x:Key="High">Visok</System:String>
+    <System:String x:Key="AddTask">Dodajte zadatak</System:String>
+    <System:String x:Key="ChooseCorrectDate">Izaberite datum u budućnosti</System:String>
+    <System:String x:Key="TaskCreatedTitle">Zadatak je kreiran</System:String>
+    <System:String x:Key="TaskCreatedDescription">Novi zadatak je uspješno dodat</System:String>
 </ResourceDictionary>

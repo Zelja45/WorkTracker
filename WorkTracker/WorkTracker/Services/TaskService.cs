@@ -19,24 +19,35 @@ namespace WorkTracker.Services
                 var manager = await context.Users
             .Include(u => u.IdSectors)
             .FirstOrDefaultAsync(u => u.Username == username);
-
-                if (manager == null)
-                {
-                    throw new InvalidOperationException("Manager not found.");
-                }
-
-                // ID-ovi sektora kojima upravlja menadžer
                 var managedSectorIds = manager.IdSectors.Select(s => s.IdSector).ToList();
 
-                // Filtriranje taskova prema sektorima kojima upravlja
+                
                     tasks = await context.Tasks
-                    .Include(t => t.WorkerUsernameNavigation) // Uključujemo informacije o radniku
+                    .Include(t => t.WorkerUsernameNavigation) 
                     .Where(t =>
                         t.WorkerUsernameNavigation.IdSector.HasValue &&
                         managedSectorIds.Contains(t.WorkerUsernameNavigation.IdSector.Value))
                     .ToListAsync();
             }
             return tasks;
+        }
+        public async System.Threading.Tasks.Task DeleteTask(Model.Task task)
+        {
+            using(WorktrackerContext context = new WorktrackerContext())
+            {
+                context.Tasks.Remove(task);
+                await context.SaveChangesAsync();
+            }
+        }
+        public async System.Threading.Tasks.Task AddNewTask(Model.Task task,User worker)
+        {
+            using(WorktrackerContext context = new WorktrackerContext())
+            {
+                var workerToConnect=await context.Users.FirstOrDefaultAsync(u=>u.Username == worker.Username);
+                task.WorkerUsernameNavigation = workerToConnect;
+                await context.Tasks.AddAsync(task);
+                await context.SaveChangesAsync();
+            }
         }
     }
 }

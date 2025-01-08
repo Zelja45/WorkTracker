@@ -50,6 +50,9 @@
             <DataTemplate DataType="{x:Type viewModel:ManagerHomeViewModel}">
                 <view:ManagerHomeView />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:AddNewTaskViewModel}">
+                <view:AddNewTaskView />
+            </DataTemplate>
 
 
         </ResourceDictionary>

@@ -55,6 +55,7 @@ namespace WorkTracker
             services.AddSingleton<HeaderViewModel>();
             services.AddSingleton<ManagerHomeViewModel>();
             services.AddSingleton<HomeViewHeaderModel>();
+            services.AddSingleton<AddNewTaskViewModel>();
             services.AddSingleton<User>();
 
 

@@ -37,6 +37,9 @@
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\AddNewTaskView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\AddSectorView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,6 +97,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddNewTaskView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\AddSectorView.xaml">

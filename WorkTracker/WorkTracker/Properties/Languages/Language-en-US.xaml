@@ -106,7 +106,20 @@
     <System:String x:Key="Doing">Doing</System:String>
     <System:String x:Key="Done">Done</System:String>
     <System:String x:Key="Overdue">Overdue</System:String>
-
+    <System:String x:Key="Tasks">Tasks</System:String>
+    <System:String x:Key="CreateNewTask">Create new task</System:String>
+    <System:String x:Key="DueDatePick">Due date</System:String>
+    <System:String x:Key="DueTimePick">Due time</System:String>
+    <System:String x:Key="Priority13">Priority</System:String>
+    <System:String x:Key="CreateTask">Create task</System:String>
+    <System:String x:Key="ChooseWorker">Choose worker</System:String>
+    <System:String x:Key="Low">Low</System:String>
+    <System:String x:Key="Medium">Medium</System:String>
+    <System:String x:Key="High">High</System:String>
+    <System:String x:Key="AddTask">Add task</System:String>
+    <System:String x:Key="ChooseCorrectDate">Select a date in the future</System:String>
+    <System:String x:Key="TaskCreatedDescription">New task is successfully created</System:String>
+    <System:String x:Key="TaskCreatedTitle">Task is created</System:String>
 
 
 

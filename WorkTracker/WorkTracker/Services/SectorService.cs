@@ -33,27 +33,22 @@ namespace WorkTracker.Services
             }
             return count;
         }
-        public async System.Threading.Tasks.Task<int> CountNumberOfWorkersInAllSectorsOfManager(string username)
+        public async System.Threading.Tasks.Task<List<User>> GetAllManagerWorkers(string username)
         {
-            int count = 0;
-            using(WorktrackerContext context = new WorktrackerContext())
+            List<User> users = new List<User>();
+            using (WorktrackerContext context = new WorktrackerContext())
             {
                 var manager = await context.Users
-            .Include(u => u.IdSectors) 
+            .Include(u => u.IdSectors)
             .FirstOrDefaultAsync(u => u.Username == username);
-
-                if (manager == null)
-                {
-                    throw new InvalidOperationException("Manager not found.");
-                }
 
                 var sectorIds = manager.IdSectors.Select(s => s.IdSector).ToList();
 
-                count= await context.Users
-                    .Where(u => u.IdSector.HasValue && sectorIds.Contains(u.IdSector.Value))
-                    .CountAsync();
+                users = await context.Users
+                    .Where(u => u.IdSector.HasValue && sectorIds.Contains(u.IdSector.Value)&&u.IsActive==(sbyte)1)
+                    .ToListAsync();
             }
-            return count;
+            return users;
         }
     }
 }

@@ -41,10 +41,10 @@
                 </Image>
                 <StackPanel Grid.Column="1"
                             VerticalAlignment="Center">
-                    <Label Content="{Binding NameSurname}"
+                    <TextBlock Text="{Binding NameSurname}"
                            FontSize="20"
                            FontWeight="Bold"
-                           Foreground="{DynamicResource MaterialDesignBody}" />
+                           Foreground="{DynamicResource MaterialDesignBody}" TextWrapping="Wrap" />
                     <Label Content="{Binding User.Username}"
                            FontSize="14"
                            FontWeight="Bold"
