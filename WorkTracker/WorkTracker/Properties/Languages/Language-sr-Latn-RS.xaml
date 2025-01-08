@@ -119,4 +119,24 @@
     <System:String x:Key="ChooseCorrectDate">Izaberite datum u budućnosti</System:String>
     <System:String x:Key="TaskCreatedTitle">Zadatak je kreiran</System:String>
     <System:String x:Key="TaskCreatedDescription">Novi zadatak je uspješno dodat</System:String>
+    <System:String x:Key="YourSectors">Vaši sektori</System:String>
+    <System:String x:Key="SomethingWentWrong">Desila se greška.Probajte kasnije.</System:String>
+    <System:String x:Key="Manage"
+                   xml:space="preserve">Upravljanje </System:String>
+    <System:String x:Key="SectorsManage"
+                   xml:space="preserve">Sektorima</System:String>
+    <System:String x:Key="SearchBySectorName">Pretraga po nazivu sektora</System:String>
+    <System:String x:Key="SectorId">ID sektora:</System:String>
+    <System:String x:Key="ViewDetails">Prikaz detalja</System:String>
+    <System:String x:Key="Workers">Radnici</System:String>
+    <System:String x:Key="NoWorkersInSector">Nema radnika u sektoru</System:String>
+    <System:String x:Key="AddWorkerToSector">Dodajte radnika u sektor</System:String>
+    <System:String x:Key="NoFreeWorkers">Nema slobodnih radnika</System:String>
+    <System:String x:Key="WorkerIsAddedTitle">Radnik je dodat</System:String>
+    <System:String x:Key="WorkerIsAddedDescription">Radnik je uspješno dodat</System:String>
+    <System:String x:Key="SectorUpdatedTitle">Sektor je ažuriran</System:String>
+    <System:String x:Key="SectorUpdatedDescription">Sektor je uspešno ažuriran</System:String>
+    <System:String x:Key="RemovingWorkerTitle">Uklanjanje radnika</System:String>
+    <System:String x:Key="RemovingWorkerDescription">Da li ste sigurni da želite ukloniti izabranog radnika?</System:String>
+
 </ResourceDictionary>

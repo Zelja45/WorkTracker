@@ -53,6 +53,15 @@
             <DataTemplate DataType="{x:Type viewModel:AddNewTaskViewModel}">
                 <view:AddNewTaskView />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ManageSectorsManagerViewModel}">
+                <view:ManageSectorsManagerView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:ManageSectorViewModel}">
+                <view:ManageSectorView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:AddWorkerInSectorViewModel}">
+                <view:AddWorkerInSectorView />
+            </DataTemplate>
 
 
         </ResourceDictionary>

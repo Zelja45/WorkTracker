@@ -28,6 +28,9 @@
     <Compile Update="Components\MenuItem.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\SectorCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\SingleUserCardAdmin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
     <Compile Update="View\AddUserView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\AddWorkerInSectorView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\AdminHomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -53,6 +59,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ManagerHomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ManageSectorsManagerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ManageSectorView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\MyProfileView.xaml.cs">
@@ -87,6 +99,9 @@
     <Page Update="Components\MenuItem.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\SectorCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\SingleUserCardAdmin.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -108,6 +123,9 @@
     <Page Update="View\AddUserView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\AddWorkerInSectorView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\AdminHomeView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -115,6 +133,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ManagerHomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManageSectorsManagerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManageSectorView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\MyProfileView.xaml">

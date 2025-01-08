@@ -140,5 +140,15 @@ namespace WorkTracker.Services
                 }
             }
         }
+        public async System.Threading.Tasks.Task<List<User>> GetFreeWorkers()
+        {
+            List<User> users = new List<User>();
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                users = await context.Users.Where(u => u.AccountType == Constants.WorkerKeyWord && u.IsActive == (sbyte)1&&u.IdSector==null).ToListAsync();
+            }
+            return users;
+        }
+
     }
 }

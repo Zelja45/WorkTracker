@@ -120,6 +120,23 @@
     <System:String x:Key="ChooseCorrectDate">Select a date in the future</System:String>
     <System:String x:Key="TaskCreatedDescription">New task is successfully created</System:String>
     <System:String x:Key="TaskCreatedTitle">Task is created</System:String>
+    <System:String x:Key="YourSectors">Your sectors</System:String>
+    <System:String x:Key="SomethingWentWrong">Something went wrong.Try again later.</System:String>
+    <System:String x:Key="Manage" xml:space="preserve">Manage </System:String>
+    <System:String x:Key="SectorsManage" xml:space="preserve">Sectors</System:String>
+    <System:String x:Key="SearchBySectorName">Search by sector name</System:String>
+    <System:String x:Key="SectorId">Sector id:</System:String>
+    <System:String x:Key="ViewDetails">View details</System:String>
+    <System:String x:Key="Workers">Workers</System:String>
+    <System:String x:Key="NoWorkersInSector">No workers in sector</System:String>
+    <System:String x:Key="AddWorkerToSector">Add worker to sector</System:String>
+    <System:String x:Key="NoFreeWorkers">No free workers</System:String>
+    <System:String x:Key="WorkerIsAddedTitle">Worker is added</System:String>
+    <System:String x:Key="WorkerIsAddedDescription">Worker is successffuly added</System:String>
+    <System:String x:Key="SectorUpdatedTitle">Sector updated</System:String>
+    <System:String x:Key="SectorUpdatedDescription">Sector is successfully updated</System:String>
+    <System:String x:Key="RemovingWorkerTitle">Removing worker</System:String>
+    <System:String x:Key="RemovingWorkerDescription">Are you sure to remove slected worker?</System:String>
 
 
 

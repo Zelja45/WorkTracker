@@ -166,3 +166,11 @@ C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-win
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\TaskCard.baml
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddNewTaskView.g.cs
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddNewTaskView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\SectorCard.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\ManageSectorsManagerView.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\Components\SectorCard.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\ManageSectorsManagerView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\ManageSectorView.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\ManageSectorView.baml
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddWorkerInSectorView.g.cs
+C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\obj\Debug\net8.0-windows\View\AddWorkerInSectorView.baml
