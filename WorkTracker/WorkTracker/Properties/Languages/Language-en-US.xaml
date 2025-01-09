@@ -137,6 +137,12 @@
     <System:String x:Key="SectorUpdatedDescription">Sector is successfully updated</System:String>
     <System:String x:Key="RemovingWorkerTitle">Removing worker</System:String>
     <System:String x:Key="RemovingWorkerDescription">Are you sure to remove slected worker?</System:String>
+    <System:String x:Key="EndingSessionTitle">Ending session</System:String>
+    <System:String x:Key="EndingSessionDescription">Are you sure to end current session?</System:String>
+    <System:String x:Key="WorkingSession">Working session</System:String>
+    <System:String x:Key="PauseResumeSession">Pause/Resume session</System:String>
+    <System:String x:Key="StartNewSession">Start new session</System:String>
+    <System:String x:Key="EndSession">End session</System:String>
 
 
 

@@ -54,6 +54,7 @@ namespace WorkTracker.ViewModel
                 else if (user.AccountType.Equals(Constants.WorkerKeyWord))
                 {
                     App.serviceProvider.GetRequiredService<MainViewModel>().PrepareWorkerUI();
+                    await _navigationService.NavigateTo<WorkerHomeViewModel>();
                 }
                 else if(user.AccountType.Equals(Constants.ManagerKeyWord))
                 {

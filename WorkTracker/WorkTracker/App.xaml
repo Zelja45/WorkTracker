@@ -62,6 +62,9 @@
             <DataTemplate DataType="{x:Type viewModel:AddWorkerInSectorViewModel}">
                 <view:AddWorkerInSectorView />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:WorkerHomeViewModel}">
+                <view:WorkerHomeView />
+            </DataTemplate>
 
 
         </ResourceDictionary>

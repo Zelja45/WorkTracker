@@ -44,18 +44,18 @@ public partial class WorktrackerContext : DbContext
 
         modelBuilder.Entity<Pauselog>(entity =>
         {
-            entity.HasKey(e => e.IdWorkSession).HasName("PRIMARY");
+            entity.HasKey(e => new { e.IdWorkSession, e.StartTime })
+                .HasName("PRIMARY")
+                .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0 });
 
             entity.ToTable("pauselog");
 
-            entity.Property(e => e.IdWorkSession)
-                .ValueGeneratedNever()
-                .HasColumnName("idWorkSession");
-            entity.Property(e => e.EndTime).HasColumnType("datetime");
+            entity.Property(e => e.IdWorkSession).HasColumnName("idWorkSession");
             entity.Property(e => e.StartTime).HasColumnType("datetime");
+            entity.Property(e => e.EndTime).HasColumnType("datetime");
 
-            entity.HasOne(d => d.IdWorkSessionNavigation).WithOne(p => p.Pauselog)
-                .HasForeignKey<Pauselog>(d => d.IdWorkSession)
+            entity.HasOne(d => d.IdWorkSessionNavigation).WithMany(p => p.Pauselogs)
+                .HasForeignKey(d => d.IdWorkSession)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("fk_PauseLog_WorkSession1");
         });
@@ -104,9 +104,7 @@ public partial class WorktrackerContext : DbContext
 
             entity.HasIndex(e => e.WorkerUsername, "fk_Task_User1_idx");
 
-            entity.Property(e => e.IdTask)
-                .ValueGeneratedNever()
-                .HasColumnName("idTask");
+            entity.Property(e => e.IdTask).HasColumnName("idTask");
             entity.Property(e => e.CreatedAt).HasColumnType("datetime");
             entity.Property(e => e.Description).HasColumnType("text");
             entity.Property(e => e.DueDate).HasColumnType("datetime");

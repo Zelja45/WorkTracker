@@ -138,5 +138,11 @@
     <System:String x:Key="SectorUpdatedDescription">Sektor je uspešno ažuriran</System:String>
     <System:String x:Key="RemovingWorkerTitle">Uklanjanje radnika</System:String>
     <System:String x:Key="RemovingWorkerDescription">Da li ste sigurni da želite ukloniti izabranog radnika?</System:String>
+    <System:String x:Key="EndingSessionTitle">Završavanje sesije</System:String>
+    <System:String x:Key="EndingSessionDescription">Da li ste sigurni da želite da završite sesiju?</System:String>
+    <System:String x:Key="WorkingSession">Radna sesija</System:String>
+    <System:String x:Key="PauseResumeSession">Pauziraj/Nastavi sesiju</System:String>
+    <System:String x:Key="StartNewSession">Započnite sesiju</System:String>
+    <System:String x:Key="EndSession">Završite sesiju</System:String>
 
 </ResourceDictionary>

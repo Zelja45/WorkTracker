@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\App.xaml
-241404836685
+25-1405851565
 
-79-771875258
+831297153070
 2261411008295
-Components\CustomDialog.xaml;Components\Header.xaml;Components\HomeViewHeader.xaml;Components\LoadingCircle.xaml;Components\ManagersAddingSectorsCard.xaml;Components\Menu.xaml;Components\MenuItem.xaml;Components\SectorCard.xaml;Components\SingleUserCardAdmin.xaml;Components\TaskCard.xaml;LoginWindow.xaml;MainWindow.xaml;View\AddNewTaskView.xaml;View\AddSectorView.xaml;View\AddUserView.xaml;View\AddWorkerInSectorView.xaml;View\AdminHomeView.xaml;View\AdminManageUsersView.xaml;View\ManagerHomeView.xaml;View\ManageSectorsManagerView.xaml;View\ManageSectorView.xaml;View\MyProfileView.xaml;View\SettingsView.xaml;View\WorkerHomeView.xaml;
+Components\CustomDialog.xaml;Components\Header.xaml;Components\HomeViewHeader.xaml;Components\LoadingCircle.xaml;Components\ManagersAddingSectorsCard.xaml;Components\Menu.xaml;Components\MenuItem.xaml;Components\SectorCard.xaml;Components\SingleUserCardAdmin.xaml;Components\TaskCard.xaml;Components\WorkingSessionControlCard.xaml;LoginWindow.xaml;MainWindow.xaml;View\AddNewTaskView.xaml;View\AddSectorView.xaml;View\AddUserView.xaml;View\AddWorkerInSectorView.xaml;View\AdminHomeView.xaml;View\AdminManageUsersView.xaml;View\ManagerHomeView.xaml;View\ManageSectorsManagerView.xaml;View\ManageSectorView.xaml;View\MyProfileView.xaml;View\SettingsView.xaml;View\WorkerHomeView.xaml;
 
 False
 

@@ -17,7 +17,7 @@ public partial class Worksession
 
     public string WorkerUsername { get; set; } = null!;
 
-    public virtual Pauselog? Pauselog { get; set; }
+    public virtual ICollection<Pauselog> Pauselogs { get; set; } = new List<Pauselog>();
 
     public virtual User WorkerUsernameNavigation { get; set; } = null!;
 
