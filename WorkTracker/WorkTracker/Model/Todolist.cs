@@ -9,7 +9,7 @@ public partial class Todolist
 
     public string Title { get; set; } = null!;
 
-    public string? Description { get; set; }
+    public sbyte IsSelected { get; set; }
 
     public string WorkerUsername { get; set; } = null!;
 

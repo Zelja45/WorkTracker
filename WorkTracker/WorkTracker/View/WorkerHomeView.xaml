@@ -23,8 +23,9 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
-                    <RowDefinition Height="150" />
+                   
                 </Grid.RowDefinitions>
+                <components:ToDoList />
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
@@ -33,8 +34,8 @@
                 </Grid.RowDefinitions>
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40*" />
-                        <ColumnDefinition Width="60*" />
+                        <ColumnDefinition Width="45*" />
+                        <ColumnDefinition Width="55*" />
                     </Grid.ColumnDefinitions>
                     <components:WorkingSessionControlCard />
                 </Grid>

@@ -37,6 +37,12 @@
     <Compile Update="Components\TaskCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\ToDoList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\ToDoListItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\WorkingSessionControlCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -109,6 +115,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\TaskCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\ToDoList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\ToDoListItem.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\WorkingSessionControlCard.xaml">

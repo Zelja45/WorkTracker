@@ -143,7 +143,13 @@
     <System:String x:Key="PauseResumeSession">Pause/Resume session</System:String>
     <System:String x:Key="StartNewSession">Start new session</System:String>
     <System:String x:Key="EndSession">End session</System:String>
-
+    <System:String x:Key="TODOList">TODO List</System:String>
+    <System:String x:Key="AddNewTodoList">Add new TODO list</System:String>
+    <System:String x:Key="CreateNewTODOList">Create new TODO list</System:String>
+    <System:String x:Key="ListName">List name:</System:String>
+    <System:String x:Key="AddList">AddList</System:String>
+    <System:String x:Key="AddNewTODO">Add new TODO item</System:String>
+    <System:String x:Key="AddOrSelectList">Add or select TODO list</System:String>
 
 
 </ResourceDictionary>

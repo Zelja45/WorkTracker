@@ -10,6 +10,9 @@ FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\Components\MenuItem
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\Components\SectorCard.xaml;;
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\Components\SingleUserCardAdmin.xaml;;
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\Components\TaskCard.xaml;;
+FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\Components\ToDoList.xaml;;
+FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\Components\ToDoListItem.xaml;;
+FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\Components\WorkingSessionControlCard.xaml;;
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\LoginWindow.xaml;;
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\MainWindow.xaml;;
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\View\AddNewTaskView.xaml;;
@@ -24,5 +27,4 @@ FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\View\ManageSectorVi
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\View\MyProfileView.xaml;;
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\View\SettingsView.xaml;;
 FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\View\WorkerHomeView.xaml;;
-FC:\Users\Nikola\Desktop\WorkTracker\WorkTracker\WorkTracker\Components\WorkingSessionControlCard.xaml;;
 

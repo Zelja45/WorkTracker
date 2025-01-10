@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WorkTracker"
+        xmlns:utils="clr-namespace:WorkTracker.Utils"
         xmlns:controls="clr-namespace:WorkTracker.Components"
         xmlns:views="clr-namespace:WorkTracker.View"
         mc:Ignorable="d"
@@ -17,6 +18,7 @@
         MinHeight="570"
         FontFamily="{DynamicResource AppFont}"
         MinWidth="850" Height="570" Width="850" >
+    
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0"
                       CornerRadius="0"

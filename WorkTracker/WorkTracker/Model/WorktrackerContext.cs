@@ -126,7 +126,6 @@ public partial class WorktrackerContext : DbContext
             entity.HasIndex(e => e.WorkerUsername, "fk_TODOList_User1_idx");
 
             entity.Property(e => e.IdTodolist).HasColumnName("idTODOList");
-            entity.Property(e => e.Description).HasColumnType("text");
             entity.Property(e => e.Title).HasMaxLength(100);
             entity.Property(e => e.WorkerUsername).HasMaxLength(45);
 

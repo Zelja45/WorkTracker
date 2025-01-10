@@ -38,6 +38,7 @@ namespace WorkTracker
             services.AddSingleton<SectorService>();
             services.AddSingleton<TaskService>();
             services.AddSingleton<WorksessionService>();
+            services.AddSingleton<TODOListService>();
             services.AddSingleton<ThemeChanger>();
             services.AddSingleton(provider =>
                 new LanguageChanger(Application.Current.Resources)
@@ -62,6 +63,7 @@ namespace WorkTracker
             services.AddSingleton<AddWorkerInSectorViewModel>();
             services.AddSingleton<WorkerHomeViewModel>();
             services.AddSingleton<WorkSessionViewModel>();
+            services.AddSingleton<TODOListViewModel>();
             services.AddSingleton<User>();
 
 

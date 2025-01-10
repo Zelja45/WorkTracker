@@ -144,5 +144,12 @@
     <System:String x:Key="PauseResumeSession">Pauziraj/Nastavi sesiju</System:String>
     <System:String x:Key="StartNewSession">Započnite sesiju</System:String>
     <System:String x:Key="EndSession">Završite sesiju</System:String>
+    <System:String x:Key="TODOList"> TODO Lista</System:String>
+    <System:String x:Key="AddNewTodoList">Dodajte novu TODO listu</System:String>
+    <System:String x:Key="CreateNewTODOList">Kreirajte novu TODO listu</System:String>
+    <System:String x:Key="ListName">Naziv liste:</System:String>
+    <System:String x:Key="AddList">Dodajte listu</System:String>
+    <System:String x:Key="AddNewTODO">Dodajte novi TODO </System:String>
+    <System:String x:Key="AddOrSelectList">Dodajte ili selektujte TODO listu</System:String>
 
 </ResourceDictionary>

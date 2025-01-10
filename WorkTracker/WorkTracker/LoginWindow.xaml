@@ -19,6 +19,7 @@
         Width="350" >
     <Window.Resources>
         <utils:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <utils:SByteToBooleanConverter x:Key="SByteToBooleanConverter" />
     </Window.Resources>
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0"
