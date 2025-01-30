@@ -154,7 +154,7 @@ namespace WorkTracker.Components.ViewModels
         }
         private void CheckDissableProgressSlider()
         {
-            DissableProgressSlider = !(Task.Status == 2 || Task.DueDate < DateTime.Now);
+            DissableProgressSlider = !(Task.Status==0||Task.Status == 2 || Task.DueDate < DateTime.Now);
         }
         private void SetButtonStatusUpdateText()
         {

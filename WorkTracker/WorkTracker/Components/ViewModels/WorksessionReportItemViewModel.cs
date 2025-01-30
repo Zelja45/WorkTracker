@@ -15,12 +15,12 @@ namespace WorkTracker.Components.ViewModels
     public class WorksessionReportItemViewModel : BaseViewModel
     {
         private Worksession _worksession;
-        private decimal _amountEarned;
+        private string _amountEarned;
         private string _periodValue;
         private string _totalWorkedHours;
 
         public Worksession Worksession { get { return _worksession; } }
-        public decimal AmountEarned { get { return _amountEarned; } }
+        public string AmountEarned { get { return _amountEarned; } }
         public string PeriodValue { get { return _periodValue; } }
         public string TotalWorkedHours { get { return _totalWorkedHours; } }
         public RelayCommand OpenDetailsCommand { get; }
@@ -34,8 +34,8 @@ namespace WorkTracker.Components.ViewModels
             string endDate = worksession.EndTime?.ToString("f", new CultureInfo(languageCode));
             _periodValue = startDate+" - "+endDate;
 
-            _amountEarned = Util.calculateIncome(worksession.Worksessionreport.WorkedHours, worksession.Worksessionreport.HourlyRate)+
-                Util.calculateIncome(worksession.Worksessionreport.OvertimeHours, worksession.Worksessionreport.OvertimeHourlyRate);
+            _amountEarned = (Util.calculateIncome(worksession.Worksessionreport.WorkedHours, worksession.Worksessionreport.HourlyRate)+
+                Util.calculateIncome(worksession.Worksessionreport.OvertimeHours, worksession.Worksessionreport.OvertimeHourlyRate)).ToString("F2");
 
             _totalWorkedHours = Util.SumTimeOnly(worksession.Worksessionreport.WorkedHours, worksession.Worksessionreport.OvertimeHours).ToString("HH:mm:ss");
 

@@ -44,7 +44,8 @@ namespace WorkTracker.Components.ViewModels
 
             OvertimeAmountEarned = Util.calculateIncome(worksession.Worksessionreport.OvertimeHours, worksession.Worksessionreport.OvertimeHourlyRate);
             RegularAmountEarned = Util.calculateIncome(worksession.Worksessionreport.WorkedHours, worksession.Worksessionreport.HourlyRate);
-
+            RegularAmountEarned=Math.Round(RegularAmountEarned, 2);
+            OvertimeAmountEarned = Math.Round(OvertimeAmountEarned, 2);
             _totalAmountEarned =OvertimeAmountEarned + RegularAmountEarned;
 
 

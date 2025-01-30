@@ -48,7 +48,7 @@ namespace WorkTracker.ViewModel
             {
                 Sector sector = await _sectorService.GetSector((int)_userStore.User.IdSector);
                 SectorName = sector.Name;
-                OvertimeHourlyRate = sector.HourlyRate.ToString("F2");
+                OvertimeHourlyRate = sector.OvertimeHourlyRate.ToString("F2");
                 HourlyRate = sector.HourlyRate.ToString("F2");
             }
 

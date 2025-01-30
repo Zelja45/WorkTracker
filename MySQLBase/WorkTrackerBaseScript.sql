@@ -21,8 +21,8 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`Sector` (
   `idSector` INT NOT NULL AUTO_INCREMENT,
   `Name` VARCHAR(45) NOT NULL,
   `Description` TEXT NULL,
-  `HourlyRate` DECIMAL(5,2) NOT NULL,
-  `OvertimeHourlyRate` DECIMAL(5,2) NOT NULL,
+  `HourlyRate` DECIMAL NOT NULL,
+  `OvertimeHourlyRate` DECIMAL NOT NULL,
   `DailyHoursNorm` INT NOT NULL,
   `WeeklyHoursNorm` INT NOT NULL,
   PRIMARY KEY (`idSector`))
@@ -43,8 +43,8 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`User` (
   `CreatedAt` DATE NOT NULL,
   `Image` BLOB NULL,
   `AccountType` VARCHAR(45) NOT NULL,
-  `OvertimeRateWorkerSpecific` DECIMAL(5,2) NULL,
-  `HourlyRateWorkerSpecific` DECIMAL(5,2) NULL,
+  `OvertimeRateWorkerSpecific` DECIMAL NULL,
+  `HourlyRateWorkerSpecific` DECIMAL NULL,
   `idSector` INT NULL,
   PRIMARY KEY (`Username`),
   UNIQUE INDEX `Username_UNIQUE` (`Username` ASC) VISIBLE,
@@ -103,7 +103,7 @@ ENGINE = InnoDB;
 -- Table `worktracker`.`Task`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `worktracker`.`Task` (
-  `idTask` INT NOT NULL,
+  `idTask` INT NOT NULL AUTO_INCREMENT,
   `Title` VARCHAR(100) NOT NULL,
   `Description` TEXT NULL,
   `Status` TINYINT NOT NULL,
@@ -112,6 +112,7 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`Task` (
   `DueDate` DATETIME NOT NULL,
   `Progress` INT NOT NULL DEFAULT 0,
   `WorkerUsername` VARCHAR(45) NOT NULL,
+  `Pinned` TINYINT NOT NULL,
   PRIMARY KEY (`idTask`),
   INDEX `fk_Task_User1_idx` (`WorkerUsername` ASC) VISIBLE,
   CONSTRAINT `fk_Task_User1`
@@ -128,7 +129,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `worktracker`.`TODOList` (
   `idTODOList` INT NOT NULL AUTO_INCREMENT,
   `Title` VARCHAR(100) NOT NULL,
-  `Description` TEXT NULL,
+  `IsSelected` TINYINT NOT NULL,
   `WorkerUsername` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idTODOList`),
   INDEX `fk_TODOList_User1_idx` (`WorkerUsername` ASC) VISIBLE,
@@ -165,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`PauseLog` (
   `StartTime` DATETIME NOT NULL,
   `EndTime` DATETIME NULL,
   `idWorkSession` INT NOT NULL,
-  PRIMARY KEY (`idWorkSession`),
+  PRIMARY KEY (`idWorkSession`, `StartTime`),
   CONSTRAINT `fk_PauseLog_WorkSession1`
     FOREIGN KEY (`idWorkSession`)
     REFERENCES `worktracker`.`WorkSession` (`idSession`)
@@ -181,8 +182,8 @@ CREATE TABLE IF NOT EXISTS `worktracker`.`WorkSessionReport` (
   `WorkSession_idSession` INT NOT NULL,
   `WorkedHours` TIME NOT NULL,
   `OvertimeHours` TIME NOT NULL,
-  `HourlyRate` DECIMAL(5,2) NOT NULL,
-  `OvertimeHourlyRate` DECIMAL(5,2) NOT NULL,
+  `HourlyRate` DECIMAL NOT NULL,
+  `OvertimeHourlyRate` DECIMAL NOT NULL,
   PRIMARY KEY (`WorkSession_idSession`),
   CONSTRAINT `fk_WorkSessionReport_WorkSession1`
     FOREIGN KEY (`WorkSession_idSession`)
