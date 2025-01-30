@@ -57,6 +57,10 @@ Prilikom kreiranja sektora, administrator popunjava prikazanu formu, a takođe n
 ![image](https://github.com/user-attachments/assets/d3f9cf4c-f9fa-430c-8530-55c6b7666776)
 Izgled ispunjene forme.
 
+## Interfejs menadžera sektora
+
+
+
 
 
 
