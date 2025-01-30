@@ -52,7 +52,11 @@ Administrator je zadužen i za kreiranje sektora unutar kompanije. Kreiranje sek
 
 ![image](https://github.com/user-attachments/assets/135e4b9f-1b3c-43c2-b4d6-287f76297176)
 
-Prilikom kreiranja sektora, administrator popunjava prikazanu formu, a takođe neophodno je da iz liste u desnom dijelu forme izabere minimalno jednog menadžera koji će biti menadžer novokreiranog sektora. Jedan menadžer može da bude menadžer u više sektora.
+Prilikom kreiranja sektora, administrator popunjava prikazanu formu, a takođe neophodno je da iz liste u desnom dijelu forme izabere minimalno jednog menadžera koji će biti menadžer novokreiranog sektora. Biranje menadžera vrši se klikom na dugme sa kvačicom kraj svakog menadžera, a ukoliko u toku kreiranja želimo da uklonimo nekog od izabranih menadžera to radimo klikom na X dugme.Jedan menadžer može da bude menadžer u više sektora.
+
+![image](https://github.com/user-attachments/assets/d3f9cf4c-f9fa-430c-8530-55c6b7666776)
+Izgled ispunjene forme.
+
 
 
 
