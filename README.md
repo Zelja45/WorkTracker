@@ -25,4 +25,16 @@ Izgled prijavne forme u tamnoj temi
 Izgled prijavne forme u svijetloj temi
 
 ## Administratorski interfejs
+Nakon što se korisnik na sistem prijavi administratorskim nalogom, prikazuje mu se interfejs kao na slici ispod.
+![image](https://github.com/user-attachments/assets/71dbe191-5593-4785-8357-586ef61a2198)
+
+Na samom centralnom dijelu ekrana nalaze se osnovne informacije o broju naloga po svakom tipu naloga na ssitemu, pri čemu se prikazuje i broj deaktiviranih naloga za svaki tip. Takođe, prikazuje se i broj sektora na sistemu kao i broj slobodnih radnika, odnosno radnika koji nisu pridruženi niti jednom sektoru. Administratoru se prikazuju korisničko ime i njegova fotografija na sistemu, a omogućen je i pregled kalendara (informativno, klasični sistemski kalendar, gornji lijevi ugao).
+Sa lijeve strane nalazi se glavni meni koji sadrži sve opcije koje administratorski interfejs nudi, a može da bude minimizovan kao na prethodnoj slici ili proširen kao na narednoj slici.
+![image](https://github.com/user-attachments/assets/2c573907-3808-4d6e-b23f-b81a53abd6c3)
+
+Proširivanje/skupljanje se vrši klikom na logo aplikacije. Trentno izabrana stranica je označena zelenim vertikalnim markerom.
+### Kreiranje naloga
+
+
+
 
