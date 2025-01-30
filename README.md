@@ -7,7 +7,7 @@ WorkTracker predstavlja sistem koji je namjenjen kompanijama za praćenje radnog
 
 #### Tipovi naloga:
 1. Administratori
-2. Šefovi sektora
+2. Menadžeri sektora
 3. Radnici
 
 ### Prijava na sistem
@@ -34,6 +34,15 @@ Sa lijeve strane nalazi se glavni meni koji sadrži sve opcije koje administrato
 
 Proširivanje/skupljanje se vrši klikom na logo aplikacije. Trentno izabrana stranica je označena zelenim vertikalnim markerom.
 ### Kreiranje naloga
+
+Osnovni zadatak administratora jeste kreiranje novih korisničkih naloga na sistemu (administratorskih, menadžerskih i radničkih). Kreiranje novih naloga se vrši kroz interfejs na sledećoj slici.
+![image](https://github.com/user-attachments/assets/02512a66-3042-40d9-a6d5-f8e9efc10303)
+Administrator popunjava polja forme i bira tip naloga,a svaka od unesenih vrijednosti se provjerava, tako da administrator mora da unese validnu vrijednost za svako od polja (broj telefona, email,šifra,dovoljno sigurna lozinka, jedinstveno korisničko ime). Nakon popunjavanja validnim parametrima novi nalog će biti kreiran. Primjer nevalidne lozinke
+![image](https://github.com/user-attachments/assets/fd589406-41e7-4f53-9c52-3fbe4cacbfcc)
+
+### Upravljanje nalozima
+
+
 
 
 
