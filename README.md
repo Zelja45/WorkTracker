@@ -42,6 +42,12 @@ Administrator popunjava polja forme i bira tip naloga,a svaka od unesenih vrijed
 
 ### Upravljanje nalozima
 
+Administratori imaju mogućnost pregleda i upravljanja nad svim neadministratorskim nalozima na sistemu (radnici, menadžeri sektora). Administratori mogu da aktiviraju i deaktiviraju svaki od naloga klikom na dugme u desnom dijelu svake od korisničkihh kartica. Moguće je filtriranje prikaza kroz izbor tipa naloga koji želimo da se prikaže kao i kroz mogućnost pretrage na osnovu imena, prezime, ili korisničkog imena. Interfejs za upravljanje nalozima prikazan je na sledećoj slici.
+
+![image](https://github.com/user-attachments/assets/995b9633-2d70-4407-abe4-df35f243b2bc)
+
+### Kreiranje sektora
+
 
 
 
