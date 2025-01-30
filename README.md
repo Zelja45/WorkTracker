@@ -59,6 +59,26 @@ Izgled ispunjene forme.
 
 ## Interfejs menadžera sektora
 
+Nakon što se korisnik na sistem prijavi menadžerskim nalogom, prikazuje mu se interfejs kao na slici ispod. 
+
+![image](https://github.com/user-attachments/assets/d88e4788-58d2-479b-9958-94c5dd1264af)
+
+U lijevom dijelu centralnog interfejsa nalaze se podaci vezani za broj sektora u kome je prijavljeni korisnik menadžer kao i broj radnika u svim sektorima u kojima je prijavljeni korisnik menadžer. 
+U desnom dijeli nalazi se kartica koja omogućava pregled zadataka koji su dodjeljeni radnicima kojima je prijavljeni korisnik menadžer. Zadaci su organizovani u četri grupe na osnovu njihovog statusa a pregled grupa se mijenja izborom svakog od pojedinačnih tabova. Zadaci koji su označeni za rad (inicijalno stanje nakon kreiranja) se mogu brisati klikom na ikonicu kante. Ostali zadaci koji su u drugim stanjima se ne mogu brisati. Zadaci koji su označeni sa Isteklo predstavljaju zadatke koji nisu završeni u roku koji je predviđen. 
+
+![image](https://github.com/user-attachments/assets/1fb07578-e080-4ed0-acc5-ff5696c7bac4)
+Prikaz zadataka u radu.
+
+Klikom na dugme označeno + ikonicom vrši se kreiranje novog zadatka. Interfejs za krairanje novog zadatka prikazan je na sledećoj slici.
+
+![image](https://github.com/user-attachments/assets/8a7439a3-4e64-41ce-9b84-76cb45d3e843)
+
+Menadzer popunjava sve informacije o zadatku koji kreira. Datum i vrijeme dospjeća zadatka mogu da se biraju klikom na ikonice kalendara odnosno sata u sklopu polja za unos ili da se direktno unose u odgovarajućem formatu. Menadžer mora da izabere tačno jednog radnika, iz liste radnika svih sektora u kojima je prijavljeni korisnik menadžer, u desnom dijelu interfejsa kome će novokreirani zadatak biti dodjeljen, a izbor vrši klikom na dugme na kartici željenog radnika.
+
+![image](https://github.com/user-attachments/assets/b08d6139-867f-4b53-a52a-bdabcfd3ee66)
+
+
+
 
 
 
