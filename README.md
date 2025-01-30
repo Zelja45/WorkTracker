@@ -96,7 +96,7 @@ Za dodavanje novih radnika u sektor korisnik mora da klikne na dugme plus(gornji
 
 Menadžer dobija prikaz svih slobodnih radnika(radnika koji ne pripadaju ni jednom sektoru) te ima mogućnost izbora jednog od njih. Takodje, moguće je pretraživanje po imenu, prezimenu ili korisničkom imenu. Nakon izbora radnika neophodno je kliknuti dugme "Dodajte radnika u sektor" nakon čega će se izabrani radnik dodati u sektor.
 
-### Statistika radnika
+### Pregled statistike radnika
 
 Menadžer ima mogućnost pregleda statistike, aktivnosti, efikasnosti i zarade svakog od radnika unutar svojih sektora. Interfejs za prikaz statistike dat je na sledećoj slici.
 
@@ -117,6 +117,47 @@ U donjem dijelu interfejsa nalaze se izvještaji o svim radnim sesijama za izabr
 U izvještaju se nalaze svi podaci o radnim satima, prekovremenim satima, cijenama rada u trenutku završavanja sesije, ostvareni prihod radnika, kao i zapisi o svim pauzama koje je radnik pravio u toku te sesije.
 
 ## Interfejs radnika
+
+Nakon što se korisnik na sistem prijavi radničkim nalogom, prikazuje mu se interfejs kao na slici ispod. 
+
+![image](https://github.com/user-attachments/assets/add4b95c-b5c3-4ab6-94c8-06aa87f7cd43)
+
+
+U lijevom dijelu centralnog interfejsa nalazi se segmet za rad sa TODO listama koje radnik sebi može da definiše kako bi olakšao rad. Za kriranje nove TODO liste neophodno je da klikne na + dugme u gornjem dijelu kartice (poslije naslova TODO Lista) nakon čega mu se prikazuje modalni prozor za kreiranje nove liste gdje unosi naziv te liste.
+Izbor između listi korisnik vrši klikom na dugme ![image](https://github.com/user-attachments/assets/6b05c877-fbef-4890-a05f-6971dce6e5f2) nakon čega mu se prikazuje padajuća lista sa svim njegovim TODO listama.
+Za dodavanje novih elemenata u listu koristi se input polje iznad svih elemenata u listi, te nakon unosa vrijednosti u to polje kliknuti dugme plus pokraj njega.
+![image](https://github.com/user-attachments/assets/0f16641f-569d-4106-8c31-18ff6b114a93)
+
+
+Radnik kako bi pokrenuo novu radnu sesiju neophodno je da u obojenoj kartici(kartica u sredini) započne novu sesiju klikom na dugme "Započnite sesiju". Izgled kartice nakon započinjanja sesije dat je na slici.
+
+![image](https://github.com/user-attachments/assets/60a1b06c-2306-43a5-b08e-542c70e925ec)
+
+Radnik ima mogućnost pauziranja sesije klikom na dugme za pauzu (prvo dugme s lijeva), a za završavanje sesije neophodno je zaustaviti sesiju na stop dugme(crveno dugme, drugo u nizu). U slučaju odjave sa sistema u toku trajanja radne sesije radna sesija se automatski završava.
+
+U kartici u donjem desnom dijelu interfejsa nalazi se zakačeni zadatak koji radnicima omogućava brzi pristup i manipulaciju zadatkom na kom trenutno rade. U sklopu te kartice nalazi se kartica koja predstavlja zakaleni zadataka ukoliko takav postoji. Opis same kartice i rada sa njom dat je u narednom tekstu.
+
+### Pregled zadataka
+Radnik ima mogućnost pregleda i manipulacijom zadacima koji su mu dodjeljeni od strane menadžera sektora kojim pripada. Izgled interfejsa dat je na sledećoj slici.
+
+![image](https://github.com/user-attachments/assets/4fa6f51a-16fb-4d50-82f2-269f693401ef)
+
+Svi zadaci su organizovani u grupe na osnovu njihovog statusa, a prikaz zadataka iz svake grupe vrši se izborom odgovarajućeg taba na vrhu stranice.
+Svi zadaci su predstavljeni karticom. U sklopu svake kartice predstavljene su informacije o samom zadatku kao i napredak koji je ostvaren do tada na tom zadatku. Radnici upravljaju napretkom tako što vrše "pomjeranje" klizača u zavisnosti koji napredak žele da postave. Napredak je moguće postaviti samo na zadatke koji su sa statusom "U radu". Nakon postavljanja novog napretka neophodno je da sačuva postavljeni napredak klikom na ikonicu čuvanja koja se nalazi desno od klizača, a nakon toga korisniku se prikazuje prozor za potvrdu akcije. Promjena statusa zadatka vrši se klikom na dugme u gornjem desnom uglu kartice zadatka, a prebacivanje u status "Završen" moguće je tek kada se postavi napredak na 100%. Za označavanje zadatka kao zakačenog koji će se prikazivati na početnoj strani koristi se dugme iglice u donjem desnom dijelu kartice kao i za otkačivanje tog zadatka.
+
+![image](https://github.com/user-attachments/assets/2d3042c8-9ca7-4470-8538-2adfa9659252)
+Kartica zadatka
+
+Moguće je i sortiranje zadataka po različitim kriterijumima koje se vrši izborom kriterijuma iz comboBox-a u gornjem desnom uglu interfejsa.
+
+### Statistika radnika
+Za pregled statistike radnika pogledati: [Statistika radnika](#pregled-statistike-radnika)
+
+
+
+
+
+
 
 
 
