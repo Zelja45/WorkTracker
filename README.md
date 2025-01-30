@@ -153,6 +153,28 @@ Moguće je i sortiranje zadataka po različitim kriterijumima koje se vrši izbo
 ### Statistika radnika
 Za pregled statistike radnika pogledati: [Statistika radnika](#pregled-statistike-radnika)
 
+## Upravljanje korisničkim nalogom
+Svi korisnici u okviru sistema imaju mogućnost upravljanja korisničkim nalogom. Upravljanje se vrši kroz interfejs dat na sledećoj slici.
+
+![image](https://github.com/user-attachments/assets/5445ebbf-bd37-4285-8238-2db0de2b4b35)
+
+Za izmjenu fotografije korisnika, korisnik treba da klikne na ikonicu olovke pokraj podrazumjevane slike, a zatim mu se prikazuje dijalog za izbor slike sa fajl sistema.
+Izmjenu podataka o korisniku izvršiti kroz prikazana polja ispod, ali neophodno je omogućiti njihovu izmjenu klikom na dugme olovke pokraj.
+Nakon kreiranih izmjena neophodno je kliknuti dugme "Sačuvajte promjene". 
+Korisnik može i da izmjeni lozinku klikom na dugme "Izmjenite lozinku". Nakon klika, korisnik je dužan da unese svoju trenutno lozinku, te ukoliko je unio validnu loinku prikazuje mu se forma za unos nove lozinke. Nakon unosa nove lozinke neophodno je da klikne dugme "Izmjeniet lozinku".
+## Podešavanja aplikacije
+
+Svi korisnici na sistemu imaju mogućnosti izmjene podešavanja aplikacije u vidu izmjene fonta, teme, jezika i osnovne boje. Interfejs podešavanja dat je na lsedećoj slici.
+![image](https://github.com/user-attachments/assets/b200f3cb-359e-4007-a325-e92bfee5fc1a)
+
+## Odjava sa sistema
+
+Svi korisnici vrše odjavu sa sistema klikom na poslednje dugme unutar menija nakon čega im se prikazuje prozor za potvrdu odjave sa sistema. Nakon odjave sa sistema, korisniku se prikazuje forma za prijavu.
+
+![image](https://github.com/user-attachments/assets/4e54f2b3-6eeb-41df-aaf9-d081a6ad595e)
+
+
+
 
 
 
