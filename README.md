@@ -48,6 +48,14 @@ Administratori imaju mogućnost pregleda i upravljanja nad svim neadministrators
 
 ### Kreiranje sektora
 
+Administrator je zadužen i za kreiranje sektora unutar kompanije. Kreiranje sektora vrši se popunjavanjem sledeće forme
+
+![image](https://github.com/user-attachments/assets/135e4b9f-1b3c-43c2-b4d6-287f76297176)
+
+Prilikom kreiranja sektora, administrator popunjava prikazanu formu, a takođe neophodno je da iz liste u desnom dijelu forme izabere minimalno jednog menadžera koji će biti menadžer novokreiranog sektora. Jedan menadžer može da bude menadžer u više sektora.
+
+
+
 
 
 
