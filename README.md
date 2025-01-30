@@ -98,6 +98,27 @@ Menadžer dobija prikaz svih slobodnih radnika(radnika koji ne pripadaju ni jedn
 
 ### Statistika radnika
 
+Menadžer ima mogućnost pregleda statistike, aktivnosti, efikasnosti i zarade svakog od radnika unutar svojih sektora. Interfejs za prikaz statistike dat je na sledećoj slici.
+
+![image](https://github.com/user-attachments/assets/591157f1-2d2a-4ac7-87f9-1db6156ca588)
+
+Kako bi pregledao statistiku svakog od radnika, menader treba da klikne na dugme "Pregled statistike". Nakon klika na to dugme otvara mu se sledeći interfejs.
+
+![image](https://github.com/user-attachments/assets/ed72937d-572f-434b-a54e-ffe8c2f2ac0f)
+
+U gornjem dijelu interfejsa nalaze se kartice o aktivnosti, efikasnosti i prihodu radnika redom. Unutar kartice za pregled aktivnosti imamo mogućnost izbora na sedmičnom ili dnevnom nivou a podaci koji se prikazuju predstavljaju zapravo izvršenost normi u vidu broja sati i broja zadataka koji za taj dan trebaju da budu zaršeni.
+U kartici efikasnosti prikazuje se procenat uspješnosti izvršenja zadataka koji predstavlja odnos broja zadataka koji su uspješno završeni i broja zadataka koji su dodjeljeni tom radniku tokom njegove karijere.
+Kartica pregleda prihoda omogućava pregled ukupnih prihoda za svaki mjesec izabrane godine. Korisnik bira godinu i mjesec od interesa a zatim mu se ispisuje ukupan prihod radnika za izabrane parametre.
+
+U donjem dijelu interfejsa nalaze se izvještaji o svim radnim sesijama za izabrani period. Korisnik bira mjesec i godinu od interesa a zatim mu se prikazuju sve radne sesije koje je radnik imao u tom mjesecu. Menadžer ima mogućnost sortiranja zapisa po datumu radne sesije i ostvarenom prihodu za tu sesiju u opadajućem i rastućem poretku. Za sortiranje vrši izbor unutar comboBox elementa u desnom dijelu kartice. Za prikaz detalja o svakoj sesiji korisnik treba da klikne dugme "Prikaz detalja" za željenu sesiju. Nakon klika, prikazuje mu se modalni prozor sa informacijama koji je dat na narednoj slici.
+
+![image](https://github.com/user-attachments/assets/9b947025-54d4-480b-9b50-19c8faf9db6f)
+
+U izvještaju se nalaze svi podaci o radnim satima, prekovremenim satima, cijenama rada u trenutku završavanja sesije, ostvareni prihod radnika, kao i zapisi o svim pauzama koje je radnik pravio u toku te sesije.
+
+## Interfejs radnika
+
+
 
 
 
