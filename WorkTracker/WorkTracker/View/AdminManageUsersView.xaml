@@ -19,7 +19,7 @@
                    Foreground="{DynamicResource SecondaryHueMidBrush}"
                    FontSize="25"
                    FontWeight="Bold" />
-            <TextBlock Text="{DynamicResource AccountsAddList}"
+            <TextBlock Text="{DynamicResource ManageAccountList}"
                        Foreground="{DynamicResource MaterialDesignBody}"
                        FontSize="25"
                        FontWeight="Bold" />
@@ -56,7 +56,7 @@
                           ItemsSource="{Binding CardsViewModelsToShow}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <components:SingleUserCardAdmin DataContext="{Binding}" />
+                        <components:SingleUserCardAdmin DataContext="{Binding}"  />
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

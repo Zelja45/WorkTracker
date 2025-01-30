@@ -1,0 +1,161 @@
+﻿<UserControl x:Class="WorkTracker.View.WorkerStatsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:WorkTracker.View"
+             xmlns:components="clr-namespace:WorkTracker.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style 
+               TargetType="materialDesign:Card">
+            <Setter Property="UniformCornerRadius"
+                    Value="10" />
+            <Setter Property="Padding"
+                    Value="5" />
+            <Setter Property="Margin"
+                    Value="0,0,10,10" />
+            <Setter Property="materialDesign:ElevationAssist.Elevation"
+                    Value="Dp4" />
+            <Setter Property="Background"
+                    Value="{DynamicResource MaterialDesignCardBackground}" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10"
+                    VerticalAlignment="Center">
+            <Button Visibility="{Binding BackVisibility,Converter={StaticResource BooleanToVisibilityConverter}}" Command="{Binding NavigateBackCommand}"
+                    Style="{StaticResource MaterialDesignIconButton}" VerticalAlignment="Center" Height="30" Width="30"
+                    ToolTip="MaterialDesignIconButton" Foreground="{DynamicResource MaterialDesignBody}">
+                <materialDesign:PackIcon Kind="ArrowBack" Height="25" Width="25" />
+            </Button>
+            <Rectangle Width="5" />
+            <TextBlock Text="{DynamicResource StatisticsWithSpace}" VerticalAlignment="Center"
+                       Foreground="{DynamicResource SecondaryHueMidBrush}"
+                       FontSize="25"
+                       FontWeight="Bold" />
+            <TextBlock Text="{Binding UserName}" VerticalAlignment="Center"
+                       Foreground="{DynamicResource MaterialDesignBody}"
+                       FontSize="25"
+                       FontWeight="Bold" />
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" MinHeight="150" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <components:ActivityCard DataContext="{Binding ActivityCardViewModel}"/>
+                <materialDesign:Card Grid.Column="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="{DynamicResource Efficiency}"
+                               FontSize="15" Foreground="{DynamicResource SecondaryHueMidBrush}"
+                               FontWeight="Medium" />
+                        <StackPanel Grid.Row="1" >
+                            <Label Content="{DynamicResource TasksDone}"
+                                   Foreground="{DynamicResource SecondaryHueMidBrush}" />
+                            <Label Content="{Binding NumberOfDoneTasks}"
+                                   FontSize="13"
+                                   FontWeight="Medium" />
+                            <Label Content="{DynamicResource AssignedTasks}"
+                                   Foreground="{DynamicResource SecondaryHueMidBrush}" />
+                            <Label Content="{Binding NumberOfTotalAssignedTasks}"
+                                   FontSize="13"
+                                   FontWeight="Medium" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                    Grid.Column="1">
+                            <Label Content="{DynamicResource Efficiency:}"
+                                   Foreground="{DynamicResource SecondaryHueMidBrush}" />
+                            <Label Content="{Binding Efficiency}" HorizontalAlignment="Center"
+                                   FontSize="15"
+                                   FontWeight="Medium" />
+                        </StackPanel>
+                    </Grid>
+                </materialDesign:Card>
+                <components:IncomeCard Grid.Column="2"
+                                       DataContext="{Binding IncomeCardViewModel}" />
+            </Grid>
+            <materialDesign:Card Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label Content="{DynamicResource WorksessionReports}"
+                           Foreground="{DynamicResource SecondaryHueMidBrush}" FontSize="15" FontWeight="Medium" />
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal"
+                                    Grid.Row="1">
+                            <Label Content="{DynamicResource Month}"
+                                   Foreground="{DynamicResource SecondaryHueMidBrush}" />
+                            <ComboBox ItemsSource="{Binding Months}"
+                                      SelectedIndex="{Binding SelectedMonth}" />
+                            <Rectangle Width="20" />
+                            <Label Content="{DynamicResource Year}"
+                                   Foreground="{DynamicResource SecondaryHueMidBrush}" />
+                            <ComboBox ItemsSource="{Binding Years}"
+                                      SelectedItem="{Binding SelectedYear}" />
+
+                        </StackPanel>
+                        <StackPanel Grid.Column="1"
+                                    Orientation="Horizontal"
+                                    Margin="0,0,20,0">
+                            <materialDesign:PackIcon Kind="Sort"
+                                                     Height="25"
+                                                     Width="25"
+                                                     VerticalAlignment="Center"
+                                                     Foreground="{DynamicResource MaterialDesignBody}" />
+                            <Rectangle Width="10" />
+                            <ComboBox SelectedIndex="{Binding SelectedSortIndex}"
+                                      VerticalAlignment="Center">
+                                <ComboBoxItem Content="{DynamicResource DateOldest}" />
+                                <ComboBoxItem Content="{DynamicResource DateNewest}" />
+                                <ComboBoxItem Content="{DynamicResource IncomeSmallest}" />
+                                <ComboBoxItem Content="{DynamicResource incomeLargest}" />
+                            </ComboBox>
+                        </StackPanel>
+                    </Grid>
+                    <ScrollViewer Grid.Row="2"
+                                  VerticalScrollBarVisibility="Hidden">
+                        <ItemsControl ItemsSource="{Binding ReportItems}"
+                                      Grid.Row="2">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <components:WorksessionReportItem DataContext="{Binding}" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                    <Label Content="{DynamicResource NoReports}" Grid.Row="2" Visibility="{Binding NoReports,Converter={StaticResource BooleanToVisibilityConverter}}"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center" />
+                </Grid>
+            </materialDesign:Card>
+        </Grid>
+    </Grid>
+</UserControl>

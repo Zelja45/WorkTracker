@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using WorkTracker.Model;
+using WorkTracker.Utils;
 
 namespace WorkTracker.Services
 {
@@ -92,7 +93,6 @@ namespace WorkTracker.Services
         {
             using (WorktrackerContext context = new WorktrackerContext())
             {
-                // Pronalaženje aktivnog pauze loga
                 Pauselog pauseLog = await context.Pauselogs
                     .FirstOrDefaultAsync(p => p.IdWorkSession == session.IdSession && p.EndTime == null);
                 var realSession = await context.Worksessions.FirstOrDefaultAsync(s => s.IdSession == session.IdSession);
@@ -108,6 +108,52 @@ namespace WorkTracker.Services
                 }
             }
         }
+
+        public async System.Threading.Tasks.Task<List<Worksession>> GetAllEndedWorkerSessionsInMonthOfYear(String username,int year,int month)
+        {
+            List<Worksession> sessions = new List<Worksession>();
+            using(WorktrackerContext context=new WorktrackerContext())
+            {
+                sessions = await context.Worksessions.Where(ws => ws.WorkerUsername == username && ws.EndTime != null&&ws.StartTime.Month==month&&ws.StartTime.Year==year).
+                    Include(ws => ws.Pauselogs).Include(ws => ws.Worksessionreport).ToListAsync();
+            }
+            return sessions;
+        }
+
+        public async System.Threading.Tasks.Task<TimeOnly> GetTotalTodayWorkingTime()
+        {
+            TimeOnly timeOnly = new TimeOnly(0,0,0);
+            using(WorktrackerContext context=new WorktrackerContext())
+            {
+                var sessions = await context.Worksessions.Where(w => w.EndTime != null && w.EndTime.Value.Date == DateTime.Now.Date).ToListAsync();
+                foreach(var session in sessions)
+                {
+                    timeOnly = Util.SumTimeOnly(timeOnly, session.WorkedHours.Value);
+                }
+            }
+            return timeOnly;
+        }
+
+        public async System.Threading.Tasks.Task<TimeOnly> GetTotalCurrentWeekWorkingTime()
+        {
+            TimeOnly timeOnly = new TimeOnly(0, 0, 0);
+
+            DateTime today = DateTime.Now;
+            DateTime startOfWeek = today.AddDays(-(int)today.DayOfWeek + (int)DayOfWeek.Monday);
+            DateTime endOfWeek = startOfWeek.AddDays(6);
+
+            using (WorktrackerContext context = new WorktrackerContext())
+            {
+                var sessions = await context.Worksessions.Where(w => w.EndTime != null && w.EndTime.Value.Date >= startOfWeek.Date&&w.EndTime.Value.Date<=endOfWeek.Date).ToListAsync();
+                foreach (var session in sessions)
+                {
+                    timeOnly = Util.SumTimeOnly(timeOnly, session.WorkedHours.Value);
+                }
+            }
+            return timeOnly;
+        }
+
+
 
 
     }

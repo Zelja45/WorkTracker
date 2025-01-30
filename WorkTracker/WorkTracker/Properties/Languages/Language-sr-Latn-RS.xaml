@@ -16,8 +16,9 @@
     <System:String x:Key="NumberOfSectors">Broj sektora:</System:String>
     <System:String x:Key="Home">Početna strana</System:String>
     <System:String x:Key="AddUsers">Kreiraj nalog</System:String>
-    <System:String x:Key="AddAccountsFor" xml:space="preserve">Kreiraj nalog za </System:String>
+    <System:String x:Key="AddAccountsFor" xml:space="preserve">Kreirajte nalog za </System:String>
     <System:String x:Key="AccountsAddList">Admina, Manadžera ili Radnika</System:String>
+    <System:String x:Key="ManageAccountList">Manadžera ili Radnika</System:String>
     <System:String x:Key="Name">Ime</System:String>
     <System:String x:Key="Surname">Prezime</System:String>
     <System:String x:Key="PhoneNumber">Broj telefona</System:String>
@@ -151,5 +152,70 @@
     <System:String x:Key="AddList">Dodajte listu</System:String>
     <System:String x:Key="AddNewTODO">Dodajte novi TODO </System:String>
     <System:String x:Key="AddOrSelectList">Dodajte ili selektujte TODO listu</System:String>
+    <System:String x:Key="AllTasks">Zadaci</System:String>
+    <System:String x:Key="SaveProgressTitle">Sačuvajte napredak</System:String>
+    <System:String x:Key="SaveProgressDescription">Da li ste sigurni da želite sačuvati svoj napredak?</System:String>
+    <System:String x:Key="ChangeStatusTitle">Promijenite status</System:String>
+    <System:String x:Key="ChangeStatusDescription">Da li ste sigurni da želite promijeniti status?</System:String>
+    <System:String x:Key="MarkAsDoing">Označite u Radu</System:String>
+    <System:String x:Key="MarkAsDone">Označite kao Završeno</System:String>
+    <System:String x:Key="Save">Sačuvajte</System:String>
+    <System:String x:Key="PinTask">Zakačite/Otkačite zadatak</System:String>
+    <System:String x:Key="PinnedTask">Zakačeni zadatak</System:String>
+    <System:String x:Key="NoPinnedTask">Nema zakačenih zadataka</System:String>
+    <System:String x:Key="All"
+                   xml:space="preserve">Svi </System:String>
+    <System:String x:Key="CreationDateNewest">Datum kreiranja - Najnoviji</System:String>
+    <System:String x:Key="CreationDateOldest">Datum kreiranja - Najstariji</System:String>
+    <System:String x:Key="DueDateClosest">Datum dospijeća - Najbliži</System:String>
+    <System:String x:Key="DueDateFarthest">Datum dospijeća - Najdalji</System:String>
+    <System:String x:Key="PriorityHighest">Prioritet - Najviši</System:String>
+    <System:String x:Key="PriorityLowest">Prioritet - Najniži</System:String>
+    <System:String x:Key="noTasks">Nema zadataka</System:String>
+    <System:String x:Key="Statistics">Statistika</System:String>
+    <System:String x:Key="Activity">Aktivnost</System:String>
+    <System:String x:Key="Daily">dnevna</System:String>
+    <System:String x:Key="Weekly">sedmična</System:String>
+    <System:String x:Key="WorkingHours">Radni sati</System:String>
+    <System:String x:Key="TasksDone">Završeni zadaci</System:String>
+    <System:String x:Key="IncomeSummary">Pregled prihoda</System:String>
+    <System:String x:Key="Month">Mjesec:</System:String>
+    <System:String x:Key="Year">Godina:</System:String>
+    <System:String x:Key="TotalIncome">Ukupna zarada:</System:String>
+    <System:String x:Key="NoData">Nema podataka</System:String>
+    <System:String x:Key="ViewStatistics">Pregled statistike</System:String>
+    <System:String x:Key="Sector:">Sektor:</System:String>
+    <System:String x:Key="WorksessionID">ID radne sesije:</System:String>
+    <System:String x:Key="Period">Period:</System:String>
+    <System:String x:Key="Hours">Sati</System:String>
+    <System:String x:Key="RegularWork">Redovan rad</System:String>
+    <System:String x:Key="OvertimeWork">Prekovremeni rad</System:String>
+    <System:String x:Key="Rate">Satnica</System:String>
+    <System:String x:Key="Income">Prihod</System:String>
+    <System:String x:Key="Total">Ukupno</System:String>
+    <System:String x:Key="NoPauseLogs">Nema zapisa o pauzama</System:String>
+    <System:String x:Key="TotalWorkTime">Ukupno radno vrijeme:</System:String>
+    <System:String x:Key="Income:">Prihod:</System:String>
+    <System:String x:Key="WorkerStatistics">Statistika radnika</System:String>
+    <System:String x:Key="StatisticsWithSpace"
+                   xml:space="preserve">Statistka </System:String>
+    <System:String x:Key="Efficiency">Efikasnost</System:String>
+    <System:String x:Key="AssignedTasks">Dodijeljeni zadaci:</System:String>
+    <System:String x:Key="Efficiency:">Efikasnost:</System:String>
+    <System:String x:Key="WorksessionReports">Izvještaji radnih sesija</System:String>
+    <System:String x:Key="NoReports">Nema izvještaja</System:String>
+    <System:String x:Key="IncomeSmallest">Prihod-najmanji</System:String>
+    <System:String x:Key="incomeLargest">Prihod-najveci</System:String>
+    <System:String x:Key="DateOldest">Datum-najstariji</System:String>
+    <System:String x:Key="DateNewest">Datum-najnoviji</System:String>
+    <System:String x:Key="YourSector">Vaš sektor</System:String>
+    <System:String x:Key="NoTODOListItems">Nema TODO elemenata</System:String>
+    <System:String x:Key="NoAssignedSector">Ne pripada sektoru</System:String>
+    <System:String x:Key="NoWorkers">Nema radnika</System:String>
+    <System:String x:Key="NoSectors">Nema sektora</System:String>
+    <System:String x:Key="NumberOfFreeWorkers">Broj slobodnih radnika (bez sektora)</System:String>
+    <System:String x:Key="PauseLogs">Zapisi o pauzama</System:String>
+
+
 
 </ResourceDictionary>

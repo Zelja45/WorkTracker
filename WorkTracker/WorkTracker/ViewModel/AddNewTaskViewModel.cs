@@ -25,6 +25,7 @@ namespace WorkTracker.ViewModel
         private SectorService _sectorService;
         private TaskService _taskService;
 
+        private bool _noWorkers = false;
         private string _name="";
         private string _description="";
         private DateTime? _date=null;
@@ -32,6 +33,8 @@ namespace WorkTracker.ViewModel
         private int _priority=-1;
         private bool _isAdddable=false;
         private ManagerWorkerAddingSectorCardViewModel? _selectedWorker = null;
+
+        public bool NoWorkers { get { return _noWorkers; } set { _noWorkers = value;OnPropertyChanged(); } }
 
         public string Name { get { return _name; } set { _name = value; CheckIsAddable(); OnPropertyChanged(); } }
         public string Description { get { return _description; } set { _description = value; CheckIsAddable(); OnPropertyChanged(); } }
@@ -102,6 +105,7 @@ namespace WorkTracker.ViewModel
             IsAddable = false;
             Date = null;
             Time = null;
+            NoWorkers = false;
             if (SelectedWorker != null)
             {
                 SelectedWorker.IsChecked = false;
@@ -142,6 +146,7 @@ namespace WorkTracker.ViewModel
                 }, o => true);
                 Cards.Add(card);
             }
+            NoWorkers = Cards.Count == 0;
         }
     }
 }

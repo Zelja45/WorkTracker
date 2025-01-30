@@ -47,7 +47,7 @@ namespace WorkTracker
             services.AddSingleton<SettingsViewModel>();
             services.AddSingleton<MainViewModel>();
             services.AddSingleton<LoginViewModel>();
-            services.AddSingleton<WorkerMainViewModel>();
+            
             services.AddSingleton<LoadingCircleViewModel>();
             services.AddSingleton<AdminHomeViewModel>();
             services.AddSingleton<AddNewUserViewModel>();
@@ -63,11 +63,12 @@ namespace WorkTracker
             services.AddSingleton<AddWorkerInSectorViewModel>();
             services.AddSingleton<WorkerHomeViewModel>();
             services.AddSingleton<WorkSessionViewModel>();
+            services.AddSingleton<AllTasksWorkerViewModel>();
             services.AddSingleton<TODOListViewModel>();
+            services.AddSingleton<WorkerStatsViewModel>();
+            services.AddSingleton<ManagerWorkerStatsViewModel>();
             services.AddSingleton<User>();
 
-
-           
 
             services.AddSingleton<UserService>();
             services.AddSingleton<UserStore>();

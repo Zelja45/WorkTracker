@@ -5,6 +5,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:components="clr-namespace:WorkTracker.Components"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:local="clr-namespace:WorkTracker.View"
              mc:Ignorable="d"
              d:DesignHeight="450"
@@ -64,7 +65,9 @@
                                  TextWrapping="Wrap"
                                  VerticalScrollBarVisibility="Auto" />
                         <Rectangle Style="{StaticResource Separator}" />
-                        <DatePicker Width="200" HorizontalAlignment="Left"
+                        <DatePicker Width="200"
+                                    HorizontalAlignment="Left"
+                                    DisplayDateStart="{x:Static sys:DateTime.Now}"
                                         BorderThickness="2"
                                         SelectedDate="{Binding Date,UpdateSourceTrigger=PropertyChanged}"
                                         materialDesign:HintAssist.Hint="{DynamicResource DueDatePick}"
@@ -97,6 +100,11 @@
                         <Label Content="{DynamicResource ChooseWorker}"
                                Foreground="{DynamicResource SecondaryHueMidBrush}"
                                FontSize="14" />
+                        <Label Content="{DynamicResource NoWorkers}"
+                               Visibility="{Binding NoWorkers,Converter={StaticResource BooleanToVisibilityConverter}}"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Grid.Row="1" />
                         <ScrollViewer VerticalScrollBarVisibility="Hidden" Grid.Row="1">
                             <ItemsControl ItemsSource="{Binding Cards}"
                                           >

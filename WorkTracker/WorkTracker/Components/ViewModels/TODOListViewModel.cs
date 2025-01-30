@@ -24,6 +24,7 @@ namespace WorkTracker.Components.ViewModels
         private string _newListTitle = "";
         private bool _newListAddable = false;
         private bool _noCreatedTODO = false;
+        private bool _noTODOListItems = false;
 
         public Todolist SelectedList { get { return _selectedList; } set { _selectedList = value; OnPropertyChanged(); } }
 
@@ -38,6 +39,7 @@ namespace WorkTracker.Components.ViewModels
 
         public bool NoCreatedTODO { get { return _noCreatedTODO; } set { _noCreatedTODO = value; OnPropertyChanged(); } }
 
+        public bool NoTODOListItems { get { return _noTODOListItems; } set { _noTODOListItems = value;OnPropertyChanged(); } }
 
         public string NewListTitle { get { return _newListTitle; } set { _newListTitle = value; if (value.Length != 0) IsNewListAddable = true; else IsNewListAddable = false; OnPropertyChanged(); } }
 
@@ -63,6 +65,7 @@ namespace WorkTracker.Components.ViewModels
             };
             await _toDOListService.AddNewItem(item);
             Items.Add(new TodoListItemViewModel(item, _toDOListService));
+            NoTODOListItems = Items.Count == 0;
             SelectedList.Todolistitems.Add(item);
             NewItemContent = "";
         }
@@ -75,9 +78,15 @@ namespace WorkTracker.Components.ViewModels
                 IsSelected=0
             };
             NewListTitle = "";
+
             
             await _toDOListService.AddNewList(list);
-            PopupBoxItemViewModel vm = new PopupBoxItemViewModel(list, new RelayCommand(o => { SelectedList = list; DrawItems(); }, o => true));
+            PopupBoxItemViewModel vm = new PopupBoxItemViewModel(list, new RelayCommand(o => {
+                if (SelectedList != null) { SelectedList.IsSelected = 0; _toDOListService.UpdateListIsSelected(SelectedList); }
+                SelectedList = list; list.IsSelected = 1; DrawItems();
+                NoCreatedTODO = false;
+                _toDOListService.UpdateListIsSelected(list);
+            }, o => true));
             popupBoxItemViewModels.Add(vm);
         }
 
@@ -89,6 +98,7 @@ namespace WorkTracker.Components.ViewModels
             _isAddable = false;
             SelectedList = null;
             NoCreatedTODO = false;
+            NoTODOListItems = false;
             Items.Clear();
             TodoLists.Clear();
             var allLists = await _toDOListService.GetWorkerTodolists(_userStore.User.Username);
@@ -128,6 +138,7 @@ namespace WorkTracker.Components.ViewModels
                 TodoListItemViewModel vm = new TodoListItemViewModel(item, _toDOListService);
                 Items.Add(vm);
             }
+            NoTODOListItems = Items.Count == 0;
         }
 
     }

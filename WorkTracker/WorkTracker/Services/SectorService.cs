@@ -55,7 +55,7 @@ namespace WorkTracker.Services
                 var sectorIds = manager.IdSectors.Select(s => s.IdSector).ToList();
 
                 users = await context.Users
-                    .Where(u => u.IdSector.HasValue && sectorIds.Contains(u.IdSector.Value)&&u.IsActive==(sbyte)1)
+                    .Where(u => u.IdSector.HasValue && sectorIds.Contains(u.IdSector.Value)&&u.IsActive==(sbyte)1).Include(u=>u.IdSectorNavigation)
                     .ToListAsync();
             }
             return users;
@@ -108,6 +108,16 @@ namespace WorkTracker.Services
                 sector.Users.Add(worker);
                 await context.SaveChangesAsync();
             }
+        }
+
+        public async System.Threading.Tasks.Task<Sector?> GetSector(int sectorId)
+        {
+            Sector? sector = null ;
+            using(WorktrackerContext context = new WorktrackerContext())
+            {
+               sector = await context.Sectors.FirstOrDefaultAsync(s => s.IdSector == sectorId);
+            }
+            return sector;
         }
     }
 }

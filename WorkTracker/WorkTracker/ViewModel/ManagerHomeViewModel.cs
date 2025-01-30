@@ -26,7 +26,9 @@ namespace WorkTracker.ViewModel
         private int _numberOfMySectors;
         private int _selectedTabIndex;
         private List<TaskCardViewModel> allTasks;
+        private bool _noTasks = false;
 
+        public bool NoTasks { get { return _noTasks; } set { _noTasks = value;OnPropertyChanged(); } }
         public int NumberOfMyWorkers { get { return _numberOfMyWorkers; } set { _numberOfMyWorkers = value;OnPropertyChanged(); } }
         public int NumberOfMySectors { get { return _numberOfMySectors; } set { _numberOfMySectors = value; OnPropertyChanged(); } }
         public ObservableCollection<TaskCardViewModel> TaskCardsToShow { get; set; } = new ObservableCollection<TaskCardViewModel>();
@@ -60,6 +62,7 @@ namespace WorkTracker.ViewModel
                 if(task.Status==Constants.TODO && task.DueDate >= DateTime.Now)
                     TaskCardsToShow.Add(card); 
             }
+            NoTasks = TaskCardsToShow.Count == 0;
         }
         public void SwitchTab()
         {
@@ -87,12 +90,14 @@ namespace WorkTracker.ViewModel
                         TaskCardsToShow.Add(task);
                 }
             }
+            NoTasks = TaskCardsToShow.Count == 0;
             
         }
         public override void Dispose()
         {
             SelectedTabIndex = 0;
             TaskCardsToShow.Clear();
+            NoTasks = false;
         }
     }
 }

@@ -21,6 +21,7 @@ namespace WorkTracker.ViewModel
         public int NumberOfDeactivatedManagers { get; set; }
 
         public int NumberOfSectors { get; set; }
+        public int NumberOfFreeWorkers { get; set; }
 
         
         public AdminHomeViewModel(UserStore userStore,UserService userService)
@@ -35,6 +36,7 @@ namespace WorkTracker.ViewModel
            NumberOfManagers = await _userService.GetNumberOfManagers();
            NumberOfDeactivatedWorkers = await _userService.GetNumberOfWorkersDeactivated();
            NumberOfDeactivatedManagers=await _userService.GetNumberOfManagersDeactivated();
+           NumberOfFreeWorkers = (await _userService.GetFreeWorkers()).Count();
         }
         public override void Dispose()
         {

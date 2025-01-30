@@ -23,5 +23,7 @@ public partial class Task
 
     public string WorkerUsername { get; set; } = null!;
 
+    public sbyte Pinned { get; set; }
+
     public virtual User WorkerUsernameNavigation { get; set; } = null!;
 }

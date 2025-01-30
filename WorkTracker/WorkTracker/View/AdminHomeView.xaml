@@ -138,11 +138,14 @@
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <TextBlock Text="{DynamicResource NumberOfSectors}"
+                <TextBlock Text="{DynamicResource NumberOfFreeWorkers}"
                            Foreground="{DynamicResource SecondaryHueMidBrush}"
                            HorizontalAlignment="Center"
                            TextWrapping="Wrap" />
-                
+                <Label Content="{Binding NumberOfFreeWorkers}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
+                       FontSize="40"
+                       Foreground="{DynamicResource MaterialDesignBody}"
+                       FontWeight="Bold" />
             </Grid>
         </materialDesign:Card>
     </Grid>

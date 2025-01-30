@@ -14,16 +14,19 @@
         Background="{DynamicResource MaterialDesignPaper}" WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown">
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0"
+                      materialDesign:ElevationAssist.Elevation="Dp5"
                       CornerRadius="15"
                       CaptionHeight="0" />
     </WindowChrome.WindowChrome>
+
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        <TextBlock Name="Title" Foreground="{DynamicResource MaterialDesignBody}"
+        <TextBlock Name="Title"
+                   Foreground="{DynamicResource MaterialDesignBody}"
                    FontSize="18"
                    FontWeight="Medium"
                    TextWrapping="Wrap" />
@@ -32,7 +35,11 @@
                 <ColumnDefinition Width="auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <materialDesign:PackIcon Name="Icon" Width="30" Height="30"  Margin="5" Kind="Information"/>
+            <materialDesign:PackIcon Name="Icon"
+                                     Width="30"
+                                     Height="30"
+                                     Margin="5"
+                                     Kind="Information" />
             <TextBlock VerticalAlignment="Center"
                        Name="Description"
                        Foreground="{DynamicResource SecondaryHueMidBrush}"
@@ -40,29 +47,34 @@
                        FontSize="12"
                        TextWrapping="Wrap" />
         </Grid>
-        <StackPanel Name="YesNoPanel" Grid.Row="2" Visibility="Hidden"
-                    Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Name="noBtn" materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
+        <StackPanel Name="YesNoPanel"
+                    Grid.Row="2"
+                    Visibility="Hidden"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <Button Name="noBtn"
+                    materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
                     Content="{DynamicResource No}"
                     Click="noBtn_Click"
                     Style="{StaticResource MaterialDesignRaisedButton}" />
             <Rectangle Width="5" />
-            <Button Name="yesBtn" materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
+            <Button Name="yesBtn"
+                    materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
                     Content="{DynamicResource Yes}"
                     Click="yesBtn_Click"
-                    Style="{StaticResource MaterialDesignRaisedButton}"
-                     />
+                    Style="{StaticResource MaterialDesignRaisedButton}" />
         </StackPanel>
-        <StackPanel Name="OKPanel" Grid.Row="2"
+        <StackPanel Name="OKPanel"
+                    Grid.Row="2"
                     Visibility="Hidden"
                     Orientation="Horizontal"
                     HorizontalAlignment="Right">
             <Button materialDesign:ButtonAssist.CornerRadius="{StaticResource GlobalCornerRadius}"
                     Content="OK"
                     Click="Button_Click"
-                    Style="{StaticResource MaterialDesignRaisedButton}"
-                     />
+                    Style="{StaticResource MaterialDesignRaisedButton}" />
         </StackPanel>
 
     </Grid>
+
 </Window>

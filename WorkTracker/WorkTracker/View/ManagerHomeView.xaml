@@ -105,6 +105,11 @@
                         <TabItem Header="{DynamicResource Overdue}" >
                         </TabItem>
                     </TabControl>
+                    <Label Content="{DynamicResource noTasks}"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Grid.Row="2"
+                           Visibility="{Binding NoTasks,Converter={StaticResource BooleanToVisibilityConverter}}" />
                     <ScrollViewer Grid.Row="2"
                                   VerticalScrollBarVisibility="Hidden">
                         <ItemsControl ItemsSource="{Binding TaskCardsToShow}"

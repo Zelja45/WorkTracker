@@ -150,6 +150,73 @@
     <System:String x:Key="AddList">AddList</System:String>
     <System:String x:Key="AddNewTODO">Add new TODO item</System:String>
     <System:String x:Key="AddOrSelectList">Add or select TODO list</System:String>
+    <System:String x:Key="AllTasks">Tasks</System:String>
+    <System:String x:Key="SaveProgressTitle">Save progress</System:String>
+    <System:String x:Key="SaveProgressDescription">Are you sure you want to save your progress?</System:String>
+    <System:String x:Key="ChangeStatusTitle">Change status</System:String>
+    <System:String x:Key="ChangeStatusDescription">Are you sure you want to change status?</System:String>
+    <System:String x:Key="MarkAsDoing">Mark as DOING</System:String>
+    <System:String x:Key="MarkAsDone">Mark as DONE</System:String>
+    <System:String x:Key="Save">Save</System:String>
+    <System:String x:Key="PinTask">Pin/Unpin task</System:String>
+    <System:String x:Key="PinnedTask">Pinned task</System:String>
+    <System:String x:Key="NoPinnedTask">No pinned task</System:String>
+    <System:String x:Key="All" xml:space="preserve">All </System:String>
+    <System:String x:Key="CreationDateNewest">Creation Date - Newest</System:String>
+    <System:String x:Key="CreationDateOldest">Creation Date - Oldest</System:String>
+    <System:String x:Key="DueDateClosest">Due Date - Closest</System:String>
+    <System:String x:Key="DueDateFarthest">Due Date - Farthest</System:String>
+    <System:String x:Key="PriorityHighest">Priority - Highest</System:String>
+    <System:String x:Key="PriorityLowest">Priority - Lowest</System:String>
+    <System:String x:Key="noTasks">No tasks</System:String>
+    <System:String x:Key="Statistics">Statistics</System:String>
+    <System:String x:Key="Activity">Activity</System:String>
+    <System:String x:Key="Daily">daily</System:String>
+    <System:String x:Key="Weekly">weekly</System:String>
+    <System:String x:Key="WorkingHours">Working hours</System:String>
+    <System:String x:Key="TasksDone">Tasks done</System:String>
+    <System:String x:Key="IncomeSummary">Income summary</System:String>
+    <System:String x:Key="Month">Month:</System:String>
+    <System:String x:Key="Year">Year:</System:String>
+    <System:String x:Key="TotalIncome">Total income:</System:String>
+    <System:String x:Key="NoData">No data</System:String>
+    <System:String x:Key="ViewStatistics">View statistics</System:String>
+    <System:String x:Key="Sector:">Sector:</System:String>
+    <System:String x:Key="WorksessionID">Worksession ID:</System:String>
+    <System:String x:Key="Period">Period:</System:String>
+    <System:String x:Key="Hours">Hours</System:String>
+    <System:String x:Key="RegularWork">Regular work</System:String>
+    <System:String x:Key="OvertimeWork">Overtime work</System:String>
+    <System:String x:Key="Rate">Rate</System:String>
+    <System:String x:Key="Income">Income</System:String>
+    <System:String x:Key="Total">Total</System:String>
+    <System:String x:Key="NoPauseLogs">No pause logs</System:String>
+    <System:String x:Key="TotalWorkTime">Total work time:</System:String>
+    <System:String x:Key="Income:">Income:</System:String>
+    <System:String x:Key="WorkerStatistics">Worker statistics</System:String>
+    <System:String x:Key="StatisticsWithSpace" xml:space="preserve">Space </System:String>
+    <System:String x:Key="Efficiency">Efficiency</System:String>
+    <System:String x:Key="AssignedTasks">Assigned tasks:</System:String>
+    <System:String x:Key="Efficiency:">Efficiency:</System:String>
+    <System:String x:Key="WorksessionReports">Working session reports</System:String>
+    <System:String x:Key="NoReports">No reports</System:String>
+    <System:String x:Key="IncomeSmallest">Income-smallest</System:String>
+    <System:String x:Key="incomeLargest">Income-largest</System:String>
+    <System:String x:Key="DateOldest">Date-oldest</System:String>
+    <System:String x:Key="DateNewest">Date-newest</System:String>
+    <System:String x:Key="YourSector">Your sector</System:String>
+    <System:String x:Key="NoTODOListItems">No TODO list items</System:String>
+    <System:String x:Key="NoAssignedSector">No assigned sector</System:String>
+    <System:String x:Key="NoWorkers">No workers</System:String>
+    <System:String x:Key="NoSectors">No workers</System:String>
+    <System:String x:Key="NumberOfFreeWorkers">Number of free worker (without sector)</System:String>
+    <System:String x:Key="ManageAccountList">Managers or Workers</System:String>
+    <System:String x:Key="PauseLogs">Pause logs:</System:String>
+
+
+
+
+
 
 
 </ResourceDictionary>

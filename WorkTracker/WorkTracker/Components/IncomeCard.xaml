@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="WorkTracker.Components.IncomeCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WorkTracker.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <materialDesign:Card>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Label Content="{DynamicResource IncomeSummary}"
+                   FontSize="15" FontWeight="Medium"
+                   Foreground="{DynamicResource SecondaryHueMidBrush}" />
+            <StackPanel Orientation="Horizontal" 
+                        Grid.Row="1">
+                <Label Content="{DynamicResource Month}"
+                       Foreground="{DynamicResource SecondaryHueMidBrush}" />
+                <ComboBox ItemsSource="{Binding Months}"
+                          SelectedIndex="{Binding SelectedMonth}" />
+                <Rectangle Width="20" />
+                <Label Content="{DynamicResource Year}"
+                       Foreground="{DynamicResource SecondaryHueMidBrush}" />
+                <ComboBox ItemsSource="{Binding Years}"
+                          SelectedItem="{Binding SelectedYear}" />
+
+            </StackPanel>
+            <StackPanel Grid.Row="2"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Visibility="{Binding ShowEarning,Converter={StaticResource BooleanToVisibilityConverter}}">
+                <Label Content="{DynamicResource TotalIncome}" FontSize="12" Foreground="{DynamicResource SecondaryHueMidBrush}"/>
+                <Label Content="{Binding Earning}"
+                       FontWeight="Medium"
+                       FontSize="15" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <Label Content="{DynamicResource NoData}" Grid.Row="2" 
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="13"
+                   Visibility="{Binding NoData,Converter={StaticResource BooleanToVisibilityConverter}}" />
+        </Grid>
+    </materialDesign:Card>
+</UserControl>

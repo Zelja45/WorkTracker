@@ -39,6 +39,10 @@
             </TextBox>
             
         </Grid>
+        <Label Content="{DynamicResource NoSectors}" Grid.Row="2"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Visibility="{Binding NoSectors,Converter={StaticResource BooleanToVisibilityConverter}}" />
         <ScrollViewer VerticalScrollBarVisibility="Hidden"
                       Grid.Row="2">
             <ItemsControl ItemsSource="{Binding CardsToShow}">

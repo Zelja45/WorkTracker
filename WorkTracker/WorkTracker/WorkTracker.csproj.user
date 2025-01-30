@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\ActivityCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\CustomDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -14,6 +17,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\HomeViewHeader.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\IncomeCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\LoadingCircle.xaml.cs">
@@ -34,6 +40,9 @@
     <Compile Update="Components\SingleUserCardAdmin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\StatWorkerCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\TaskCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -43,7 +52,16 @@
     <Compile Update="Components\ToDoListItem.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\WorkerTaskCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Components\WorkingSessionControlCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\WorksessionReportDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\WorksessionReportItem.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginWindow.xaml.cs">
@@ -67,7 +85,13 @@
     <Compile Update="View\AdminManageUsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\AllTasksWorker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ManagerHomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ManagerWorkerStatsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ManageSectorsManagerView.xaml.cs">
@@ -85,8 +109,14 @@
     <Compile Update="View\WorkerHomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\WorkerStatsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Components\ActivityCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\CustomDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -94,6 +124,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\HomeViewHeader.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\IncomeCard.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\LoadingCircle.xaml">
@@ -114,6 +147,9 @@
     <Page Update="Components\SingleUserCardAdmin.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\StatWorkerCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\TaskCard.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -123,7 +159,16 @@
     <Page Update="Components\ToDoListItem.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\WorkerTaskCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Components\WorkingSessionControlCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\WorksessionReportDetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\WorksessionReportItem.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginWindow.xaml">
@@ -150,7 +195,13 @@
     <Page Update="View\AdminManageUsersView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\AllTasksWorker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\ManagerHomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ManagerWorkerStatsView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ManageSectorsManagerView.xaml">
@@ -166,6 +217,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\WorkerHomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WorkerStatsView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Resource Update="Properties\Languages\Language-en-US.xaml">

@@ -111,6 +111,12 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    Visibility="{Binding NoCreatedTODO,Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <TextBlock Text="{DynamicResource NoTODOListItems}"
+                       TextWrapping="Wrap"
+                       Grid.Row="4"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Visibility="{Binding NoTODOListItems,Converter={StaticResource BooleanToVisibilityConverter}}" />
             <ScrollViewer Grid.Row="4" VerticalAlignment="Top"
                           VerticalScrollBarVisibility="Hidden">
                 <ItemsControl ItemsSource="{Binding Items}"

@@ -49,5 +49,63 @@ namespace WorkTracker.Services
                 await context.SaveChangesAsync();
             }
         }
+
+        public async System.Threading.Tasks.Task<List<Model.Task>> getAllTasksOfWorker(String workerUsername)
+        {
+            List<Model.Task> tasks = new List<Model.Task>();
+            using(WorktrackerContext context=new WorktrackerContext())
+            {
+                tasks = await context.Tasks.Where(t => t.WorkerUsername == workerUsername).ToListAsync(); 
+            }
+            return tasks;
+        }
+        public async System.Threading.Tasks.Task UpdateTask(Model.Task task)
+        {
+            using(WorktrackerContext context=new WorktrackerContext())
+            {
+                var realTask = await context.Tasks.FirstOrDefaultAsync(t => t.IdTask == task.IdTask);
+                if (realTask != null)
+                {
+                    realTask.Status = task.Status;
+                    realTask.Progress = task.Progress;
+                    realTask.Pinned= task.Pinned;
+                    context.Tasks.Update(realTask);
+                    await context.SaveChangesAsync();
+                }
+            }
+        }
+        public async System.Threading.Tasks.Task<Model.Task?> GetPinnedTask(String workerUsername)
+        {
+            Model.Task? task = null;
+            using(WorktrackerContext context=new WorktrackerContext())
+            {
+                task = await context.Tasks.FirstOrDefaultAsync(t => t.WorkerUsername == workerUsername && t.Pinned == 1 && t.Status <= 1 && t.DueDate >= DateTime.Now);
+            }
+            return task;
+        }
+
+        public async System.Threading.Tasks.Task<List<Model.Task>> GetTasksForCurrentWeek()
+        {
+            List<Model.Task> tasks=new List<Model.Task>();
+            DateTime today = DateTime.Now;
+            DateTime startOfWeek = today.AddDays(-(int)today.DayOfWeek + (int)DayOfWeek.Monday);
+            DateTime endOfWeek = startOfWeek.AddDays(6);
+
+            using(WorktrackerContext context=new WorktrackerContext())
+            {
+                tasks=await context.Tasks.Where(t=>t.DueDate.Date>=startOfWeek.Date&&t.DueDate.Date<=endOfWeek.Date).ToListAsync();
+            }
+            return tasks;
+        }
+
+        public async System.Threading.Tasks.Task<List<Model.Task>> GetTasksForCurrentDay()
+        {
+            List<Model.Task> tasks = new List<Model.Task>();
+            using(WorktrackerContext context=new WorktrackerContext())
+            {
+                tasks=await context.Tasks.Where(t=>t.DueDate.Date==DateTime.Now.Date).ToListAsync();
+            }
+            return tasks;
+        }
     }
 }
