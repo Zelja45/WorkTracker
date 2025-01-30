@@ -73,9 +73,31 @@ Klikom na dugme označeno + ikonicom vrši se kreiranje novog zadatka. Interfejs
 
 ![image](https://github.com/user-attachments/assets/8a7439a3-4e64-41ce-9b84-76cb45d3e843)
 
-Menadzer popunjava sve informacije o zadatku koji kreira. Datum i vrijeme dospjeća zadatka mogu da se biraju klikom na ikonice kalendara odnosno sata u sklopu polja za unos ili da se direktno unose u odgovarajućem formatu. Menadžer mora da izabere tačno jednog radnika, iz liste radnika svih sektora u kojima je prijavljeni korisnik menadžer, u desnom dijelu interfejsa kome će novokreirani zadatak biti dodjeljen, a izbor vrši klikom na dugme na kartici željenog radnika.
+Menadzer popunjava sve informacije o zadatku koji kreira. Datum i vrijeme dospjeća zadatka mogu da se biraju klikom na ikonice kalendara odnosno sata u sklopu polja za unos ili da se direktno unose u odgovarajućem formatu. Menadžer mora da izabere tačno jednog radnika, iz liste radnika svih sektora u kojima je prijavljeni korisnik menadžer, u desnom dijelu interfejsa kome će novokreirani zadatak biti dodjeljen, a izbor vrši klikom na dugme na kartici željenog radnika. 
 
 ![image](https://github.com/user-attachments/assets/b08d6139-867f-4b53-a52a-bdabcfd3ee66)
+### Upravljanje sektorima
+
+Menadžer ima mogućnost pregleda i upravljanjem sektorima u kojima je menadžer. Menadžeru se prikazuju svi sektori u kojima je menadžer u formi liste pri čemu se prikazuju neki osnovni podaci o sektoru poput naziva sektora i broja radnika. Postoji mogućnost i pretrage sektora po nazivu sektora.
+
+![image](https://github.com/user-attachments/assets/26b45f3d-99a9-44e6-a53b-f62548e284f0)
+
+Za prikaz detalalja korisnik treba da klikne dugme "Prikaz detalja". Izgled interfejsa koji se prikazuje dat je na narednoj slici.
+
+![image](https://github.com/user-attachments/assets/33f48853-0d11-45f2-88c0-cba5be31eeeb)
+
+Menadžer kroz prikazani interfejs ima mogućnost izmjene satnice i satnice za prekovremeni rad unutar izabranog sektora. Kako bi to izvršio neopohodno je da klikne na na ikonicu olovke kako bi mu se omogućila izmjena. Nakon izmjene neophodno je da klikne dugme "Sačuvaj promjene". Osim izmjene satnica, menadžer sa desne strane ima listu radnika koji pripadaju sektoru, i ima mogućnost uklanjanja radnika iz sektora. Kako bi uklonio radnika iz sektora korisnik mora da klikne dugme X kraj željenog radnika nakon čega mu se pojavljuje modalni prozor za potvrdu te akcije. 
+
+![image](https://github.com/user-attachments/assets/be6bd7f4-6d72-45f6-985c-2359470a6796)
+
+Za dodavanje novih radnika u sektor korisnik mora da klikne na dugme plus(gornji desni ugao). Interfejs za dodavanje novih radnika dat je na sledećoj slici.
+
+![image](https://github.com/user-attachments/assets/07c1648c-9f7d-4cf7-b8e4-8f5ef9c2f868)
+
+Menadžer dobija prikaz svih slobodnih radnika(radnika koji ne pripadaju ni jednom sektoru) te ima mogućnost izbora jednog od njih. Takodje, moguće je pretraživanje po imenu, prezimenu ili korisničkom imenu. Nakon izbora radnika neophodno je kliknuti dugme "Dodajte radnika u sektor" nakon čega će se izabrani radnik dodati u sektor.
+
+### Statistika radnika
+
 
 
 
